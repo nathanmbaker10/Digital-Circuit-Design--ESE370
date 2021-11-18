@@ -1,0 +1,1483 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Fri Nov 12 18:56:32 EST 2021
+Menu Activated: File | Open Library...
+--------------- 1 --------------
+  Fri Nov 12 18:56:49 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 2 --------------
+  Fri Nov 12 18:57:16 EST 2021
+Menu Activated: Window | Toggle Grid
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'PositiveRegister{ic}[Positive@0].clk'
+--------------- 3 --------------
+  Fri Nov 12 18:59:07 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 4 --------------
+  Fri Nov 12 18:59:17 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Pan
+--------------- 5 --------------
+  Fri Nov 12 18:59:18 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 6 --------------
+  Fri Nov 12 19:00:57 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'spicepartsS3:VPulse{ic}[VPulse@0].plus'
+--------------- 7 --------------
+  Fri Nov 12 19:00:57 EST 2021
+ProcessKeyBinding 400 when=1636761657035 modifiers=0 code=0 char=8 false false
+--------------- 8 --------------
+  Fri Nov 12 19:01:03 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Wire_Pin[pin@0].wire'
+--------------- 9 --------------
+  Fri Nov 12 19:01:03 EST 2021
+ProcessKeyBinding 400 when=1636761663757 modifiers=0 code=0 char=8 false false
+--------------- 10 --------------
+  Fri Nov 12 19:01:04 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Wire_Pin[pin@1].wire'
+--------------- 11 --------------
+  Fri Nov 12 19:01:04 EST 2021
+ProcessKeyBinding 400 when=1636761664959 modifiers=0 code=0 char=8 false false
+--------------- 12 --------------
+  Fri Nov 12 19:01:24 EST 2021
+ProcessKeyBinding 402 when=1636761684030 modifiers=0 code=25 char=ffff false true
+--------------- 13 --------------
+  Fri Nov 12 19:01:25 EST 2021
+ProcessKeyBinding 401 when=1636761685166 modifiers=0 code=2e char=2e(.) false true
+--------------- 14 --------------
+  Fri Nov 12 19:01:25 EST 2021
+ProcessKeyBinding 402 when=1636761685227 modifiers=0 code=2e char=2e(.) false true
+--------------- 15 --------------
+  Fri Nov 12 19:01:25 EST 2021
+ProcessKeyBinding 401 when=1636761685515 modifiers=0 code=38 char=38(8) false true
+--------------- 16 --------------
+  Fri Nov 12 19:01:25 EST 2021
+ProcessKeyBinding 402 when=1636761685568 modifiers=0 code=38 char=38(8) false true
+--------------- 17 --------------
+  Fri Nov 12 19:01:25 EST 2021
+ProcessKeyBinding 402 when=1636761685867 modifiers=0 code=a char=a false false
+--------------- 18 --------------
+  Fri Nov 12 19:03:07 EST 2021
+ProcessKeyBinding 401 when=1636761787169 modifiers=80 code=11 char=ffff false false
+--------------- 19 --------------
+  Fri Nov 12 19:03:07 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 20 --------------
+  Fri Nov 12 19:03:07 EST 2021
+ProcessKeyBinding 400 when=1636761787169 modifiers=80 code=0 char=13 false false
+--------------- 21 --------------
+  Fri Nov 12 19:03:07 EST 2021
+ProcessKeyBinding 402 when=1636761787231 modifiers=0 code=11 char=ffff false false
+--------------- 22 --------------
+  Fri Nov 12 19:03:11 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 23 --------------
+  Fri Nov 12 19:23:47 EST 2021
+Menu Activated: Window | Zoom Out
+--------------- 24 --------------
+  Fri Nov 12 19:28:58 EST 2021
+ProcessKeyBinding 401 when=1636763338925 modifiers=80 code=11 char=ffff false false
+--------------- 25 --------------
+  Fri Nov 12 19:28:58 EST 2021
+Menu Activated: Edit | Undo
+--------------- 26 --------------
+  Fri Nov 12 19:28:58 EST 2021
+ProcessKeyBinding 400 when=1636763338925 modifiers=80 code=0 char=1a false false
+--------------- 27 --------------
+  Fri Nov 12 19:28:59 EST 2021
+ProcessKeyBinding 402 when=1636763339022 modifiers=0 code=11 char=ffff false false
+--------------- 28 --------------
+  Fri Nov 12 19:29:15 EST 2021
+ProcessKeyBinding 401 when=1636763355241 modifiers=40 code=10 char=ffff false false
+--------------- 29 --------------
+  Fri Nov 12 19:29:17 EST 2021
+ProcessKeyBinding 402 when=1636763357078 modifiers=0 code=10 char=ffff false false
+--------------- 30 --------------
+  Fri Nov 12 19:29:20 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@0].a'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@1].y'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@2].y'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@3].a'
+--------------- 31 --------------
+  Fri Nov 12 19:30:07 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@3].y'
+--------------- 32 --------------
+  Fri Nov 12 19:30:37 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@2].y'
+--------------- 33 --------------
+  Fri Nov 12 19:30:45 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@1].y'
+--------------- 34 --------------
+  Fri Nov 12 19:30:50 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@0].a'
+--------------- 35 --------------
+  Fri Nov 12 19:30:57 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Wire_Pin[pin@2].wire'
+--------------- 36 --------------
+  Fri Nov 12 19:30:57 EST 2021
+ProcessKeyBinding 400 when=1636763457779 modifiers=0 code=0 char=8 false false
+--------------- 37 --------------
+  Fri Nov 12 19:31:01 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    Parameter 'pwl' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'ACM' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'ACP' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'VDC' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': Ground['gnd@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': spicepartsS3:VPWL{ic}['VPWL@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': wire['net@6']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': wire['net@7']
+--------------- 38 --------------
+  Fri Nov 12 19:31:01 EST 2021
+ProcessKeyBinding 400 when=1636763461002 modifiers=0 code=0 char=8 false false
+--------------- 39 --------------
+  Fri Nov 12 19:31:02 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': wire['net@11']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': wire['net@10']
+--------------- 40 --------------
+  Fri Nov 12 19:31:02 EST 2021
+ProcessKeyBinding 400 when=1636763462857 modifiers=0 code=0 char=8 false false
+--------------- 41 --------------
+  Fri Nov 12 19:31:15 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    Parameter 'Voltage' on node spicepartsS3:V_Generic{ic}['V_Generi@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': Power['pwr@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': Ground['gnd@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': spicepartsS3:V_Generic{ic}['V_Generi@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': wire['net@5']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': wire['net@4']
+--------------- 42 --------------
+  Fri Nov 12 19:31:15 EST 2021
+ProcessKeyBinding 400 when=1636763475824 modifiers=0 code=0 char=8 false false
+--------------- 43 --------------
+  Fri Nov 12 19:31:22 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@4].a'
+--------------- 44 --------------
+  Fri Nov 12 19:31:34 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@0].y'
+--------------- 45 --------------
+  Fri Nov 12 19:31:34 EST 2021
+ProcessKeyBinding 400 when=1636763494587 modifiers=0 code=0 char=8 false false
+--------------- 46 --------------
+  Fri Nov 12 19:31:56 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@5].y'
+--------------- 47 --------------
+  Fri Nov 12 19:33:33 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@6].a'
+--------------- 48 --------------
+  Fri Nov 12 19:33:43 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': 'Off-Page[conn@5].y'
+--------------- 49 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 401 when=1636763630211 modifiers=80 code=11 char=ffff false false
+--------------- 50 --------------
+  Fri Nov 12 19:33:50 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 51 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 400 when=1636763630211 modifiers=80 code=0 char=13 false false
+--------------- 52 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 402 when=1636763630262 modifiers=0 code=11 char=ffff false false
+--------------- 53 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 401 when=1636763630865 modifiers=40 code=10 char=ffff false false
+--------------- 54 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 401 when=1636763630964 modifiers=40 code=20c char=ffff false false
+--------------- 55 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 402 when=1636763630964 modifiers=40 code=20c char=ffff false false
+--------------- 56 --------------
+  Fri Nov 12 19:33:50 EST 2021
+ProcessKeyBinding 402 when=1636763630966 modifiers=0 code=10 char=ffff false false
+--------------- 57 --------------
+  Fri Nov 12 19:33:51 EST 2021
+ProcessKeyBinding 401 when=1636763631019 modifiers=40 code=10 char=ffff false false
+--------------- 58 --------------
+  Fri Nov 12 19:33:51 EST 2021
+ProcessKeyBinding 401 when=1636763631791 modifiers=40 code=20c char=ffff false false
+--------------- 59 --------------
+  Fri Nov 12 19:33:51 EST 2021
+ProcessKeyBinding 402 when=1636763631791 modifiers=0 code=10 char=ffff false false
+--------------- 60 --------------
+  Fri Nov 12 19:33:52 EST 2021
+ProcessKeyBinding 402 when=1636763632095 modifiers=0 code=20c char=ffff false false
+--------------- 61 --------------
+  Fri Nov 12 21:03:51 EST 2021
+ProcessKeyBinding 401 when=1636763774460 modifiers=80 code=11 char=ffff false false
+--------------- 62 --------------
+  Fri Nov 12 21:03:51 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 63 --------------
+  Fri Nov 12 21:03:51 EST 2021
+ProcessKeyBinding 400 when=1636763774460 modifiers=80 code=0 char=13 false false
+--------------- 64 --------------
+  Fri Nov 12 21:04:12 EST 2021
+Menu Activated: View | Make Icon View
+--------------- 65 --------------
+  Fri Nov 12 21:04:21 EST 2021
+Menu Activated: View | Edit Icon View
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4{sch}': HW6Q4{ic}['HW6Q4@0']
+--------------- 66 --------------
+  Fri Nov 12 21:04:28 EST 2021
+ProcessKeyBinding 401 when=1636763811120 modifiers=40 code=10 char=ffff false false
+--------------- 67 --------------
+  Fri Nov 12 21:04:28 EST 2021
+ProcessKeyBinding 402 when=1636763811839 modifiers=0 code=10 char=ffff false false
+--------------- 68 --------------
+  Fri Nov 12 21:04:29 EST 2021
+ProcessKeyBinding 401 when=1636763812167 modifiers=40 code=10 char=ffff false false
+--------------- 69 --------------
+  Fri Nov 12 21:04:29 EST 2021
+ProcessKeyBinding 402 when=1636763812511 modifiers=0 code=10 char=ffff false false
+--------------- 70 --------------
+  Fri Nov 12 21:04:29 EST 2021
+ProcessKeyBinding 401 when=1636763812871 modifiers=40 code=10 char=ffff false false
+--------------- 71 --------------
+  Fri Nov 12 21:04:31 EST 2021
+ProcessKeyBinding 402 when=1636763814751 modifiers=0 code=10 char=ffff false false
+--------------- 72 --------------
+  Fri Nov 12 21:04:35 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Variable 'SCHEM_function' on node Opened-Thicker-Polygon['art@1']
+    Export 'clk'
+    Export 'd'
+    Export 'a[0]'
+    Export 'a[1]'
+    Export 'a[2]'
+    Export 'a[3]'
+--------------- 73 --------------
+  Fri Nov 12 21:04:48 EST 2021
+ProcessKeyBinding 401 when=1636763831256 modifiers=80 code=11 char=ffff false false
+--------------- 74 --------------
+  Fri Nov 12 21:04:48 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 75 --------------
+  Fri Nov 12 21:04:48 EST 2021
+ProcessKeyBinding 400 when=1636763831256 modifiers=80 code=0 char=13 false false
+--------------- 76 --------------
+  Fri Nov 12 21:04:48 EST 2021
+ProcessKeyBinding 402 when=1636763831293 modifiers=0 code=11 char=ffff false false
+--------------- 77 --------------
+  Fri Nov 12 21:04:55 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 78 --------------
+  Fri Nov 12 21:05:08 EST 2021
+Menu Activated: Cell | Rename Cell...
+--------------- 79 --------------
+  Fri Nov 12 21:06:08 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 80 --------------
+  Fri Nov 12 21:06:22 EST 2021
+Menu Activated: View | Edit Icon View
+--------------- 81 --------------
+  Fri Nov 12 21:06:36 EST 2021
+ProcessKeyBinding 401 when=1636763939883 modifiers=0 code=34 char=34(4) false true
+--------------- 82 --------------
+  Fri Nov 12 21:06:36 EST 2021
+ProcessKeyBinding 402 when=1636763939963 modifiers=0 code=34 char=34(4) false true
+--------------- 83 --------------
+  Fri Nov 12 21:06:37 EST 2021
+ProcessKeyBinding 401 when=1636763940389 modifiers=0 code=44 char=64(d) false true
+--------------- 84 --------------
+  Fri Nov 12 21:06:37 EST 2021
+ProcessKeyBinding 401 when=1636763940390 modifiers=0 code=45 char=65(e) false true
+--------------- 85 --------------
+  Fri Nov 12 21:06:37 EST 2021
+ProcessKeyBinding 402 when=1636763940429 modifiers=0 code=44 char=64(d) false true
+--------------- 86 --------------
+  Fri Nov 12 21:06:37 EST 2021
+ProcessKeyBinding 402 when=1636763940436 modifiers=0 code=45 char=65(e) false true
+--------------- 87 --------------
+  Fri Nov 12 21:06:37 EST 2021
+ProcessKeyBinding 401 when=1636763940489 modifiers=0 code=4c char=6c(l) false true
+--------------- 88 --------------
+  Fri Nov 12 21:06:37 EST 2021
+ProcessKeyBinding 402 when=1636763940574 modifiers=0 code=4c char=6c(l) false true
+--------------- 89 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 402 when=1636763941211 modifiers=0 code=8 char=8 false true
+--------------- 90 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 402 when=1636763941355 modifiers=0 code=8 char=8 false true
+--------------- 91 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 402 when=1636763941491 modifiers=0 code=8 char=8 false true
+--------------- 92 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 401 when=1636763941523 modifiers=0 code=45 char=65(e) false true
+--------------- 93 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 402 when=1636763941650 modifiers=0 code=45 char=65(e) false true
+--------------- 94 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 401 when=1636763941904 modifiers=0 code=4c char=6c(l) false true
+--------------- 95 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 402 when=1636763941964 modifiers=0 code=4c char=6c(l) false true
+--------------- 96 --------------
+  Fri Nov 12 21:06:38 EST 2021
+ProcessKeyBinding 401 when=1636763942040 modifiers=0 code=45 char=65(e) false true
+--------------- 97 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942094 modifiers=0 code=45 char=65(e) false true
+--------------- 98 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942159 modifiers=0 code=4d char=6d(m) false true
+--------------- 99 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942212 modifiers=0 code=4d char=6d(m) false true
+--------------- 100 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942289 modifiers=0 code=45 char=65(e) false true
+--------------- 101 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942360 modifiers=0 code=45 char=65(e) false true
+--------------- 102 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942392 modifiers=0 code=4e char=6e(n) false true
+--------------- 103 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942474 modifiers=0 code=4e char=6e(n) false true
+--------------- 104 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942501 modifiers=0 code=54 char=74(t) false true
+--------------- 105 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942558 modifiers=0 code=54 char=74(t) false true
+--------------- 106 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942793 modifiers=0 code=53 char=73(s) false true
+--------------- 107 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942864 modifiers=0 code=53 char=73(s) false true
+--------------- 108 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942867 modifiers=0 code=48 char=68(h) false true
+--------------- 109 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763942940 modifiers=0 code=49 char=69(i) false true
+--------------- 110 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942967 modifiers=0 code=48 char=68(h) false true
+--------------- 111 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 402 when=1636763942986 modifiers=0 code=49 char=69(i) false true
+--------------- 112 --------------
+  Fri Nov 12 21:06:39 EST 2021
+ProcessKeyBinding 401 when=1636763943044 modifiers=0 code=46 char=66(f) false true
+--------------- 113 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 402 when=1636763943103 modifiers=0 code=46 char=66(f) false true
+--------------- 114 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 401 when=1636763943212 modifiers=0 code=54 char=74(t) false true
+--------------- 115 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 402 when=1636763943284 modifiers=0 code=54 char=74(t) false true
+--------------- 116 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 401 when=1636763943329 modifiers=0 code=45 char=65(e) false true
+--------------- 117 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 401 when=1636763943403 modifiers=0 code=52 char=72(r) false true
+--------------- 118 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 402 when=1636763943425 modifiers=0 code=45 char=65(e) false true
+--------------- 119 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 402 when=1636763943489 modifiers=0 code=52 char=72(r) false true
+--------------- 120 --------------
+  Fri Nov 12 21:06:40 EST 2021
+ProcessKeyBinding 402 when=1636763943595 modifiers=0 code=a char=a false false
+--------------- 121 --------------
+  Fri Nov 12 21:06:41 EST 2021
+ProcessKeyBinding 401 when=1636763945064 modifiers=80 code=11 char=ffff false false
+--------------- 122 --------------
+  Fri Nov 12 21:06:41 EST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    Variable 'SCHEM_function' on node Opened-Thicker-Polygon['art@1']
+--------------- 123 --------------
+  Fri Nov 12 21:06:41 EST 2021
+ProcessKeyBinding 400 when=1636763945064 modifiers=80 code=0 char=13 false false
+--------------- 124 --------------
+  Fri Nov 12 21:06:42 EST 2021
+ProcessKeyBinding 402 when=1636763945133 modifiers=0 code=11 char=ffff false false
+--------------- 125 --------------
+  Fri Nov 12 21:06:52 EST 2021
+ProcessKeyBinding 401 when=1636763955909 modifiers=80 code=11 char=ffff false false
+--------------- 126 --------------
+  Fri Nov 12 21:06:52 EST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell '4elementshifter{sch}': '4elementshifter{ic}[HW6Q4@0].a[3]'
+--------------- 127 --------------
+  Fri Nov 12 21:06:52 EST 2021
+ProcessKeyBinding 400 when=1636763955909 modifiers=80 code=0 char=13 false false
+--------------- 128 --------------
+  Fri Nov 12 21:06:52 EST 2021
+ProcessKeyBinding 402 when=1636763956007 modifiers=0 code=11 char=ffff false false
+--------------- 129 --------------
+  Fri Nov 12 21:06:55 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 130 --------------
+  Fri Nov 12 21:07:02 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 131 --------------
+  Fri Nov 12 21:07:12 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 132 --------------
+  Fri Nov 12 21:07:15 EST 2021
+Menu Activated: Window | Toggle Grid
+--------------- 133 --------------
+  Fri Nov 12 21:07:27 EST 2021
+Menu Activated: Cell | Delete Cell...
+--------------- 134 --------------
+  Fri Nov 12 21:07:36 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 135 --------------
+  Fri Nov 12 21:09:11 EST 2021
+ProcessKeyBinding 402 when=1636764094908 modifiers=0 code=25 char=ffff false true
+--------------- 136 --------------
+  Fri Nov 12 21:09:12 EST 2021
+ProcessKeyBinding 402 when=1636764095967 modifiers=0 code=8 char=8 false true
+--------------- 137 --------------
+  Fri Nov 12 21:09:13 EST 2021
+ProcessKeyBinding 401 when=1636764096759 modifiers=0 code=30 char=30(0) false true
+--------------- 138 --------------
+  Fri Nov 12 21:09:13 EST 2021
+ProcessKeyBinding 402 when=1636764096795 modifiers=0 code=30 char=30(0) false true
+--------------- 139 --------------
+  Fri Nov 12 21:09:14 EST 2021
+ProcessKeyBinding 401 when=1636764097106 modifiers=0 code=2e char=2e(.) false true
+--------------- 140 --------------
+  Fri Nov 12 21:09:14 EST 2021
+ProcessKeyBinding 402 when=1636764097220 modifiers=0 code=2e char=2e(.) false true
+--------------- 141 --------------
+  Fri Nov 12 21:09:14 EST 2021
+ProcessKeyBinding 401 when=1636764097398 modifiers=0 code=38 char=38(8) false true
+--------------- 142 --------------
+  Fri Nov 12 21:09:14 EST 2021
+ProcessKeyBinding 402 when=1636764097480 modifiers=0 code=38 char=38(8) false true
+--------------- 143 --------------
+  Fri Nov 12 21:09:14 EST 2021
+ProcessKeyBinding 402 when=1636764097813 modifiers=0 code=a char=a false false
+--------------- 144 --------------
+  Fri Nov 12 21:09:16 EST 2021
+ProcessKeyBinding 401 when=1636764100035 modifiers=80 code=11 char=ffff false false
+--------------- 145 --------------
+  Fri Nov 12 21:09:16 EST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    Parameter 'Voltage' on node spicepartsS3:V_Generic{ic}['V_Generi@0']
+--------------- 146 --------------
+  Fri Nov 12 21:09:16 EST 2021
+ProcessKeyBinding 400 when=1636764100035 modifiers=80 code=0 char=13 false false
+--------------- 147 --------------
+  Fri Nov 12 21:09:17 EST 2021
+ProcessKeyBinding 402 when=1636764100150 modifiers=0 code=11 char=ffff false false
+--------------- 148 --------------
+  Fri Nov 12 21:09:54 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': '4elementshifter{ic}[4element@0].d'
+--------------- 149 --------------
+  Fri Nov 12 21:09:54 EST 2021
+ProcessKeyBinding 400 when=1636764137339 modifiers=0 code=0 char=8 false false
+--------------- 150 --------------
+  Fri Nov 12 21:10:00 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@11']
+--------------- 151 --------------
+  Fri Nov 12 21:10:00 EST 2021
+ProcessKeyBinding 400 when=1636764143587 modifiers=0 code=0 char=8 false false
+--------------- 152 --------------
+  Fri Nov 12 21:10:33 EST 2021
+ProcessKeyBinding 401 when=1636764176227 modifiers=80 code=11 char=ffff false false
+--------------- 153 --------------
+  Fri Nov 12 21:10:33 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 154 --------------
+  Fri Nov 12 21:10:33 EST 2021
+ProcessKeyBinding 400 when=1636764176227 modifiers=80 code=0 char=13 false false
+--------------- 155 --------------
+  Fri Nov 12 21:10:33 EST 2021
+ProcessKeyBinding 402 when=1636764176292 modifiers=0 code=11 char=ffff false false
+--------------- 156 --------------
+  Fri Nov 12 21:10:59 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 157 --------------
+  Fri Nov 12 21:58:30 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 158 --------------
+  Fri Nov 12 21:58:46 EST 2021
+Menu Activated: Window | Toggle Grid
+--------------- 159 --------------
+  Fri Nov 12 21:58:51 EST 2021
+Menu Activated: Window | Zoom In
+--------------- 160 --------------
+  Fri Nov 12 21:59:02 EST 2021
+ProcessKeyBinding 401 when=1636767085602 modifiers=40 code=10 char=ffff false false
+--------------- 161 --------------
+  Fri Nov 12 21:59:02 EST 2021
+ProcessKeyBinding 402 when=1636767085602 modifiers=0 code=10 char=ffff false false
+--------------- 162 --------------
+  Fri Nov 12 21:59:48 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 163 --------------
+  Fri Nov 12 21:59:57 EST 2021
+ProcessKeyBinding 401 when=1636767140850 modifiers=40 code=10 char=ffff false false
+--------------- 164 --------------
+  Fri Nov 12 21:59:58 EST 2021
+ProcessKeyBinding 402 when=1636767141873 modifiers=0 code=10 char=ffff false false
+--------------- 165 --------------
+  Fri Nov 12 22:00:00 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 166 --------------
+  Fri Nov 12 22:00:05 EST 2021
+ProcessKeyBinding 401 when=1636767148565 modifiers=40 code=10 char=ffff false false
+--------------- 167 --------------
+  Fri Nov 12 22:00:06 EST 2021
+ProcessKeyBinding 401 when=1636767149161 modifiers=40 code=20c char=ffff false false
+--------------- 168 --------------
+  Fri Nov 12 22:00:06 EST 2021
+ProcessKeyBinding 402 when=1636767149161 modifiers=40 code=20c char=ffff false false
+--------------- 169 --------------
+  Fri Nov 12 22:00:14 EST 2021
+ProcessKeyBinding 402 when=1636767157557 modifiers=0 code=10 char=ffff false false
+--------------- 170 --------------
+  Fri Nov 12 22:00:46 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 171 --------------
+  Fri Nov 12 22:00:48 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 172 --------------
+  Fri Nov 12 22:01:08 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 173 --------------
+  Fri Nov 12 22:01:20 EST 2021
+ProcessKeyBinding 401 when=1636767223237 modifiers=40 code=10 char=ffff false false
+--------------- 174 --------------
+  Fri Nov 12 22:01:20 EST 2021
+ProcessKeyBinding 402 when=1636767223237 modifiers=0 code=10 char=ffff false false
+--------------- 175 --------------
+  Fri Nov 12 22:01:21 EST 2021
+ProcessKeyBinding 401 when=1636767224096 modifiers=40 code=10 char=ffff false false
+--------------- 176 --------------
+  Fri Nov 12 22:01:21 EST 2021
+ProcessKeyBinding 402 when=1636767224650 modifiers=0 code=10 char=ffff false false
+--------------- 177 --------------
+  Fri Nov 12 22:02:47 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 178 --------------
+  Fri Nov 12 22:02:53 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 179 --------------
+  Fri Nov 12 22:03:03 EST 2021
+ProcessKeyBinding 401 when=1636767326753 modifiers=40 code=10 char=ffff false false
+--------------- 180 --------------
+  Fri Nov 12 22:03:08 EST 2021
+ProcessKeyBinding 402 when=1636767331090 modifiers=0 code=10 char=ffff false false
+--------------- 181 --------------
+  Fri Nov 12 22:03:37 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q3{sch}': 'PositiveRegister{ic}[Positive@0].q'
+--------------- 182 --------------
+  Fri Nov 12 22:04:02 EST 2021
+Menu Activated: Window | Zoom Out
+--------------- 183 --------------
+  Fri Nov 12 22:04:04 EST 2021
+ProcessKeyBinding 401 when=1636767387277 modifiers=40 code=10 char=ffff false false
+--------------- 184 --------------
+  Fri Nov 12 22:04:04 EST 2021
+ProcessKeyBinding 402 when=1636767387277 modifiers=0 code=10 char=ffff false false
+--------------- 185 --------------
+  Fri Nov 12 22:06:13 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 186 --------------
+  Fri Nov 12 22:06:33 EST 2021
+ProcessKeyBinding 401 when=1636767536525 modifiers=40 code=10 char=ffff false false
+--------------- 187 --------------
+  Fri Nov 12 22:06:33 EST 2021
+ProcessKeyBinding 402 when=1636767536808 modifiers=0 code=10 char=ffff false false
+--------------- 188 --------------
+  Fri Nov 12 22:20:49 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'spicepartsS3:VPWL{ic}[VPWL@0].minus'
+--------------- 189 --------------
+  Fri Nov 12 22:20:49 EST 2021
+ProcessKeyBinding 400 when=1636768392126 modifiers=0 code=0 char=8 false false
+--------------- 190 --------------
+  Fri Nov 12 22:20:50 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@17']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@16']
+--------------- 191 --------------
+  Fri Nov 12 22:20:50 EST 2021
+ProcessKeyBinding 400 when=1636768393779 modifiers=0 code=0 char=8 false false
+--------------- 192 --------------
+  Fri Nov 12 22:20:52 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@14']
+--------------- 193 --------------
+  Fri Nov 12 22:20:52 EST 2021
+ProcessKeyBinding 400 when=1636768396027 modifiers=0 code=0 char=8 false false
+--------------- 194 --------------
+  Fri Nov 12 22:20:56 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@5']
+--------------- 195 --------------
+  Fri Nov 12 22:20:56 EST 2021
+ProcessKeyBinding 400 when=1636768399959 modifiers=0 code=0 char=8 false false
+--------------- 196 --------------
+  Fri Nov 12 22:21:38 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': inverter{ic}['inverter@0']
+--------------- 197 --------------
+  Fri Nov 12 22:22:00 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'inverter{ic}[inverter@0].a'
+--------------- 198 --------------
+  Fri Nov 12 22:22:00 EST 2021
+ProcessKeyBinding 400 when=1636768463594 modifiers=0 code=0 char=8 false false
+--------------- 199 --------------
+  Fri Nov 12 22:22:01 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@26']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@27']
+--------------- 200 --------------
+  Fri Nov 12 22:22:01 EST 2021
+ProcessKeyBinding 400 when=1636768464824 modifiers=0 code=0 char=8 false false
+--------------- 201 --------------
+  Fri Nov 12 22:22:02 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@28']
+--------------- 202 --------------
+  Fri Nov 12 22:22:02 EST 2021
+ProcessKeyBinding 400 when=1636768465815 modifiers=0 code=0 char=8 false false
+--------------- 203 --------------
+  Fri Nov 12 22:22:40 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'inverter{ic}[inverter@1].a'
+--------------- 204 --------------
+  Fri Nov 12 22:22:55 EST 2021
+ProcessKeyBinding 401 when=1636768518401 modifiers=80 code=11 char=ffff false false
+--------------- 205 --------------
+  Fri Nov 12 22:22:55 EST 2021
+Menu Activated: Edit | Copy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'inverter{ic}[inverter@1].a'
+--------------- 206 --------------
+  Fri Nov 12 22:22:55 EST 2021
+ProcessKeyBinding 400 when=1636768518401 modifiers=80 code=0 char=3 false false
+--------------- 207 --------------
+  Fri Nov 12 22:22:55 EST 2021
+ProcessKeyBinding 402 when=1636768518472 modifiers=0 code=11 char=ffff false false
+--------------- 208 --------------
+  Fri Nov 12 22:22:56 EST 2021
+ProcessKeyBinding 401 when=1636768519557 modifiers=80 code=11 char=ffff false false
+--------------- 209 --------------
+  Fri Nov 12 22:22:56 EST 2021
+Menu Activated: Edit | Paste
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'inverter{ic}[inverter@1].a'
+--------------- 210 --------------
+  Fri Nov 12 22:22:56 EST 2021
+ProcessKeyBinding 400 when=1636768519557 modifiers=80 code=0 char=16 false false
+--------------- 211 --------------
+  Fri Nov 12 22:22:56 EST 2021
+ProcessKeyBinding 402 when=1636768519639 modifiers=0 code=11 char=ffff false false
+--------------- 212 --------------
+  Fri Nov 12 22:23:11 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': inverter{ic}['inverter@2']
+--------------- 213 --------------
+  Fri Nov 12 22:23:50 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'inverter{ic}[inverter@3].not(a)'
+--------------- 214 --------------
+  Fri Nov 12 22:24:22 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@21']
+--------------- 215 --------------
+  Fri Nov 12 22:24:22 EST 2021
+ProcessKeyBinding 400 when=1636768605805 modifiers=0 code=0 char=8 false false
+--------------- 216 --------------
+  Fri Nov 12 22:24:39 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 217 --------------
+  Fri Nov 12 22:25:14 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 218 --------------
+  Fri Nov 12 22:25:29 EST 2021
+ProcessKeyBinding 401 when=1636768672392 modifiers=40 code=10 char=ffff false false
+--------------- 219 --------------
+  Fri Nov 12 22:25:29 EST 2021
+ProcessKeyBinding 402 when=1636768672393 modifiers=0 code=10 char=ffff false false
+--------------- 220 --------------
+  Fri Nov 12 22:26:14 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 221 --------------
+  Fri Nov 12 22:49:48 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 222 --------------
+  Fri Nov 12 22:59:15 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Power[pwr@1].vdd'
+--------------- 223 --------------
+  Fri Nov 12 22:59:15 EST 2021
+ProcessKeyBinding 400 when=1636770698775 modifiers=0 code=0 char=8 false false
+--------------- 224 --------------
+  Fri Nov 12 22:59:17 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Resistor[res@0].b'
+--------------- 225 --------------
+  Fri Nov 12 22:59:17 EST 2021
+ProcessKeyBinding 400 when=1636770700903 modifiers=0 code=0 char=8 false false
+--------------- 226 --------------
+  Fri Nov 12 22:59:24 EST 2021
+ProcessKeyBinding 401 when=1636770707326 modifiers=80 code=11 char=ffff false false
+--------------- 227 --------------
+  Fri Nov 12 22:59:24 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 228 --------------
+  Fri Nov 12 22:59:24 EST 2021
+ProcessKeyBinding 400 when=1636770707326 modifiers=80 code=0 char=13 false false
+--------------- 229 --------------
+  Fri Nov 12 22:59:24 EST 2021
+ProcessKeyBinding 402 when=1636770707395 modifiers=0 code=11 char=ffff false false
+--------------- 230 --------------
+  Fri Nov 12 23:00:26 EST 2021
+ProcessKeyBinding 401 when=1636770769440 modifiers=80 code=11 char=ffff false false
+--------------- 231 --------------
+  Fri Nov 12 23:00:26 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 232 --------------
+  Fri Nov 12 23:00:26 EST 2021
+ProcessKeyBinding 400 when=1636770769440 modifiers=80 code=0 char=13 false false
+--------------- 233 --------------
+  Fri Nov 12 23:00:26 EST 2021
+ProcessKeyBinding 402 when=1636770769500 modifiers=0 code=11 char=ffff false false
+--------------- 234 --------------
+  Fri Nov 12 23:04:26 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@37']
+--------------- 235 --------------
+  Fri Nov 12 23:04:26 EST 2021
+ProcessKeyBinding 400 when=1636771009121 modifiers=0 code=0 char=8 false false
+--------------- 236 --------------
+  Fri Nov 12 23:05:23 EST 2021
+ProcessKeyBinding 401 when=1636771066895 modifiers=80 code=11 char=ffff false false
+--------------- 237 --------------
+  Fri Nov 12 23:05:23 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+--------------- 238 --------------
+  Fri Nov 12 23:05:23 EST 2021
+ProcessKeyBinding 400 when=1636771066895 modifiers=80 code=0 char=1a false false
+--------------- 239 --------------
+  Fri Nov 12 23:05:23 EST 2021
+ProcessKeyBinding 402 when=1636771067007 modifiers=0 code=11 char=ffff false false
+--------------- 240 --------------
+  Fri Nov 12 23:05:58 EST 2021
+ProcessKeyBinding 401 when=1636771101428 modifiers=80 code=11 char=ffff false false
+--------------- 241 --------------
+  Fri Nov 12 23:05:58 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 242 --------------
+  Fri Nov 12 23:05:58 EST 2021
+ProcessKeyBinding 400 when=1636771101428 modifiers=80 code=0 char=13 false false
+--------------- 243 --------------
+  Fri Nov 12 23:05:58 EST 2021
+ProcessKeyBinding 402 when=1636771101488 modifiers=0 code=11 char=ffff false false
+--------------- 244 --------------
+  Fri Nov 12 23:06:01 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 245 --------------
+  Fri Nov 12 23:12:32 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@9].wire'
+--------------- 246 --------------
+  Fri Nov 12 23:12:32 EST 2021
+ProcessKeyBinding 400 when=1636771495273 modifiers=0 code=0 char=8 false false
+--------------- 247 --------------
+  Fri Nov 12 23:12:34 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@42']
+--------------- 248 --------------
+  Fri Nov 12 23:12:34 EST 2021
+ProcessKeyBinding 400 when=1636771497780 modifiers=0 code=0 char=8 false false
+--------------- 249 --------------
+  Fri Nov 12 23:13:57 EST 2021
+ProcessKeyBinding 401 when=1636771581030 modifiers=80 code=11 char=ffff false false
+--------------- 250 --------------
+  Fri Nov 12 23:13:57 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 251 --------------
+  Fri Nov 12 23:13:57 EST 2021
+ProcessKeyBinding 400 when=1636771581030 modifiers=80 code=0 char=13 false false
+--------------- 252 --------------
+  Fri Nov 12 23:13:58 EST 2021
+ProcessKeyBinding 402 when=1636771581095 modifiers=0 code=11 char=ffff false false
+--------------- 253 --------------
+  Fri Nov 12 23:14:01 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 254 --------------
+  Fri Nov 12 23:29:06 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@17].wire'
+--------------- 255 --------------
+  Fri Nov 12 23:29:06 EST 2021
+ProcessKeyBinding 400 when=1636772489388 modifiers=0 code=0 char=8 false false
+--------------- 256 --------------
+  Fri Nov 12 23:29:12 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@14].wire'
+--------------- 257 --------------
+  Fri Nov 12 23:29:12 EST 2021
+ProcessKeyBinding 400 when=1636772495990 modifiers=0 code=0 char=8 false false
+--------------- 258 --------------
+  Fri Nov 12 23:29:35 EST 2021
+ProcessKeyBinding 401 when=1636772518524 modifiers=40 code=10 char=ffff false false
+--------------- 259 --------------
+  Fri Nov 12 23:29:36 EST 2021
+ProcessKeyBinding 402 when=1636772519463 modifiers=0 code=10 char=ffff false false
+--------------- 260 --------------
+  Fri Nov 12 23:32:00 EST 2021
+ProcessKeyBinding 401 when=1636772663535 modifiers=80 code=11 char=ffff false false
+--------------- 261 --------------
+  Fri Nov 12 23:32:00 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': '4elementshifter{ic}[4element@1].a[3]'
+--------------- 262 --------------
+  Fri Nov 12 23:32:00 EST 2021
+ProcessKeyBinding 400 when=1636772663535 modifiers=80 code=0 char=1a false false
+--------------- 263 --------------
+  Fri Nov 12 23:32:00 EST 2021
+ProcessKeyBinding 402 when=1636772663640 modifiers=0 code=11 char=ffff false false
+--------------- 264 --------------
+  Fri Nov 12 23:32:37 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 265 --------------
+  Fri Nov 12 23:42:35 EST 2021
+ProcessKeyBinding 401 when=1636773299008 modifiers=80 code=11 char=ffff false false
+--------------- 266 --------------
+  Fri Nov 12 23:42:35 EST 2021
+Menu Activated: Edit | Undo
+--------------- 267 --------------
+  Fri Nov 12 23:42:35 EST 2021
+ProcessKeyBinding 400 when=1636773299008 modifiers=80 code=0 char=1a false false
+--------------- 268 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 402 when=1636773299118 modifiers=0 code=11 char=ffff false false
+--------------- 269 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 401 when=1636773299227 modifiers=80 code=11 char=ffff false false
+--------------- 270 --------------
+  Fri Nov 12 23:42:36 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@25].wire'
+--------------- 271 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 400 when=1636773299227 modifiers=80 code=0 char=1a false false
+--------------- 272 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 402 when=1636773299267 modifiers=0 code=11 char=ffff false false
+--------------- 273 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 401 when=1636773299482 modifiers=80 code=11 char=ffff false false
+--------------- 274 --------------
+  Fri Nov 12 23:42:36 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@24].wire'
+--------------- 275 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 400 when=1636773299482 modifiers=80 code=0 char=1a false false
+--------------- 276 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 402 when=1636773299548 modifiers=0 code=11 char=ffff false false
+--------------- 277 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 401 when=1636773299639 modifiers=80 code=11 char=ffff false false
+--------------- 278 --------------
+  Fri Nov 12 23:42:36 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@24].wire'
+--------------- 279 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 400 when=1636773299639 modifiers=80 code=0 char=1a false false
+--------------- 280 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 402 when=1636773299711 modifiers=0 code=11 char=ffff false false
+--------------- 281 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 401 when=1636773299788 modifiers=80 code=11 char=ffff false false
+--------------- 282 --------------
+  Fri Nov 12 23:42:36 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(nMOS)[nmos@0].d'
+--------------- 283 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 400 when=1636773299788 modifiers=80 code=0 char=1a false false
+--------------- 284 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 402 when=1636773299856 modifiers=0 code=11 char=ffff false false
+--------------- 285 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 401 when=1636773299951 modifiers=80 code=11 char=ffff false false
+--------------- 286 --------------
+  Fri Nov 12 23:42:36 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Ground[gnd@3].gnd'
+--------------- 287 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 400 when=1636773299951 modifiers=80 code=0 char=1a false false
+--------------- 288 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 402 when=1636773300008 modifiers=0 code=11 char=ffff false false
+--------------- 289 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 401 when=1636773300065 modifiers=80 code=11 char=ffff false false
+--------------- 290 --------------
+  Fri Nov 12 23:42:36 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(nMOS)[nmos@0].d'
+--------------- 291 --------------
+  Fri Nov 12 23:42:36 EST 2021
+ProcessKeyBinding 400 when=1636773300065 modifiers=80 code=0 char=1a false false
+--------------- 292 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 402 when=1636773300154 modifiers=0 code=11 char=ffff false false
+--------------- 293 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 401 when=1636773300302 modifiers=80 code=11 char=ffff false false
+--------------- 294 --------------
+  Fri Nov 12 23:42:37 EST 2021
+Menu Activated: Edit | Undo
+--------------- 295 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 400 when=1636773300302 modifiers=80 code=0 char=1a false false
+--------------- 296 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 402 when=1636773300368 modifiers=0 code=11 char=ffff false false
+--------------- 297 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 401 when=1636773300447 modifiers=80 code=11 char=ffff false false
+--------------- 298 --------------
+  Fri Nov 12 23:42:37 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 299 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 400 when=1636773300447 modifiers=80 code=0 char=1a false false
+--------------- 300 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 402 when=1636773300524 modifiers=0 code=11 char=ffff false false
+--------------- 301 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 401 when=1636773300594 modifiers=80 code=11 char=ffff false false
+--------------- 302 --------------
+  Fri Nov 12 23:42:37 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'spicepartsS3:VPulse{ic}[VPulse@2].plus'
+--------------- 303 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 400 when=1636773300594 modifiers=80 code=0 char=1a false false
+--------------- 304 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 402 when=1636773300674 modifiers=0 code=11 char=ffff false false
+--------------- 305 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 401 when=1636773300754 modifiers=80 code=11 char=ffff false false
+--------------- 306 --------------
+  Fri Nov 12 23:42:37 EST 2021
+Menu Activated: Edit | Undo
+--------------- 307 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 400 when=1636773300754 modifiers=80 code=0 char=1a false false
+--------------- 308 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 402 when=1636773300827 modifiers=0 code=11 char=ffff false false
+--------------- 309 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 401 when=1636773300923 modifiers=80 code=11 char=ffff false false
+--------------- 310 --------------
+  Fri Nov 12 23:42:37 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(nMOS)[nmos@0].s'
+--------------- 311 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 400 when=1636773300923 modifiers=80 code=0 char=1a false false
+--------------- 312 --------------
+  Fri Nov 12 23:42:37 EST 2021
+ProcessKeyBinding 402 when=1636773300979 modifiers=0 code=11 char=ffff false false
+--------------- 313 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 401 when=1636773301148 modifiers=80 code=11 char=ffff false false
+--------------- 314 --------------
+  Fri Nov 12 23:42:38 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(nMOS)[nmos@0].s'
+--------------- 315 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 400 when=1636773301148 modifiers=80 code=0 char=1a false false
+--------------- 316 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 402 when=1636773301227 modifiers=0 code=11 char=ffff false false
+--------------- 317 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 401 when=1636773301338 modifiers=80 code=11 char=ffff false false
+--------------- 318 --------------
+  Fri Nov 12 23:42:38 EST 2021
+Menu Activated: Edit | Undo
+--------------- 319 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 400 when=1636773301338 modifiers=80 code=0 char=1a false false
+--------------- 320 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 402 when=1636773301395 modifiers=0 code=11 char=ffff false false
+--------------- 321 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 401 when=1636773301499 modifiers=80 code=11 char=ffff false false
+--------------- 322 --------------
+  Fri Nov 12 23:42:38 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Wire_Pin[pin@22].wire'
+--------------- 323 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 400 when=1636773301499 modifiers=80 code=0 char=1a false false
+--------------- 324 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 402 when=1636773301559 modifiers=0 code=11 char=ffff false false
+--------------- 325 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 401 when=1636773301647 modifiers=80 code=11 char=ffff false false
+--------------- 326 --------------
+  Fri Nov 12 23:42:38 EST 2021
+Menu Activated: Edit | Undo
+--------------- 327 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 400 when=1636773301647 modifiers=80 code=0 char=1a false false
+--------------- 328 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 402 when=1636773301716 modifiers=0 code=11 char=ffff false false
+--------------- 329 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 401 when=1636773301810 modifiers=80 code=11 char=ffff false false
+--------------- 330 --------------
+  Fri Nov 12 23:42:38 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 331 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 400 when=1636773301810 modifiers=80 code=0 char=1a false false
+--------------- 332 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 402 when=1636773301875 modifiers=0 code=11 char=ffff false false
+--------------- 333 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 401 when=1636773301974 modifiers=80 code=11 char=ffff false false
+--------------- 334 --------------
+  Fri Nov 12 23:42:38 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': '4elementshifter{ic}[4element@1].a[0]'
+--------------- 335 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 400 when=1636773301974 modifiers=80 code=0 char=1a false false
+--------------- 336 --------------
+  Fri Nov 12 23:42:38 EST 2021
+ProcessKeyBinding 402 when=1636773302025 modifiers=0 code=11 char=ffff false false
+--------------- 337 --------------
+  Fri Nov 12 23:42:39 EST 2021
+ProcessKeyBinding 401 when=1636773302415 modifiers=80 code=11 char=ffff false false
+--------------- 338 --------------
+  Fri Nov 12 23:42:39 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': '4elementshifter{ic}[4element@1].a[0]'
+--------------- 339 --------------
+  Fri Nov 12 23:42:39 EST 2021
+ProcessKeyBinding 400 when=1636773302415 modifiers=80 code=0 char=1a false false
+--------------- 340 --------------
+  Fri Nov 12 23:42:39 EST 2021
+ProcessKeyBinding 402 when=1636773302484 modifiers=0 code=11 char=ffff false false
+--------------- 341 --------------
+  Fri Nov 12 23:42:39 EST 2021
+ProcessKeyBinding 401 when=1636773303038 modifiers=80 code=11 char=ffff false false
+--------------- 342 --------------
+  Fri Nov 12 23:42:39 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 343 --------------
+  Fri Nov 12 23:42:39 EST 2021
+ProcessKeyBinding 400 when=1636773303038 modifiers=80 code=0 char=1a false false
+--------------- 344 --------------
+  Fri Nov 12 23:42:40 EST 2021
+ProcessKeyBinding 402 when=1636773303130 modifiers=0 code=11 char=ffff false false
+--------------- 345 --------------
+  Fri Nov 12 23:42:40 EST 2021
+ProcessKeyBinding 401 when=1636773303458 modifiers=80 code=11 char=ffff false false
+--------------- 346 --------------
+  Fri Nov 12 23:42:40 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 347 --------------
+  Fri Nov 12 23:42:40 EST 2021
+ProcessKeyBinding 400 when=1636773303458 modifiers=80 code=0 char=1a false false
+--------------- 348 --------------
+  Fri Nov 12 23:42:40 EST 2021
+ProcessKeyBinding 402 when=1636773303555 modifiers=0 code=11 char=ffff false false
+--------------- 349 --------------
+  Fri Nov 12 23:42:41 EST 2021
+ProcessKeyBinding 401 when=1636773304287 modifiers=80 code=11 char=ffff false false
+--------------- 350 --------------
+  Fri Nov 12 23:42:41 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 351 --------------
+  Fri Nov 12 23:42:41 EST 2021
+ProcessKeyBinding 400 when=1636773304287 modifiers=80 code=0 char=1a false false
+--------------- 352 --------------
+  Fri Nov 12 23:42:41 EST 2021
+ProcessKeyBinding 402 when=1636773304358 modifiers=0 code=11 char=ffff false false
+--------------- 353 --------------
+  Fri Nov 12 23:42:41 EST 2021
+ProcessKeyBinding 401 when=1636773304619 modifiers=80 code=11 char=ffff false false
+--------------- 354 --------------
+  Fri Nov 12 23:42:41 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 355 --------------
+  Fri Nov 12 23:42:41 EST 2021
+ProcessKeyBinding 400 when=1636773304619 modifiers=80 code=0 char=1a false false
+--------------- 356 --------------
+  Fri Nov 12 23:42:41 EST 2021
+ProcessKeyBinding 402 when=1636773304712 modifiers=0 code=11 char=ffff false false
+--------------- 357 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 401 when=1636773307117 modifiers=80 code=11 char=ffff false false
+--------------- 358 --------------
+  Fri Nov 12 23:42:44 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 359 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 400 when=1636773307117 modifiers=80 code=0 char=1a false false
+--------------- 360 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 402 when=1636773307257 modifiers=0 code=11 char=ffff false false
+--------------- 361 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 401 when=1636773307581 modifiers=80 code=11 char=ffff false false
+--------------- 362 --------------
+  Fri Nov 12 23:42:44 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 363 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 400 when=1636773307582 modifiers=80 code=0 char=1a false false
+--------------- 364 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 402 when=1636773307681 modifiers=0 code=11 char=ffff false false
+--------------- 365 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 401 when=1636773307937 modifiers=80 code=11 char=ffff false false
+--------------- 366 --------------
+  Fri Nov 12 23:42:44 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 367 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 400 when=1636773307937 modifiers=80 code=0 char=1a false false
+--------------- 368 --------------
+  Fri Nov 12 23:42:44 EST 2021
+ProcessKeyBinding 402 when=1636773308020 modifiers=0 code=11 char=ffff false false
+--------------- 369 --------------
+  Fri Nov 12 23:42:45 EST 2021
+ProcessKeyBinding 401 when=1636773308289 modifiers=80 code=11 char=ffff false false
+--------------- 370 --------------
+  Fri Nov 12 23:42:45 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Attribute 'length' on node Transistor(pMOS)['pmos@0']
+    Attribute 'width' on node Transistor(pMOS)['pmos@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@16']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Ground['gnd@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Power['pwr@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': Wire_Pin['pin@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@38']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@39']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@48']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': wire['net@49']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'HW6Q4a{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 371 --------------
+  Fri Nov 12 23:42:45 EST 2021
+ProcessKeyBinding 400 when=1636773308289 modifiers=80 code=0 char=1a false false
+--------------- 372 --------------
+  Fri Nov 12 23:42:45 EST 2021
+ProcessKeyBinding 402 when=1636773308377 modifiers=0 code=11 char=ffff false false
+--------------- 373 --------------
+  Fri Nov 12 23:42:45 EST 2021
+ProcessKeyBinding 401 when=1636773308561 modifiers=80 code=11 char=ffff false false
+--------------- 374 --------------
+  Fri Nov 12 23:42:45 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    

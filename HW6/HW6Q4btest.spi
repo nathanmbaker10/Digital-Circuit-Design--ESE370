@@ -1,0 +1,96 @@
+*** SPICE deck for cell HW6Q4a{sch} from library ESE370
+*** Created on Fri Nov 12, 2021 21:07:43
+*** Last revised on Fri Nov 12, 2021 23:43:05
+*** Written on Fri Nov 12, 2021 23:43:40 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__buffer FROM CELL buffer{sch}
+.SUBCKT ESE370__buffer a out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 a net@1 ESE370__inverter
+Xinverter@1 net@1 out ESE370__inverter
+.ENDS ESE370__buffer
+
+*** SUBCIRCUIT ESE370__nor2 FROM CELL nor2{sch}
+.SUBCKT ESE370__nor2 a b o
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 o b gnd gnd N L=0.022U W=0.022U
+Mnmos@1 o a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a net@12 vdd P L=0.022U W=0.022U
+Mpmos@1 net@12 b o vdd P L=0.022U W=0.022U
+.ENDS ESE370__nor2
+
+*** SUBCIRCUIT ESE370__2phaseclock FROM CELL 2phaseclock{sch}
+.SUBCKT ESE370__2phaseclock clock1 clock2 in
+** GLOBAL gnd
+** GLOBAL vdd
+Xbuffer@0 in net@5 ESE370__buffer
+Xinverter@0 in net@4 ESE370__inverter
+Xnor2@0 net@4 clock2 clock1 ESE370__nor2
+Xnor2@1 clock1 net@5 clock2 ESE370__nor2
+.ENDS ESE370__2phaseclock
+
+*** SUBCIRCUIT ESE370__nand2 FROM CELL nand2{sch}
+.SUBCKT ESE370__nand2 A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.022U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.022U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2
+
+*** SUBCIRCUIT ESE370__3nandlatch FROM CELL 3nandlatch{sch}
+.SUBCKT ESE370__3nandlatch clock in out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 clock net@6 ESE370__inverter
+Xnand2@0 in clock net@8 ESE370__nand2
+Xnand2@1 net@6 out net@10 ESE370__nand2
+Xnand2@2 net@8 net@10 out ESE370__nand2
+.ENDS ESE370__3nandlatch
+
+*** SUBCIRCUIT ESE370__PositiveRegister FROM CELL PositiveRegister{sch}
+.SUBCKT ESE370__PositiveRegister clk d q
+** GLOBAL gnd
+** GLOBAL vdd
+X_2phasecl@0 net@20 net@24 clk ESE370__2phaseclock
+X_3nandlat@0 net@24 d net@0 ESE370__3nandlatch
+X_3nandlat@1 net@20 net@0 q ESE370__3nandlatch
+.ENDS ESE370__PositiveRegister
+
+*** SUBCIRCUIT ESE370__4elementshifter FROM CELL 4elementshifter{sch}
+.SUBCKT ESE370__4elementshifter a[3] a[2] a[1] a[0] clk d
+** GLOBAL gnd
+** GLOBAL vdd
+XPositive@0 clk d a[3] ESE370__PositiveRegister
+XPositive@1 clk a[3] a[2] ESE370__PositiveRegister
+XPositive@2 clk a[2] a[1] ESE370__PositiveRegister
+XPositive@3 clk a[1] a[0] ESE370__PositiveRegister
+.ENDS ESE370__4elementshifter
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: HW6Q4a{sch}
+Mpmos@0 vdd net@43 net@15 vdd P L=0.044U W=0.044U
+X_4element@1 net@29 _4element@1_a[2] _4element@1_a[1] _4element@1_a[0] net@7 net@15 ESE370__4elementshifter
+VVPulse@0 net@7 gnd pulse (0 0.8V 0ns 10ps 10ps 41ps 82ps) DC '0V' AC '0V' 0
+VVPulse@1 net@43 gnd pulse (0.8 0 0ns 10ps 10ps 0.5ps 60ns) DC '0V' AC '0V' 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+Xinverter@1 net@29 net@31 ESE370__inverter
+Xinverter@2 net@31 net@32 ESE370__inverter
+Xinverter@3 net@32 net@15 ESE370__inverter
+.END

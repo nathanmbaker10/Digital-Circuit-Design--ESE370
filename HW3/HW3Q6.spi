@@ -1,0 +1,17 @@
+*** SPICE deck for cell HW3Q6{sch} from library ESE370
+*** Created on Mon Sep 27, 2021 22:28:39
+*** Last revised on Mon Sep 27, 2021 22:49:41
+*** Written on Mon Sep 27, 2021 22:50:02 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: HW3Q6{sch}
+Mnmos@0 net@24 net@31 gnd gnd N L=0.022U W=0.22U
+Mpmos@0 vdd gnd net@24 vdd P L=0.022U W=0.022U
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+VV_Generi@1 net@31 gnd DC 0.8 AC 0
+.END

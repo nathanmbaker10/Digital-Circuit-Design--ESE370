@@ -1,0 +1,84 @@
+*** SPICE deck for cell fa_basic{sch} from library ESE370
+*** Created on Thu Oct 21, 2021 21:26:26
+*** Last revised on Fri Oct 22, 2021 19:51:36
+*** Written on Fri Oct 22, 2021 19:51:54 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__nand2 FROM CELL nand2{sch}
+.SUBCKT ESE370__nand2 A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.022U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.022U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2
+
+*** SUBCIRCUIT ESE370__and2 FROM CELL and2{sch}
+.SUBCKT ESE370__and2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 net@25 output ESE370__inverter
+Xnand2@0 a b net@25 ESE370__nand2
+.ENDS ESE370__and2
+
+*** SUBCIRCUIT ESE370__nor2 FROM CELL nor2{sch}
+.SUBCKT ESE370__nor2 a b o
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 o b gnd gnd N L=0.022U W=0.022U
+Mnmos@1 o a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a net@12 vdd P L=0.022U W=0.022U
+Mpmos@1 net@12 b o vdd P L=0.022U W=0.022U
+.ENDS ESE370__nor2
+
+*** SUBCIRCUIT ESE370__or2 FROM CELL or2{sch}
+.SUBCKT ESE370__or2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 net@4 output ESE370__inverter
+Xnor2@1 a b net@4 ESE370__nor2
+.ENDS ESE370__or2
+
+*** SUBCIRCUIT ESE370__xor2 FROM CELL xor2{sch}
+.SUBCKT ESE370__xor2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@26 b gnd gnd N L=0.022U W=0.022U
+Mnmos@1 output a net@26 gnd N L=0.022U W=0.022U
+Mnmos@2 output net@41 net@33 gnd N L=0.022U W=0.022U
+Mnmos@3 net@33 net@16 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd b net@8 vdd P L=0.022U W=0.022U
+Mpmos@1 vdd a net@9 vdd P L=0.022U W=0.022U
+Mpmos@2 net@8 net@16 output vdd P L=0.022U W=0.022U
+Mpmos@3 net@9 net@41 output vdd P L=0.022U W=0.022U
+Xinverter@0 a net@16 ESE370__inverter
+Xinverter@2 b net@41 ESE370__inverter
+.ENDS ESE370__xor2
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: fa_basic{sch}
+VV_Generi@1 vdd gnd DC 0.8 AC 0
+Xand2@0 vdd gnd net@11 ESE370__and2
+Xand2@2 gnd gnd net@13 ESE370__and2
+Xand2@3 gnd vdd net@20 ESE370__and2
+Xand2@4 net@50 vdd net@57 ESE370__and2
+Xand2@5 net@50 net@47 net@59 ESE370__and2
+Xinverter@0 vdd net@47 ESE370__inverter
+Xor2@0 net@11 net@13 net@22 ESE370__or2
+Xor2@1 net@22 net@20 c_out ESE370__or2
+Xor2@2 net@57 net@59 sum ESE370__or2
+Xxor2@0 gnd gnd net@50 ESE370__xor2
+.END

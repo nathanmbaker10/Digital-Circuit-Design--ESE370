@@ -1,0 +1,25 @@
+*** SPICE deck for cell inverterFanout{sch} from library ESE370
+*** Created on Mon Sep 27, 2021 19:46:34
+*** Last revised on Mon Sep 27, 2021 22:02:18
+*** Written on Tue Oct 12, 2021 23:11:41 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.073U
+.ENDS ESE370__inverter
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: inverterFanout{sch}
+Mnmos@0 vdd net@43 gnd gnd N L=0.022U W=0.022U
+VVPulse@0 net@6 gnd pulse (0 0.8V 50ps 10ps 10ps 250ps 500ps) DC '0V' AC '0V' 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+Xinverter@1 net@6 net@43 ESE370__inverter
+.END

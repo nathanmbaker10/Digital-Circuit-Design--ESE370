@@ -1,0 +1,18 @@
+*** SPICE deck for cell nmos{sch} from library ESE370
+*** Created on Wed Sep 22, 2021 22:30:42
+*** Last revised on Fri Sep 24, 2021 21:33:37
+*** Written on Sun Sep 26, 2021 20:41:22 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: nmos{sch}
+Mnmos@0 net@247 net@120 gnd gnd N L=0.022U W=0.022U
+VV_Generi@6 net@120 gnd DC .8 AC 0
+VV_Generi@19 vdd gnd DC 0.8 AC 0
+VV_Generi@20 vdd net@247 DC 0 AC 0
+.OP
+.END

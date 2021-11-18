@@ -1,0 +1,186 @@
+*** SPICE deck for cell fa8_tester{sch} from library ESE370
+*** Created on Fri Oct 22, 2021 22:53:56
+*** Last revised on Mon Oct 25, 2021 21:52:39
+*** Written on Mon Oct 25, 2021 21:53:55 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__nand2 FROM CELL nand2{sch}
+.SUBCKT ESE370__nand2 A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.022U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.022U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2
+
+*** SUBCIRCUIT ESE370__and2 FROM CELL and2{sch}
+.SUBCKT ESE370__and2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 net@25 output ESE370__inverter
+Xnand2@0 a b net@25 ESE370__nand2
+.ENDS ESE370__and2
+
+*** SUBCIRCUIT ESE370__inverter1 FROM CELL inverter1{sch}
+.SUBCKT ESE370__inverter1 a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.198U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.614U
+.ENDS ESE370__inverter1
+
+*** SUBCIRCUIT ESE370__nand2_sized FROM CELL nand2_sized{sch}
+.SUBCKT ESE370__nand2_sized A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.264U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.264U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.409U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.409U
+.ENDS ESE370__nand2_sized
+
+*** SUBCIRCUIT ESE370__and2_sized FROM CELL and2_sized{sch}
+.SUBCKT ESE370__and2_sized a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@2 net@45 output ESE370__inverter1
+Xnand2_si@0 a b net@45 ESE370__nand2_sized
+.ENDS ESE370__and2_sized
+
+*** SUBCIRCUIT ESE370__nor2 FROM CELL nor2{sch}
+.SUBCKT ESE370__nor2 a b o
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 o b gnd gnd N L=0.022U W=0.022U
+Mnmos@1 o a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a net@12 vdd P L=0.022U W=0.022U
+Mpmos@1 net@12 b o vdd P L=0.022U W=0.022U
+.ENDS ESE370__nor2
+
+*** SUBCIRCUIT ESE370__or2 FROM CELL or2{sch}
+.SUBCKT ESE370__or2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 net@4 output ESE370__inverter
+Xnor2@3 a b net@4 ESE370__nor2
+.ENDS ESE370__or2
+
+*** SUBCIRCUIT ESE370__inverter2 FROM CELL inverter2{sch}
+.SUBCKT ESE370__inverter2 a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.22U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.682U
+.ENDS ESE370__inverter2
+
+*** SUBCIRCUIT ESE370__nor2_sized FROM CELL nor2_sized{sch}
+.SUBCKT ESE370__nor2_sized a b o
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 o b gnd gnd N L=0.022U W=0.18U
+Mnmos@1 o a gnd gnd N L=0.022U W=0.18U
+Mpmos@0 vdd a net@12 vdd P L=0.022U W=1.118U
+Mpmos@1 net@12 b o vdd P L=0.022U W=1.118U
+.ENDS ESE370__nor2_sized
+
+*** SUBCIRCUIT ESE370__or2_sized FROM CELL or2_sized{sch}
+.SUBCKT ESE370__or2_sized a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@1 net@44 output ESE370__inverter2
+Xnor2_siz@0 a b net@44 ESE370__nor2_sized
+.ENDS ESE370__or2_sized
+
+*** SUBCIRCUIT ESE370__xor2 FROM CELL xor2{sch}
+.SUBCKT ESE370__xor2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@26 b gnd gnd N L=0.022U W=0.022U
+Mnmos@1 output a net@26 gnd N L=0.022U W=0.022U
+Mnmos@2 output net@41 net@33 gnd N L=0.022U W=0.022U
+Mnmos@3 net@33 net@16 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd b net@8 vdd P L=0.022U W=0.022U
+Mpmos@1 vdd a net@9 vdd P L=0.022U W=0.022U
+Mpmos@2 net@8 net@16 output vdd P L=0.022U W=0.022U
+Mpmos@3 net@9 net@41 output vdd P L=0.022U W=0.022U
+Xinverter@0 a net@16 ESE370__inverter
+Xinverter@2 b net@41 ESE370__inverter
+.ENDS ESE370__xor2
+
+*** SUBCIRCUIT ESE370__fa_sized FROM CELL fa_sized{sch}
+.SUBCKT ESE370__fa_sized a b c_in c_out sum
+** GLOBAL gnd
+** GLOBAL vdd
+Xand2@0 a b net@11 ESE370__and2
+Xand2@2 b c_in net@13 ESE370__and2
+Xand2@4 net@94 a net@95 ESE370__and2
+Xand2@5 net@97 net@47 net@59 ESE370__and2
+Xand2_siz@0 c_in a net@109 ESE370__and2_sized
+Xinverter@0 a net@47 ESE370__inverter
+Xinverter@1 net@97 net@94 ESE370__inverter
+Xor2@0 net@11 net@13 net@22 ESE370__or2
+Xor2@2 net@95 net@59 sum ESE370__or2
+Xor2_size@1 net@22 net@109 c_out ESE370__or2_sized
+Xxor2@0 c_in b net@97 ESE370__xor2
+.ENDS ESE370__fa_sized
+
+*** SUBCIRCUIT ESE370__fa8_sized FROM CELL fa8_sized{sch}
+.SUBCKT ESE370__fa8_sized a[7] a[6] a[5] a[4] a[3] a[2] a[1] a[0] b[7] b[6] b[5] b[4] b[3] b[2] b[1] b[0] s[8] s[7] s[6] s[5] s[4] s[3] s[2] s[1] s[0]
+** GLOBAL gnd
+** GLOBAL vdd
+Xfa_sized@0 a[0] b[0] gnd net@113 s[0] ESE370__fa_sized
+Xfa_sized@1 a[1] b[1] net@113 net@120 s[1] ESE370__fa_sized
+Xfa_sized@2 a[2] b[2] net@120 net@125 s[2] ESE370__fa_sized
+Xfa_sized@3 a[3] b[3] net@125 net@134 s[3] ESE370__fa_sized
+Xfa_sized@4 a[4] b[4] net@134 net@142 s[4] ESE370__fa_sized
+Xfa_sized@5 a[5] b[5] net@142 net@166 s[5] ESE370__fa_sized
+Xfa_sized@6 a[7] b[7] net@165 s[8] s[7] ESE370__fa_sized
+Xfa_sized@7 a[6] b[6] net@166 net@165 s[6] ESE370__fa_sized
+.ENDS ESE370__fa8_sized
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: fa8_tester{sch}
+Mnmos@1 net@25 net@1 gnd gnd N L=0.022U W=0.022U
+Mnmos@2 net@25 net@4 gnd gnd N L=0.022U W=0.022U
+Mnmos@3 net@25 net@6 gnd gnd N L=0.022U W=0.022U
+Mnmos@4 net@25 net@8 gnd gnd N L=0.022U W=0.022U
+Mnmos@5 net@25 net@12 gnd gnd N L=0.022U W=0.022U
+Mnmos@6 net@25 net@14 gnd gnd N L=0.022U W=0.022U
+Mnmos@7 net@25 net@16 gnd gnd N L=0.022U W=0.022U
+Mnmos@8 net@25 net@18 gnd gnd N L=0.022U W=0.022U
+Mnmos@9 net@25 net@20 gnd gnd N L=0.022U W=0.022U
+VV_Generi@0 net@25 gnd DC 0.95 AC 0
+VV_Generi@2 net@129 gnd DC 0.95 AC 0
+VV_Generi@3 vdd net@129 DC 0 AC 0
+VV_Generi@4 net@243 gnd DC 0.95 AC 0
+Xfa8_sized@0 net@183 net@178 net@173 net@168 net@163 net@158 net@147 net@154 net@217 net@212 net@207 net@202 net@197 net@192 net@187 net@239 net@20 net@18 net@16 net@14 net@12 net@8 net@6 net@4 net@1 ESE370__fa8_sized
+Xinverter@2 gnd net@147 ESE370__inverter
+Xinverter@3 gnd net@154 ESE370__inverter
+Xinverter@4 gnd net@158 ESE370__inverter
+Xinverter@5 gnd net@163 ESE370__inverter
+Xinverter@6 gnd net@168 ESE370__inverter
+Xinverter@7 gnd net@173 ESE370__inverter
+Xinverter@8 gnd net@178 ESE370__inverter
+Xinverter@9 gnd net@183 ESE370__inverter
+Xinverter@10 net@243 net@187 ESE370__inverter
+Xinverter@11 net@243 net@192 ESE370__inverter
+Xinverter@12 net@243 net@197 ESE370__inverter
+Xinverter@13 net@243 net@202 ESE370__inverter
+Xinverter@14 net@243 net@207 ESE370__inverter
+Xinverter@15 net@243 net@212 ESE370__inverter
+Xinverter@16 net@243 net@217 ESE370__inverter
+Xinverter@17 gnd net@239 ESE370__inverter
+.END

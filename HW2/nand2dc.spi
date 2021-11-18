@@ -1,0 +1,27 @@
+*** SPICE deck for cell nand2{sch} from library ESE370HW1
+*** Created on Wed Sep 15, 2021 17:12:42
+*** Last revised on Wed Sep 15, 2021 17:20:56
+*** Written on Wed Sep 15, 2021 17:22:07 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '/Users/nathanbaker/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370HW1__nand2 FROM CELL nand2{sch}
+.SUBCKT ESE370HW1__nand2 A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.044U W=0.044U
+Mnmos@1 net@10 B gnd gnd N L=0.044U W=0.044U
+Mpmos@0 vdd A O vdd P L=0.044U W=0.044U
+Mpmos@1 vdd B O vdd P L=0.044U W=0.044U
+.ENDS ESE370HW1__nand2
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: hw2nandcircuit{sch}
+VV_Generi@3 net@12 gnd DC 0.8 AC 0
+VV_Generi@4 net@8 gnd DC 0.8 AC 0
+VV_Generi@5 vdd gnd DC 0.8 AC 0
+Xnand2@0 net@8 net@12 nand2@0_O ESE370HW1__nand2
+.END

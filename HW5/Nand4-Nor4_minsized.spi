@@ -1,0 +1,73 @@
+*** SPICE deck for cell HW5Question3{sch} from library ESE370
+*** Created on Sat Oct 16, 2021 21:35:50
+*** Last revised on Sun Oct 17, 2021 17:33:56
+*** Written on Sun Oct 17, 2021 17:34:28 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__nand4 FROM CELL nand4{sch}
+.SUBCKT ESE370__nand4 a b c d ouptut
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@11 d gnd gnd N L=0.022U W=0.022U
+Mnmos@1 net@12 c net@11 gnd N L=0.022U W=0.022U
+Mnmos@2 net@13 b net@12 gnd N L=0.022U W=0.022U
+Mnmos@3 ouptut a net@13 gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a ouptut vdd P L=0.022U W=0.022U
+Mpmos@1 vdd b ouptut vdd P L=0.022U W=0.022U
+Mpmos@2 vdd c ouptut vdd P L=0.022U W=0.022U
+Mpmos@3 vdd d ouptut vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand4
+
+*** SUBCIRCUIT ESE370__nor4 FROM CELL nor4{sch}
+.SUBCKT ESE370__nor4 a b c d output
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 output d gnd gnd N L=0.022U W=0.022U
+Mnmos@1 output c gnd gnd N L=0.022U W=0.022U
+Mnmos@2 output b gnd gnd N L=0.022U W=0.022U
+Mnmos@3 output a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a net@2 vdd P L=0.022U W=0.022U
+Mpmos@1 net@2 b net@1 vdd P L=0.022U W=0.022U
+Mpmos@2 net@1 c net@0 vdd P L=0.022U W=0.022U
+Mpmos@3 net@0 d output vdd P L=0.022U W=0.022U
+.ENDS ESE370__nor4
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: HW5Question3{sch}
+Mnmos@2 vdd net@367 gnd gnd N L=0.022U W=1.1U
+VVPulse@0 net@191 gnd pulse (0 0.8 50ps 10ps 10ps 1000ps 2000ps) DC '0V' AC '0V' 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+Xinverter@0 gnd net@3 ESE370__inverter
+Xinverter@1 gnd net@5 ESE370__inverter
+Xinverter@2 gnd net@7 ESE370__inverter
+Xinverter@3 gnd net@9 ESE370__inverter
+Xinverter@4 gnd net@11 ESE370__inverter
+Xinverter@5 gnd net@13 ESE370__inverter
+Xinverter@6 gnd net@15 ESE370__inverter
+Xinverter@7 gnd net@17 ESE370__inverter
+Xinverter@8 gnd net@19 ESE370__inverter
+Xinverter@9 gnd net@21 ESE370__inverter
+Xinverter@10 gnd net@23 ESE370__inverter
+Xinverter@11 gnd net@25 ESE370__inverter
+Xinverter@12 gnd net@104 ESE370__inverter
+Xinverter@14 gnd net@31 ESE370__inverter
+Xinverter@15 gnd net@115 ESE370__inverter
+Xinverter@16 net@191 net@357 ESE370__inverter
+Xnand4@1 net@3 net@5 net@7 net@9 net@360 ESE370__nand4
+Xnand4@2 net@11 net@13 net@15 net@17 net@362 ESE370__nand4
+Xnand4@3 net@19 net@21 net@23 net@25 net@363 ESE370__nand4
+Xnand4@4 net@104 net@115 net@31 net@357 net@365 ESE370__nand4
+Xnor4@4 net@360 net@362 net@363 net@365 net@367 ESE370__nor4
+.END

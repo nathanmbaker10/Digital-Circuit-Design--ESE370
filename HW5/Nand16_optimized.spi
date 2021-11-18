@@ -1,0 +1,81 @@
+*** SPICE deck for cell HW5Question3{sch} from library ESE370
+*** Created on Sat Oct 16, 2021 21:35:50
+*** Last revised on Sun Oct 17, 2021 16:07:52
+*** Written on Sun Oct 17, 2021 16:08:23 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__Nand16 FROM CELL Nand16{sch}
+.SUBCKT ESE370__Nand16 a b c d e f g h i i_n i_p j k l m o output
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 output a net@42 gnd N L=0.022U W=0.2574U
+Mnmos@1 net@42 b net@12 gnd N L=0.022U W=0.2574U
+Mnmos@2 net@12 c net@11 gnd N L=0.022U W=0.2574U
+Mnmos@3 net@11 d net@35 gnd N L=0.022U W=0.2574U
+Mnmos@4 net@35 e net@38 gnd N L=0.022U W=0.2574U
+Mnmos@5 net@38 f net@39 gnd N L=0.022U W=0.2574U
+Mnmos@6 net@39 g net@40 gnd N L=0.022U W=0.2574U
+Mnmos@7 net@40 h net@41 gnd N L=0.022U W=0.2574U
+Mnmos@8 net@41 i net@43 gnd N L=0.022U W=0.2574U
+Mnmos@9 net@43 j net@44 gnd N L=0.022U W=0.2574U
+Mnmos@10 net@44 k net@45 gnd N L=0.022U W=0.2574U
+Mnmos@11 net@45 l net@46 gnd N L=0.022U W=0.2574U
+Mnmos@12 net@46 m net@436 gnd N L=0.022U W=0.2574U
+Mnmos@14 net@409 o net@454 gnd N L=0.022U W=0.2574U
+Mnmos@19 net@436 i_n net@409 gnd N L=0.022U W=0.2574U
+Mnmos@20 net@454 i_p gnd gnd N L=0.022U W=0.2574U
+Mpmos@0 vdd a output vdd P L=0.022U W=0.2574U
+Mpmos@1 vdd b output vdd P L=0.022U W=0.2574U
+Mpmos@2 vdd c output vdd P L=0.022U W=0.2574U
+Mpmos@3 vdd d output vdd P L=0.022U W=0.2574U
+Mpmos@4 vdd e output vdd P L=0.022U W=0.2574U
+Mpmos@5 vdd f output vdd P L=0.022U W=0.2574U
+Mpmos@6 vdd g output vdd P L=0.022U W=0.2574U
+Mpmos@7 vdd h output vdd P L=0.022U W=0.2574U
+Mpmos@8 vdd i output vdd P L=0.022U W=0.2574U
+Mpmos@9 vdd j output vdd P L=0.022U W=0.2574U
+Mpmos@10 vdd k output vdd P L=0.022U W=0.2574U
+Mpmos@11 vdd l output vdd P L=0.022U W=0.2574U
+Mpmos@12 vdd m output vdd P L=0.022U W=0.2574U
+Mpmos@14 vdd o output vdd P L=0.022U W=0.2574U
+Mpmos@16 vdd i_n output vdd P L=0.022U W=0.2574U
+Mpmos@18 vdd i_p output vdd P L=0.022U W=0.2574U
+.ENDS ESE370__Nand16
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: HW5Question3{sch}
+Mnmos@0 net@99 net@94 gnd gnd N L=0.022U W=0.094U
+Mnmos@2 vdd net@99 gnd gnd N L=0.022U W=1.1U
+Mpmos@0 vdd net@94 net@99 vdd P L=0.094U W=0.094U
+XNand16@0 net@3 net@5 net@7 net@9 net@11 net@13 net@15 net@17 net@19 net@115 net@120 net@21 net@23 net@25 net@104 net@31 net@94 ESE370__Nand16
+VVPulse@0 net@191 gnd pulse (0 0.8 50ps 10ps 10ps 1000ps 2000ps) DC '0V' AC '0V' 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+Xinverter@0 gnd net@3 ESE370__inverter
+Xinverter@1 gnd net@5 ESE370__inverter
+Xinverter@2 gnd net@7 ESE370__inverter
+Xinverter@3 gnd net@9 ESE370__inverter
+Xinverter@4 gnd net@11 ESE370__inverter
+Xinverter@5 gnd net@13 ESE370__inverter
+Xinverter@6 gnd net@15 ESE370__inverter
+Xinverter@7 gnd net@17 ESE370__inverter
+Xinverter@8 gnd net@19 ESE370__inverter
+Xinverter@9 gnd net@21 ESE370__inverter
+Xinverter@10 gnd net@23 ESE370__inverter
+Xinverter@11 gnd net@25 ESE370__inverter
+Xinverter@12 gnd net@104 ESE370__inverter
+Xinverter@14 gnd net@31 ESE370__inverter
+Xinverter@15 gnd net@115 ESE370__inverter
+Xinverter@16 net@191 net@120 ESE370__inverter
+.END
