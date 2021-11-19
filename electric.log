@@ -1,0 +1,188 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Thu Nov 18 18:49:35 EST 2021
+Menu Activated: Window | Toggle Grid
+--------------- 1 --------------
+  Thu Nov 18 18:49:40 EST 2021
+Menu Activated: Window | Toggle Grid
+--------------- 2 --------------
+  Thu Nov 18 18:49:42 EST 2021
+Menu Activated: File | Open Library...
+--------------- 3 --------------
+  Thu Nov 18 18:49:48 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 4 --------------
+  Thu Nov 18 18:49:58 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 5 --------------
+  Thu Nov 18 18:50:18 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'Off-Page[conn@0].a'
+--------------- 6 --------------
+  Thu Nov 18 18:51:59 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'Off-Page[conn@1].y'
+--------------- 7 --------------
+  Thu Nov 18 18:52:11 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'Off-Page[conn@2].y'
+--------------- 8 --------------
+  Thu Nov 18 18:52:44 EST 2021
+Menu Activated: View | Make Icon View
+--------------- 9 --------------
+  Thu Nov 18 18:53:11 EST 2021
+Menu Activated: View | Edit Icon View
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'ColumnChooser{ic}[ColumnCh@0].In'
+--------------- 10 --------------
+  Thu Nov 18 18:53:17 EST 2021
+ProcessKeyBinding 401 when=1637279597394 modifiers=40 code=10 char=ffff false false
+--------------- 11 --------------
+  Thu Nov 18 18:53:19 EST 2021
+ProcessKeyBinding 402 when=1637279599985 modifiers=0 code=10 char=ffff false false
+--------------- 12 --------------
+  Thu Nov 18 18:53:23 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Export 'C0'
+    Variable 'SCHEM_function' on node Opened-Thicker-Polygon['art@1']
+    Export 'C1'
+--------------- 13 --------------
+  Thu Nov 18 18:53:34 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Export 'In'
+--------------- 14 --------------
+  Thu Nov 18 18:54:03 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': 'Opened-Thicker-Polygon[art@1].site'
+--------------- 15 --------------
+  Thu Nov 18 18:55:17 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': schematic:wire['net@2']
+--------------- 16 --------------
+  Thu Nov 18 18:55:17 EST 2021
+ProcessKeyBinding 400 when=1637279717207 modifiers=0 code=0 char=8 false false
+--------------- 17 --------------
+  Thu Nov 18 18:55:41 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': 'schematic:Wire_Pin[pin@1].wire'
+--------------- 18 --------------
+  Thu Nov 18 18:55:41 EST 2021
+ProcessKeyBinding 400 when=1637279741299 modifiers=0 code=0 char=8 false false
+--------------- 19 --------------
+  Thu Nov 18 18:56:09 EST 2021
+ProcessKeyBinding 401 when=1637279769536 modifiers=80 code=11 char=ffff false false
+--------------- 20 --------------
+  Thu Nov 18 18:56:09 EST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': 'schematic:Bus_Pin[pin@4].bus'
+--------------- 21 --------------
+  Thu Nov 18 18:56:09 EST 2021
+ProcessKeyBinding 400 when=1637279769537 modifiers=80 code=0 char=13 false false
+--------------- 22 --------------
+  Thu Nov 18 18:56:09 EST 2021
+ProcessKeyBinding 402 when=1637279769596 modifiers=0 code=11 char=ffff false false
+--------------- 23 --------------
+  Thu Nov 18 19:24:47 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 24 --------------
+  Thu Nov 18 19:26:21 EST 2021
+Menu Activated: File | Open Library...
+--------------- 25 --------------
+  Thu Nov 18 19:26:27 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 26 --------------
+  Thu Nov 18 19:26:47 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 27 --------------
+  Thu Nov 18 19:26:56 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 28 --------------
+  Thu Nov 18 19:27:04 EST 2021
+Menu Activated: Cell | Delete Cell...
+--------------- 29 --------------
+  Thu Nov 18 19:27:12 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 30 --------------
+  Thu Nov 18 19:27:53 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 31 --------------
+  Thu Nov 18 19:28:42 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@1].y'
+--------------- 32 --------------
+  Thu Nov 18 19:29:07 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': inverter{ic}['inverter@0']
+--------------- 33 --------------
+  Thu Nov 18 19:29:38 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@2].a'
+--------------- 34 --------------
+  Thu Nov 18 19:30:15 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@0].y'
+--------------- 35 --------------
+  Thu Nov 18 19:30:24 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@1].a'
+--------------- 36 --------------
+  Thu Nov 18 19:30:51 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@1].a'
+--------------- 37 --------------
+  Thu Nov 18 19:31:05 EST 2021
+Menu Activated: View | Make Icon View
+--------------- 38 --------------
+  Thu Nov 18 19:31:12 EST 2021
+Menu Activated: View | Edit Icon View
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'tristate-buffer-enable-inverted{ic}[tristate@0].out'
+--------------- 39 --------------
+  Thu Nov 18 19:31:16 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': 'Opened-Thicker-Polygon[art@1].site'
+--------------- 40 --------------
+  Thu Nov 18 19:31:16 EST 2021
+ProcessKeyBinding 400 when=1637281876882 modifiers=0 code=0 char=8 false false
+--------------- 41 --------------
+  Thu Nov 18 19:31:24 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': Triangle['art@2']
+--------------- 42 --------------
+  Thu Nov 18 19:31:35 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': 'schematic:Wire_Pin[pin@1].wire'
+--------------- 43 --------------
+  Thu Nov 18 19:31:35 EST 2021
+ProcessKeyBinding 400 when=1637281895424 modifiers=0 code=0 char=8 false false
+--------------- 44 --------------
+  Thu Nov 18 19:32:05 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': 'Circle[art@3].site'
+--------------- 45 --------------
+  Thu Nov 18 19:33:42 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 46 --------------
+  Thu Nov 18 19:33:49 EST 2021
+Menu Activated: Cell | New Cell...
+--------------- 47 --------------
+  Thu Nov 18 19:3
