@@ -1,188 +1,655 @@
 Electric Version 9.07
 --------------- 0 --------------
-  Thu Nov 18 18:49:35 EST 2021
-Menu Activated: Window | Toggle Grid
+  Sun Nov 21 17:58:58 EST 2021
+Menu Activated: File | Open Library...
 --------------- 1 --------------
-  Thu Nov 18 18:49:40 EST 2021
-Menu Activated: Window | Toggle Grid
+  Sun Nov 21 17:59:16 EST 2021
+Menu Activated: Cell | Edit Cell...
 --------------- 2 --------------
-  Thu Nov 18 18:49:42 EST 2021
-Menu Activated: File | Open Library...
+  Sun Nov 21 17:59:38 EST 2021
+Menu Activated: Cell | Edit Cell...
 --------------- 3 --------------
-  Thu Nov 18 18:49:48 EST 2021
-Menu Activated: Cell | Edit Cell...
+  Sun Nov 21 18:01:03 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Annotation text
 --------------- 4 --------------
-  Thu Nov 18 18:49:58 EST 2021
-Menu Activated: Cell | New Cell...
+  Sun Nov 21 18:01:15 EST 2021
+ProcessKeyBinding 401 when=1637535675383 modifiers=40 code=10 char=ffff false true
 --------------- 5 --------------
-  Thu Nov 18 18:50:18 EST 2021
-Menu Activated: Export | Create Export...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'Off-Page[conn@0].a'
+  Sun Nov 21 18:01:15 EST 2021
+ProcessKeyBinding 401 when=1637535675958 modifiers=40 code=52 char=52(R) false true
 --------------- 6 --------------
-  Thu Nov 18 18:51:59 EST 2021
-Menu Activated: Export | Create Export...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'Off-Page[conn@1].y'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676026 modifiers=0 code=10 char=ffff false true
 --------------- 7 --------------
-  Thu Nov 18 18:52:11 EST 2021
-Menu Activated: Export | Create Export...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'Off-Page[conn@2].y'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676055 modifiers=0 code=52 char=72(r) false true
 --------------- 8 --------------
-  Thu Nov 18 18:52:44 EST 2021
-Menu Activated: View | Make Icon View
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 401 when=1637535676129 modifiers=0 code=41 char=61(a) false true
 --------------- 9 --------------
-  Thu Nov 18 18:53:11 EST 2021
-Menu Activated: View | Edit Icon View
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{sch}': 'ColumnChooser{ic}[ColumnCh@0].In'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 401 when=1637535676233 modifiers=0 code=4d char=6d(m) false true
 --------------- 10 --------------
-  Thu Nov 18 18:53:17 EST 2021
-ProcessKeyBinding 401 when=1637279597394 modifiers=40 code=10 char=ffff false false
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676245 modifiers=0 code=41 char=61(a) false true
 --------------- 11 --------------
-  Thu Nov 18 18:53:19 EST 2021
-ProcessKeyBinding 402 when=1637279599985 modifiers=0 code=10 char=ffff false false
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676313 modifiers=0 code=4d char=6d(m) false true
 --------------- 12 --------------
-  Thu Nov 18 18:53:23 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
-Currently highlighted: 
-    Export 'C0'
-    Variable 'SCHEM_function' on node Opened-Thicker-Polygon['art@1']
-    Export 'C1'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 401 when=1637535676349 modifiers=0 code=20 char=20 false true
 --------------- 13 --------------
-  Thu Nov 18 18:53:34 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
-Currently highlighted: 
-    Export 'In'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676456 modifiers=0 code=20 char=20 false true
 --------------- 14 --------------
-  Thu Nov 18 18:54:03 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': 'Opened-Thicker-Polygon[art@1].site'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 401 when=1637535676526 modifiers=40 code=10 char=ffff false true
 --------------- 15 --------------
-  Thu Nov 18 18:55:17 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': schematic:wire['net@2']
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 401 when=1637535676781 modifiers=40 code=43 char=43(C) false true
 --------------- 16 --------------
-  Thu Nov 18 18:55:17 EST 2021
-ProcessKeyBinding 400 when=1637279717207 modifiers=0 code=0 char=8 false false
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676869 modifiers=40 code=43 char=43(C) false true
 --------------- 17 --------------
-  Thu Nov 18 18:55:41 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': 'schematic:Wire_Pin[pin@1].wire'
+  Sun Nov 21 18:01:16 EST 2021
+ProcessKeyBinding 402 when=1637535676882 modifiers=0 code=10 char=ffff false true
 --------------- 18 --------------
-  Thu Nov 18 18:55:41 EST 2021
-ProcessKeyBinding 400 when=1637279741299 modifiers=0 code=0 char=8 false false
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 401 when=1637535677171 modifiers=0 code=45 char=65(e) false true
 --------------- 19 --------------
-  Thu Nov 18 18:56:09 EST 2021
-ProcessKeyBinding 401 when=1637279769536 modifiers=80 code=11 char=ffff false false
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 402 when=1637535677222 modifiers=0 code=45 char=65(e) false true
 --------------- 20 --------------
-  Thu Nov 18 18:56:09 EST 2021
-Menu Activated: File | Save All Libraries
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnChooser{ic}': 'schematic:Bus_Pin[pin@4].bus'
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 401 when=1637535677267 modifiers=0 code=4c char=6c(l) false true
 --------------- 21 --------------
-  Thu Nov 18 18:56:09 EST 2021
-ProcessKeyBinding 400 when=1637279769537 modifiers=80 code=0 char=13 false false
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 402 when=1637535677343 modifiers=0 code=4c char=6c(l) false true
 --------------- 22 --------------
-  Thu Nov 18 18:56:09 EST 2021
-ProcessKeyBinding 402 when=1637279769596 modifiers=0 code=11 char=ffff false false
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 401 when=1637535677385 modifiers=0 code=4c char=6c(l) false true
 --------------- 23 --------------
-  Thu Nov 18 19:24:47 EST 2021
-Menu Activated: Cell | Edit Cell...
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 402 when=1637535677501 modifiers=0 code=4c char=6c(l) false true
 --------------- 24 --------------
-  Thu Nov 18 19:26:21 EST 2021
-Menu Activated: File | Open Library...
+  Sun Nov 21 18:01:17 EST 2021
+ProcessKeyBinding 402 when=1637535677826 modifiers=0 code=a char=a false true
 --------------- 25 --------------
-  Thu Nov 18 19:26:27 EST 2021
-Menu Activated: Cell | Edit Cell...
+  Sun Nov 21 18:01:19 EST 2021
+ProcessKeyBinding 402 when=1637535679395 modifiers=0 code=8 char=8 false true
 --------------- 26 --------------
-  Thu Nov 18 19:26:47 EST 2021
-Menu Activated: Cell | Edit Cell...
+  Sun Nov 21 18:01:27 EST 2021
+Menu Activated: File | Save Library
 --------------- 27 --------------
-  Thu Nov 18 19:26:56 EST 2021
+  Sun Nov 21 18:01:31 EST 2021
 Menu Activated: Cell | Edit Cell...
 --------------- 28 --------------
-  Thu Nov 18 19:27:04 EST 2021
-Menu Activated: Cell | Delete Cell...
+  Sun Nov 21 18:01:45 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'RAM_Cell{ic}[RAM_Cell@0].BL''
 --------------- 29 --------------
-  Thu Nov 18 19:27:12 EST 2021
-Menu Activated: Cell | Edit Cell...
+  Sun Nov 21 18:01:52 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'RAM_Cell{ic}[RAM_Cell@0].BL''
 --------------- 30 --------------
-  Thu Nov 18 19:27:53 EST 2021
-Menu Activated: Cell | New Cell...
+  Sun Nov 21 18:01:55 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'RAM_Cell{ic}[RAM_Cell@0].BL''
 --------------- 31 --------------
-  Thu Nov 18 19:28:42 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
+  Sun Nov 21 18:01:57 EST 2021
+Menu Activated: Window | Zoom Out
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@1].y'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'RAM_Cell{ic}[RAM_Cell@0].BL''
 --------------- 32 --------------
-  Thu Nov 18 19:29:07 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
+  Sun Nov 21 18:01:59 EST 2021
+Menu Activated: Window | Zoom In
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': inverter{ic}['inverter@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'RAM_Cell{ic}[RAM_Cell@0].BL''
 --------------- 33 --------------
-  Thu Nov 18 19:29:38 EST 2021
-Menu Activated: Export | Create Export...
+  Sun Nov 21 18:02:01 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@2].a'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'RAM_Cell{ic}[RAM_Cell@0].BL''
 --------------- 34 --------------
-  Thu Nov 18 19:30:15 EST 2021
-Menu Activated: Export | Create Export...
+  Sun Nov 21 18:02:20 EST 2021
+Menu Activated: Edit | Erase | Selected
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@0].y'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'buffer{ic}[buffer@0].a'
 --------------- 35 --------------
-  Thu Nov 18 19:30:24 EST 2021
-Menu Activated: Cell | Edit Cell...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@1].a'
+  Sun Nov 21 18:02:20 EST 2021
+ProcessKeyBinding 400 when=1637535740435 modifiers=0 code=0 char=8 false false
 --------------- 36 --------------
-  Thu Nov 18 19:30:51 EST 2021
+  Sun Nov 21 18:02:25 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': wire['net@77']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': wire['net@76']
+--------------- 37 --------------
+  Sun Nov 21 18:02:25 EST 2021
+ProcessKeyBinding 400 when=1637535745194 modifiers=0 code=0 char=8 false false
+--------------- 38 --------------
+  Sun Nov 21 18:02:27 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': wire['net@78']
+--------------- 39 --------------
+  Sun Nov 21 18:02:27 EST 2021
+ProcessKeyBinding 400 when=1637535747683 modifiers=0 code=0 char=8 false false
+--------------- 40 --------------
+  Sun Nov 21 18:02:30 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@2].y'
+--------------- 41 --------------
+  Sun Nov 21 18:02:30 EST 2021
+ProcessKeyBinding 400 when=1637535750642 modifiers=0 code=0 char=8 false false
+--------------- 42 --------------
+  Sun Nov 21 18:03:00 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+--------------- 43 --------------
+  Sun Nov 21 18:03:07 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'tristate-inverter{ic}[tristate@0].In'
+--------------- 44 --------------
+  Sun Nov 21 18:04:27 EST 2021
 Menu Activated: Export | Create Export...
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'Off-Page[conn@1].a'
---------------- 37 --------------
-  Thu Nov 18 19:31:05 EST 2021
-Menu Activated: View | Make Icon View
---------------- 38 --------------
-  Thu Nov 18 19:31:12 EST 2021
-Menu Activated: View | Edit Icon View
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{sch}': 'tristate-buffer-enable-inverted{ic}[tristate@0].out'
---------------- 39 --------------
-  Thu Nov 18 19:31:16 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': 'Opened-Thicker-Polygon[art@1].site'
---------------- 40 --------------
-  Thu Nov 18 19:31:16 EST 2021
-ProcessKeyBinding 400 when=1637281876882 modifiers=0 code=0 char=8 false false
---------------- 41 --------------
-  Thu Nov 18 19:31:24 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': Triangle['art@2']
---------------- 42 --------------
-  Thu Nov 18 19:31:35 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': 'schematic:Wire_Pin[pin@1].wire'
---------------- 43 --------------
-  Thu Nov 18 19:31:35 EST 2021
-ProcessKeyBinding 400 when=1637281895424 modifiers=0 code=0 char=8 false false
---------------- 44 --------------
-  Thu Nov 18 19:32:05 EST 2021
-Menu Activated: Edit | Properties | Object Properties...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristate-buffer-enable-inverted{ic}': 'Circle[art@3].site'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@7].y'
 --------------- 45 --------------
-  Thu Nov 18 19:33:42 EST 2021
-Menu Activated: Cell | Edit Cell...
+  Sun Nov 21 18:05:12 EST 2021
+ProcessKeyBinding 401 when=1637535912611 modifiers=80 code=11 char=ffff false false
 --------------- 46 --------------
-  Thu Nov 18 19:33:49 EST 2021
-Menu Activated: Cell | New Cell...
+  Sun Nov 21 18:05:12 EST 2021
+Menu Activated: Edit | Undo
 --------------- 47 --------------
-  Thu Nov 18 19:3
+  Sun Nov 21 18:05:12 EST 2021
+ProcessKeyBinding 400 when=1637535912611 modifiers=80 code=0 char=1a false false
+--------------- 48 --------------
+  Sun Nov 21 18:05:12 EST 2021
+ProcessKeyBinding 402 when=1637535912731 modifiers=0 code=11 char=ffff false false
+--------------- 49 --------------
+  Sun Nov 21 18:05:16 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@7].a'
+--------------- 50 --------------
+  Sun Nov 21 18:07:11 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@8].a'
+--------------- 51 --------------
+  Sun Nov 21 18:07:25 EST 2021
+ProcessKeyBinding 401 when=1637536045371 modifiers=80 code=11 char=ffff false false
+--------------- 52 --------------
+  Sun Nov 21 18:07:25 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@8].a'
+--------------- 53 --------------
+  Sun Nov 21 18:07:25 EST 2021
+ProcessKeyBinding 400 when=1637536045371 modifiers=80 code=0 char=1a false false
+--------------- 54 --------------
+  Sun Nov 21 18:07:25 EST 2021
+ProcessKeyBinding 402 when=1637536045449 modifiers=0 code=11 char=ffff false false
+--------------- 55 --------------
+  Sun Nov 21 18:07:27 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@8].a'
+--------------- 56 --------------
+  Sun Nov 21 18:07:57 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@7].y'
+--------------- 57 --------------
+  Sun Nov 21 18:07:57 EST 2021
+ProcessKeyBinding 400 when=1637536077245 modifiers=0 code=0 char=8 false false
+--------------- 58 --------------
+  Sun Nov 21 18:08:07 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Off-Page[conn@9].a'
+--------------- 59 --------------
+  Sun Nov 21 18:08:44 EST 2021
+Menu Activated: Window | Zoom Out
+--------------- 60 --------------
+  Sun Nov 21 18:08:47 EST 2021
+Menu Activated: Window | Zoom In
+--------------- 61 --------------
+  Sun Nov 21 18:08:58 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'MemoryCellTester{ic}[MemoryCe@0].Q'
+--------------- 62 --------------
+  Sun Nov 21 18:08:58 EST 2021
+ProcessKeyBinding 400 when=1637536138179 modifiers=0 code=0 char=8 false false
+--------------- 63 --------------
+  Sun Nov 21 18:09:03 EST 2021
+Menu Activated: Cell | Delete Cell...
+--------------- 64 --------------
+  Sun Nov 21 18:09:35 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 65 --------------
+  Sun Nov 21 18:09:43 EST 2021
+Menu Activated: View | Make Icon View
+--------------- 66 --------------
+  Sun Nov 21 18:09:49 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': MemoryCellTester{ic}['MemoryCe@1']
+--------------- 67 --------------
+  Sun Nov 21 18:10:05 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 68 --------------
+  Sun Nov 21 18:10:13 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': 'MemoryCellTester;1{ic}[MemoryCe@0].Q'
+--------------- 69 --------------
+  Sun Nov 21 18:10:13 EST 2021
+ProcessKeyBinding 400 when=1637536213592 modifiers=0 code=0 char=8 false false
+--------------- 70 --------------
+  Sun Nov 21 18:10:17 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@27']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@26']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@24']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@25']
+--------------- 71 --------------
+  Sun Nov 21 18:10:50 EST 2021
+Menu Activated: Cell | Delete Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@27']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@26']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@24']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@25']
+--------------- 72 --------------
+  Sun Nov 21 18:11:03 EST 2021
+Menu Activated: File | Save Library
+--------------- 73 --------------
+  Sun Nov 21 18:11:07 EST 2021
+Menu Activated: Cell | Delete Cell...
+--------------- 74 --------------
+  Sun Nov 21 18:11:25 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 75 --------------
+  Sun Nov 21 18:11:35 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'MemoryCellTester{ic}[MemoryCe@1].WL'
+--------------- 76 --------------
+  Sun Nov 21 18:11:35 EST 2021
+ProcessKeyBinding 400 when=1637536295367 modifiers=0 code=0 char=8 false false
+--------------- 77 --------------
+  Sun Nov 21 18:11:41 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 78 --------------
+  Sun Nov 21 18:11:49 EST 2021
+Menu Activated: Cell | Delete Cell...
+--------------- 79 --------------
+  Sun Nov 21 18:12:06 EST 2021
+Menu Activated: View | Make Icon View
+--------------- 80 --------------
+  Sun Nov 21 18:12:10 EST 2021
+Menu Activated: Cell | Delete Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': MemoryCellTester{ic}['MemoryCe@2']
+--------------- 81 --------------
+  Sun Nov 21 18:13:15 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'MemoryCellTester{ic}[MemoryCe@2].Q''
+--------------- 82 --------------
+  Sun Nov 21 18:13:25 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Variable 'SCHEM_function' on node Opened-Thicker-Polygon['art@1']
+--------------- 83 --------------
+  Sun Nov 21 18:13:35 EST 2021
+ProcessKeyBinding 401 when=1637536415364 modifiers=40 code=10 char=ffff false false
+--------------- 84 --------------
+  Sun Nov 21 18:13:38 EST 2021
+ProcessKeyBinding 402 when=1637536418200 modifiers=0 code=10 char=ffff false false
+--------------- 85 --------------
+  Sun Nov 21 18:13:43 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Export 'Q'
+    Export 'Q''
+    Export 'PC'
+    Export 'Rd/Wr''
+    Export 'WL'
+--------------- 86 --------------
+  Sun Nov 21 18:13:57 EST 2021
+Menu Activated: Edit | Properties | Object Properties...
+Currently highlighted: 
+    Variable 'SCHEM_function' on node Opened-Thicker-Polygon['art@1']
+--------------- 87 --------------
+  Sun Nov 21 18:14:37 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{ic}': 'schematic:Wire_Pin[pin@3].wire'
+--------------- 88 --------------
+  Sun Nov 21 18:14:37 EST 2021
+ProcessKeyBinding 400 when=1637536477523 modifiers=0 code=0 char=8 false false
+--------------- 89 --------------
+  Sun Nov 21 18:14:46 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{ic}': 'schematic:Wire_Pin[pin@5].wire'
+--------------- 90 --------------
+  Sun Nov 21 18:14:46 EST 2021
+ProcessKeyBinding 400 when=1637536486626 modifiers=0 code=0 char=8 false false
+--------------- 91 --------------
+  Sun Nov 21 18:15:12 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 92 --------------
+  Sun Nov 21 18:15:30 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'VDC' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'ACP' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'ACM' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'pwl' on node spicepartsS3:VPWL{ic}['VPWL@0']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Ground['gnd@5']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Ground['gnd@3']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@13']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@12']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@11']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@10']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Ground['gnd@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@8']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': Wire_Pin['pin@9']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': spicepartsS3:VPWL{ic}['VPWL@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': inverter{ic}['inverter@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': spicepartsS3:VPulse{ic}['VPulse@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': spicepartsS3:VPulse{ic}['VPulse@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@11']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@22']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@26']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@27']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@5']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@7']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@25']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@24']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@19']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': wire['net@21']
+--------------- 93 --------------
+  Sun Nov 21 18:15:30 EST 2021
+ProcessKeyBinding 400 when=1637536530147 modifiers=0 code=0 char=8 false false
+--------------- 94 --------------
+  Sun Nov 21 18:15:48 EST 2021
+Menu Activated: Window | Toggle Grid
+--------------- 95 --------------
+  Sun Nov 21 18:26:07 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTest{sch}': 'MemoryCellTester{ic}[MemoryCe@1].Q'
+--------------- 96 --------------
+  Sun Nov 21 18:50:34 EST 2021
+Menu Activated: Shortcuts | Wire Up One Level
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Wire_Pin[pin@43].wire'
+--------------- 97 --------------
+  Sun Nov 21 18:50:34 EST 2021
+ProcessKeyBinding 400 when=1637538459139 modifiers=0 code=0 char=3d(=) false false
+--------------- 98 --------------
+  Sun Nov 21 18:50:34 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Wire_Pin[pin@43].wire'
+--------------- 99 --------------
+  Sun Nov 21 18:50:34 EST 2021
+ProcessKeyBinding 400 when=1637538459473 modifiers=0 code=0 char=8 false false
+--------------- 100 --------------
+  Sun Nov 21 18:50:55 EST 2021
+ProcessKeyBinding 401 when=1637538480560 modifiers=80 code=11 char=ffff false false
+--------------- 101 --------------
+  Sun Nov 21 18:50:55 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@0']
+--------------- 102 --------------
+  Sun Nov 21 18:50:55 EST 2021
+ProcessKeyBinding 400 when=1637538480560 modifiers=80 code=0 char=1a false false
+--------------- 103 --------------
+  Sun Nov 21 18:50:55 EST 2021
+ProcessKeyBinding 402 when=1637538480639 modifiers=0 code=11 char=ffff false false
+--------------- 104 --------------
+  Sun Nov 21 19:04:21 EST 2021
+ProcessKeyBinding 401 when=1637539286073 modifiers=80 code=11 char=ffff false false
+--------------- 105 --------------
+  Sun Nov 21 19:04:21 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'spicepartsS3:VPulse{ic}[VPulse@2].plus'
+--------------- 106 --------------
+  Sun Nov 21 19:04:21 EST 2021
+ProcessKeyBinding 400 when=1637539286073 modifiers=80 code=0 char=1a false false
+--------------- 107 --------------
+  Sun Nov 21 19:04:21 EST 2021
+ProcessKeyBinding 402 when=1637539286153 modifiers=0 code=11 char=ffff false false
+--------------- 108 --------------
+  Sun Nov 21 19:04:32 EST 2021
+ProcessKeyBinding 401 when=1637539297574 modifiers=80 code=11 char=ffff false false
+--------------- 109 --------------
+  Sun Nov 21 19:04:32 EST 2021
+Menu Activated: Edit | Undo
+--------------- 110 --------------
+  Sun Nov 21 19:04:32 EST 2021
+ProcessKeyBinding 400 when=1637539297574 modifiers=80 code=0 char=1a false false
+--------------- 111 --------------
+  Sun Nov 21 19:04:32 EST 2021
+ProcessKeyBinding 402 when=1637539297606 modifiers=0 code=11 char=ffff false false
+--------------- 112 --------------
+  Sun Nov 21 19:04:37 EST 2021
+ProcessKeyBinding 401 when=1637539302006 modifiers=80 code=11 char=ffff false false
+--------------- 113 --------------
+  Sun Nov 21 19:04:37 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Wire_Pin[pin@47].wire'
+--------------- 114 --------------
+  Sun Nov 21 19:04:37 EST 2021
+ProcessKeyBinding 400 when=1637539302006 modifiers=80 code=0 char=1a false false
+--------------- 115 --------------
+  Sun Nov 21 19:04:37 EST 2021
+ProcessKeyBinding 402 when=1637539302090 modifiers=0 code=11 char=ffff false false
+--------------- 116 --------------
+  Sun Nov 21 19:04:55 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 117 --------------
+  Sun Nov 21 19:05:03 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 118 --------------
+  Sun Nov 21 19:05:05 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 119 --------------
+  Sun Nov 21 19:11:09 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 120 --------------
+  Sun Nov 21 19:11:12 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 121 --------------
+  Sun Nov 21 19:11:15 EST 2021
+Menu Activated: Window | Zoom In
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 122 --------------
+  Sun Nov 21 19:11:16 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+--------------- 123 --------------
+  Sun Nov 21 19:11:20 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Pan
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': wire['net@102']
+--------------- 124 --------------
+  Sun Nov 21 19:11:27 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': wire['net@102']
+--------------- 125 --------------
+  Sun Nov 21 19:11:43 EST 2021
+ProcessKeyBinding 401 when=1637539728030 modifiers=40 code=10 char=ffff false false
+--------------- 126 --------------
+  Sun Nov 21 19:11:43 EST 2021
+ProcessKeyBinding 402 when=1637539728562 modifiers=0 code=10 char=ffff false false
+--------------- 127 --------------
+  Sun Nov 21 19:11:48 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Wire_Pin[pin@47].wire'
+--------------- 128 --------------
+  Sun Nov 21 19:11:48 EST 2021
+ProcessKeyBinding 400 when=1637539733218 modifiers=0 code=0 char=8 false false
+--------------- 129 --------------
+  Sun Nov 21 19:11:50 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Wire_Pin[pin@46].wire'
+--------------- 130 --------------
+  Sun Nov 21 19:11:50 EST 2021
+ProcessKeyBinding 400 when=1637539734793 modifiers=0 code=0 char=8 false false
+--------------- 131 --------------
+  Sun Nov 21 19:11:51 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'MemoryCellTester{sch}': 'Wire_Pin[pin@44].wire'
+--------------- 132 --------------
+  Sun Nov 21 19:11:51 EST 2021
+ProcessKeyBinding 400 when=1637539736665 modifiers=0 code=0 char=8 false false
+--------------- 133 --------------
+  Sun Nov 21 19:12:07 EST 2021
+ProcessKeyBinding 401 when=1637539751998 modifiers=80 code=11 char=ffff false false
+--------------- 134 --------------
+  Sun Nov 21 19:12:07 EST 2021
+Menu Activated: Edit | Copy
+Currently highlighted: 
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'TF' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'TR' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'TD' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'V2' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@1']
+    Parameter 'ACP' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'ACM' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'VDC' on node spicepartsS3:VPulse{ic}['VPulse@0']
+    Parameter 'PW' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'Per' on node spicepartsS3:VPulse{ic}['VPulse@2']
+    Parameter 'ACM' on node spiceparts
