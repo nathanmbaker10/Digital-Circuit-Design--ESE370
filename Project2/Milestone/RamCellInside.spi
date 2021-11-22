@@ -1,0 +1,29 @@
+*** SPICE deck for cell RamCellInside{sch} from library ESE370
+*** Created on Sun Nov 21, 2021 22:48:30
+*** Last revised on Sun Nov 21, 2021 22:54:22
+*** Written on Sun Nov 21, 2021 22:54:30 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: RamCellInside{sch}
+Mnmos@0 Q WL BL gnd N L=0.022U W=0.022U
+Mnmos@1 BL_ WL Q_ gnd N L=0.022U W=0.022U
+VVPulse@0 BL gnd pulse (0 0.8V 0ns 10ps 10ps 500ps 1ns) DC '0V' AC '0V' 0
+VVPulse@1 BL_ gnd pulse (0.8 0V 0ns 10ps 10ps 500ps 1ns) DC '0V' AC '0V' 0
+VVPulse@2 WL gnd pulse (0 0.8V 100ps 10ps 10ps 200ps 500ps) DC '0V' AC '0V' 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+Xinverter@0 Q Q_ ESE370__inverter
+Xinverter@1 Q_ Q ESE370__inverter
+.END

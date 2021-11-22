@@ -1,7 +1,7 @@
 *** SPICE deck for cell MemoryCellTest{sch} from library ESE370
 *** Created on Fri Nov 19, 2021 15:30:10
-*** Last revised on Sun Nov 21, 2021 19:41:43
-*** Written on Sun Nov 21, 2021 19:42:13 by Electric VLSI Design System, version 9.07
+*** Last revised on Sun Nov 21, 2021 20:37:30
+*** Written on Sun Nov 21, 2021 20:37:52 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -105,12 +105,13 @@ Xtristate@0 Rd/Wr_ PC net@79 ESE370__tristate-inverter
 .global gnd vdd
 
 *** TOP LEVEL CELL: MemoryCellTest{sch}
-XMemoryCe@2 PC net@51 net@55 R/W WL ESE370__MemoryCellTester
-VVPWL@1 net@64 gnd pwl (0ns 0V 0.5ns 0V 0.6ns 0.8V 2.4ns 0.8V 2.5ns 0V 4.0ns 0V) DC '0V' AC '0V' 0
+XMemoryCe@2 PC net@93 net@91 RW WL ESE370__MemoryCellTester
+VVPWL@1 net@88 gnd pwl (0ns 0V 0.5ns 0V 0.6ns 0.8V 2.4ns 0.8V 2.5ns 0V 4.0ns 0V) DC '0V' AC '0V' 0
 VVPulse@2 PC gnd pulse (0 0.8V 0ns 10ps 10ps 33ps 333ps) DC '0V' AC '0V' 0
 VVPulse@3 WL gnd pulse (0 0.8V 50ps 10ps 10ps 151.5ps 333ps) DC '0V' AC '0V' 0
 VVPulse@4 RW gnd pulse (0 0.8V 333ps 10ps 10ps 666ps 1ns) DC '0V' AC '0V' 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
-Xinverter@2 net@51 net@55 ESE370__inverter
-Xtristate@0 RW net@64 net@51 ESE370__tristate-buffer-enable-inverted
+Xinverter@4 net@88 net@99 ESE370__inverter
+Xtristate@0 RW net@99 net@91 ESE370__tristate-buffer-enable-inverted
+Xtristate@1 RW net@88 net@93 ESE370__tristate-buffer-enable-inverted
 .END
