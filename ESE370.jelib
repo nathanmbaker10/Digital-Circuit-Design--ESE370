@@ -726,7 +726,7 @@ Ngeneric:Facet-Center|art@0||0|0||||AV
 X
 
 # Cell MemoryCellTest;1{sch}
-CMemoryCellTest;1{sch}||schematic|1637353810670|1637541633867|
+CMemoryCellTest;1{sch}||schematic|1637353810670|1637541703398|
 IMemoryCellTester;1{ic}|MemoryCe@2||15|23|||D5G4;
 IspicepartsS3:VPWL;1{ic}|VPWL@1||40|-2|||D5G4;|ATTR_ACM(D6G0.5;NPX3.5;)S0V|ATTR_ACP(D6G0.5;NPX3.5;Y-0.5;)I0|ATTR_VDC(D6G0.5;NPX3.5;Y-1;)S0V|ATTR_pwl(D6G0.5;NPX3.5;Y0.5;)S0 0 1 1
 IspicepartsS3:VPulse;1{ic}|VPulse@2||-17|-8|||D5G4;|ATTR_ACM(D6G0.5;NPX-5.5;Y-1;)S0V|ATTR_ACP(D6G0.5;NPX-5.5;Y-1.5;)I0|ATTR_PW(D6G0.5;NPX-5.5;)S3ns|ATTR_Per(D6G0.5;NPX-5.5;Y-0.5;)S6ns|ATTR_TD(D6G0.5;NPX-5.5;Y1.5;)S0ns|ATTR_TF(D6G0.5;NPX-5.5;Y0.5;)S200ps|ATTR_TR(D6G0.5;NPX-5.5;Y1;)S200ps|ATTR_V1(D6G0.5;NPX-5.5;Y2.5;)I0|ATTR_V2(D6G0.5;NPX-5.5;Y2;)S1V|ATTR_VDC(D6G0.5;NPX-5.5;Y-2;)S0V
@@ -749,10 +749,10 @@ NWire_Pin|pin@22||8|25||||
 NWire_Pin|pin@23||40|-11||||
 NWire_Pin|pin@24||40|22||||
 NWire_Pin|pin@25||40|20||||
-NWire_Pin|pin@26||39|20||||
-NWire_Pin|pin@27||-2|9.5||||
+NWire_Pin|pin@29||40|4||||
+NWire_Pin|pin@31||-2|10||||
 NPower|pwr@0||-36|30.5||||
-Itri-state-buffer;2{ic}|tri-stat@1||39|9|R||D5G4;
+Itristate-buffer-enable-inverted;1{ic}|tristate@0||40|10|R||D5G4;
 Awire|PC|D5G1;||1800|pin@19||-17|27|pin@20||8|27
 Awire|R/W|D5G1;||1800|pin@17||-2|20|pin@21||8|20
 Awire|WL|D5G1;||1800|pin@18||-10|25|pin@22||8|25
@@ -774,13 +774,13 @@ Awire|net@49|||900|VPWL@1|minus|40|-2|pin@23||40|-11
 Awire|net@51|||0|pin@24||40|22|MemoryCe@2|Q|20|22
 Awire|net@53|||2700|pin@25||40|20|pin@24||40|22
 Awire|net@55|||0|inverter@2|not(a)|27|20|MemoryCe@2|Q'|20|20
-Awire|net@56|||2700|VPWL@1|plus|40|2|tri-stat@1|In|40|4
-Awire|net@57|||0|pin@25||40|20|pin@26||39|20
-Awire|net@58|||0|pin@26||39|20|inverter@2|a|37|20
-Awire|net@59|||2700|tri-stat@1|out|39|14|pin@26||39|20
-Awire|net@60|||2700|VPulse@4|plus|-2|4|pin@27||-2|9.5
-Awire|net@61|||2700|pin@27||-2|9.5|pin@17||-2|20
-Awire|net@62|||0|tri-stat@1|En|35.5|9.5|pin@27||-2|9.5
+Awire|net@64|||2700|VPWL@1|plus|40|2|pin@29||40|4
+Awire|net@66|||0|pin@25||40|20|inverter@2|a|37|20
+Awire|net@67|||900|tristate@0|in|40|5|pin@29||40|4
+Awire|net@69|||2700|VPulse@4|plus|-2|4|pin@31||-2|10
+Awire|net@70|||2700|pin@31||-2|10|pin@17||-2|20
+Awire|net@71|||0|tristate@0|en|36|10|pin@31||-2|10
+Awire|net@72|||2700|tristate@0|out|40|15|pin@25||40|20
 X
 
 # Cell MemoryCellTester;1{ic}
@@ -1511,6 +1511,11 @@ Awire|net@18|||0|conn@4|y|18|-1|nmos@1|d|14.5|-1
 EBL||D5G2;|conn@3|a|B
 EBL'||D5G2;|conn@4|y|B
 EWL||D5G2;|conn@0|a|I
+X
+
+# Cell WorkBench;1{sch}
+CWorkBench;1{sch}||schematic|1637542829031|1637542829031|
+Ngeneric:Facet-Center|art@0||0|0||||AV
 X
 
 # Cell and2;1{ic}
