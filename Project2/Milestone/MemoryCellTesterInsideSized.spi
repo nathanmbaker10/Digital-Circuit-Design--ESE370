@@ -47,12 +47,12 @@ Xtristate@0 WR/_R b d ESE370__tristate-buffer-enable-inverted
 .SUBCKT ESE370__RAM_Cell BL BL_ WL
 ** GLOBAL gnd
 ** GLOBAL vdd
-Mnmos@0 net@0 WL BL gnd N L=0.022U W=0.022U
+Mnmos@0 net@0 WL BL gnd N L=0.022U W=0.044U
 Mnmos@1 BL_ WL net@10 gnd N L=0.022U W=0.022U
-Mnmos@2 net@10 net@0 gnd gnd N L=0.022U W=0.033U
+Mnmos@2 net@10 net@0 gnd gnd N L=0.022U W=0.044U
 Mnmos@3 net@0 net@10 gnd gnd N L=0.022U W=0.022U
 Mpmos@0 vdd net@0 net@10 vdd P L=0.022U W=0.022U
-Mpmos@1 vdd net@10 net@0 vdd P L=0.022U W=0.033U
+Mpmos@1 vdd net@10 net@0 vdd P L=0.022U W=0.022U
 .ENDS ESE370__RAM_Cell
 
 *** SUBCIRCUIT ESE370__bitLineConditioning FROM CELL bitLineConditioning{sch}

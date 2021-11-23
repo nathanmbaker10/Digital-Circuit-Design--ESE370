@@ -1649,14 +1649,14 @@ EWL||D5G1;|pin@4||I
 X
 
 # Cell RAM_Cell;1{sch}
-CRAM_Cell;1{sch}||schematic|1637281149985|1637641586395|
+CRAM_Cell;1{sch}||schematic|1637281149985|1637643142856|
 IRAM_Cell;4{ic}|RAM_Cell@1||42.5|27.5|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-4|16|||RRR|
 NOff-Page|conn@3||-26.5|-1||||
 NOff-Page|conn@5||20|-1||||
 NGround|gnd@0||-6|-12.5||||
-NTransistor|nmos@0||-20|1|||||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@0||-20|1|||||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)S2
 NTransistor|nmos@1||12.5|1|||||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
 NTransistor|nmos@2||1.5|-5.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S2
 NTransistor|nmos@3||-13|-5.5|||XR||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
@@ -1680,7 +1680,7 @@ NWire_Pin|pin@25||3.5|0||||
 NWire_Pin|pin@26||-2.5|0.5||||
 NWire_Pin|pin@27||-15|0.5||||
 NTransistor|pmos@0||1.5|4.5|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|pmos@1||-13|4.5|||XR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S2
+NTransistor|pmos@1||-13|4.5|||XR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S1
 NPower|pwr@0||-4|10||||
 Awire|net@0|||1800|nmos@0|d|-18|-1|pin@0||-15|-1
 Awire|net@10|||0|nmos@1|s|10.5|-1|pin@5||6|-1
