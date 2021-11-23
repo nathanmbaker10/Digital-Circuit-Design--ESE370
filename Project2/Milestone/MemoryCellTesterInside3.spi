@@ -1,7 +1,7 @@
 *** SPICE deck for cell MemoryCellTesterInside{sch} from library ESE370
 *** Created on Fri Nov 19, 2021 13:43:25
-*** Last revised on Mon Nov 22, 2021 21:27:28
-*** Written on Mon Nov 22, 2021 21:27:43 by Electric VLSI Design System, version 9.07
+*** Last revised on Mon Nov 22, 2021 21:54:15
+*** Written on Mon Nov 22, 2021 21:54:38 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -74,17 +74,17 @@ Xinverter@2 En net@28 ESE370__inverter
 .global gnd vdd
 
 *** TOP LEVEL CELL: MemoryCellTesterInside{sch}
-XColumnDr@4 BL Q gnd ESE370__ColumnDriver
-XColumnDr@5 BL_ Q_ gnd ESE370__ColumnDriver
+XColumnDr@4 BL Q net@333 ESE370__ColumnDriver
+XColumnDr@5 BL_ Q_ net@333 ESE370__ColumnDriver
 XRAM_Cell@0 BL BL_ WL ESE370__RAM_Cell
-VVPWL@0 net@365 gnd pwl (0ns 0.8 333ps 0.8 333ps 0 1ns 0 1ns 0.8 166ps 0.8) DC 0V AC 0V 0
+VVPWL@0 net@365 gnd pwl (0ns 0.8 2ns 0.8 2ns 0) DC 0V AC 0V 0
 VVPulse@1 PC gnd pulse (0.8V 0V 20ps 10ps 10ps 30ps 333ps) DC 0V AC 0V 0
 VVPulse@2 RW gnd pulse (0V 0.8V 0ps 10ps 10ps 333ps 1ns) DC 0V AC 0V 0
-VVPulse@3 WL gnd pulse (0 0.8V 62ps 10ps 10ps 151.5ps 333ps) DC 0V AC 0V 0
+VVPulse@3 WL gnd pulse (0 0.8V 80ps 10ps 10ps 151.5ps 333ps) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
-XbitLineC@0 net@233 net@235 PC ESE370__bitLineConditioning
-Xtri-stat@0 gnd net@365 Q ESE370__tri-state-buffer
-Xtristate@2 gnd net@235 BL_ ESE370__tristate-buffer-enable-inverted
-Xtristate@3 gnd net@233 BL ESE370__tristate-buffer-enable-inverted
-Xtristate@4 gnd net@365 Q_ ESE370__tristate-inverter
+XbitLineC@0 BL BL_ net@416 ESE370__bitLineConditioning
+Xtri-stat@0 net@333 net@365 Q ESE370__tri-state-buffer
+Xtri-stat@1 PC RW net@333 ESE370__tri-state-buffer
+Xtristate@4 net@333 net@365 Q_ ESE370__tristate-inverter
+Xtristate@5 RW PC net@416 ESE370__tristate-buffer-enable-inverted
 .END
