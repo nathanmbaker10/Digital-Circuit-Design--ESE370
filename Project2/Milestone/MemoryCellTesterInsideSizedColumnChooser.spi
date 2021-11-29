@@ -1,7 +1,7 @@
 *** SPICE deck for cell MemoryCellTesterInside{sch} from library ESE370
 *** Created on Fri Nov 19, 2021 13:43:25
-*** Last revised on Mon Nov 22, 2021 22:10:47
-*** Written on Mon Nov 22, 2021 23:34:22 by Electric VLSI Design System, version 9.07
+*** Last revised on Sun Nov 28, 2021 16:10:39
+*** Written on Sun Nov 28, 2021 16:22:22 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -14,6 +14,22 @@
 Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
 Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
 .ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__buffer FROM CELL buffer{sch}
+.SUBCKT ESE370__buffer a out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 a net@1 ESE370__inverter
+Xinverter@1 net@1 out ESE370__inverter
+.ENDS ESE370__buffer
+
+*** SUBCIRCUIT ESE370__ColumnChooser FROM CELL ColumnChooser{sch}
+.SUBCKT ESE370__ColumnChooser C0 C1 In
+** GLOBAL gnd
+** GLOBAL vdd
+Xbuffer@0 In C1 ESE370__buffer
+Xinverter@0 In C0 ESE370__inverter
+.ENDS ESE370__ColumnChooser
 
 *** SUBCIRCUIT ESE370__tri-state-buffer FROM CELL tri-state-buffer{sch}
 .SUBCKT ESE370__tri-state-buffer En In out
@@ -36,11 +52,13 @@ Xtri-stat@0 net@2 in out ESE370__tri-state-buffer
 .ENDS ESE370__tristate-buffer-enable-inverted
 
 *** SUBCIRCUIT ESE370__ColumnDriver FROM CELL ColumnDriver{sch}
-.SUBCKT ESE370__ColumnDriver b d WR/_R
+.SUBCKT ESE370__ColumnDriver b Cin d WR/_R
 ** GLOBAL gnd
 ** GLOBAL vdd
-Xtri-stat@2 WR/_R d b ESE370__tri-state-buffer
-Xtristate@0 WR/_R b d ESE370__tristate-buffer-enable-inverted
+Xtri-stat@2 WR/_R d net@72 ESE370__tri-state-buffer
+Xtri-stat@3 Cin net@72 b ESE370__tri-state-buffer
+Xtri-stat@4 Cin b net@74 ESE370__tri-state-buffer
+Xtristate@0 WR/_R net@74 d ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__ColumnDriver
 
 *** SUBCIRCUIT ESE370__RAM_Cell FROM CELL RAM_Cell{sch}
@@ -76,8 +94,9 @@ Xinverter@2 En net@28 ESE370__inverter
 .global gnd vdd
 
 *** TOP LEVEL CELL: MemoryCellTesterInside{sch}
-XColumnDr@4 BL Q net@333 ESE370__ColumnDriver
-XColumnDr@5 BL_ Q_ net@333 ESE370__ColumnDriver
+XColumnCh@0 net@425 ColumnCh@0_C1 gnd ESE370__ColumnChooser
+XColumnDr@4 BL net@425 Q net@333 ESE370__ColumnDriver
+XColumnDr@5 BL_ net@425 Q_ net@333 ESE370__ColumnDriver
 XRAM_Cell@0 BL BL_ WL ESE370__RAM_Cell
 VVPWL@0 net@365 gnd pwl (0ns 0.8 1ns 0.8 1ns 0 2.667ns 0 2.667ns 0.8) DC 0V AC 0V 0
 VVPulse@1 PC gnd pulse (0.8V 0V 20ps 10ps 10ps 30ps 333ps) DC 0V AC 0V 0
