@@ -1,0 +1,180 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Tue Nov 30 14:14:38 EST 2021
+Menu Activated: File | Open Library...
+--------------- 1 --------------
+  Tue Nov 30 14:14:47 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 2 --------------
+  Tue Nov 30 14:14:58 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 3 --------------
+  Tue Nov 30 14:15:24 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 4 --------------
+  Tue Nov 30 14:17:34 EST 2021
+Menu Activated: Cell | Edit Cell...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'ColumnDecoderBus{ic}[ColumnDe@0].BL[0]'
+--------------- 5 --------------
+  Tue Nov 30 14:17:46 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 6 --------------
+  Tue Nov 30 14:17:56 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 7 --------------
+  Tue Nov 30 14:18:05 EST 2021
+ProcessKeyBinding 401 when=1638299885424 modifiers=80 code=11 char=ffff false false
+--------------- 8 --------------
+  Tue Nov 30 14:18:05 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnDecoderBus{sch}': 'ColumnDriver{ic}[ColumnDr@0].b'
+--------------- 9 --------------
+  Tue Nov 30 14:18:05 EST 2021
+ProcessKeyBinding 400 when=1638299885654 modifiers=80 code=0 char=4 false false
+--------------- 10 --------------
+  Tue Nov 30 14:18:05 EST 2021
+ProcessKeyBinding 402 when=1638299885757 modifiers=0 code=11 char=ffff false false
+--------------- 11 --------------
+  Tue Nov 30 14:19:04 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 12 --------------
+  Tue Nov 30 14:19:18 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+--------------- 13 --------------
+  Tue Nov 30 14:19:28 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+--------------- 14 --------------
+  Tue Nov 30 14:20:50 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy In Place
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'RowDecoder{ic}[RowDecod@4].~PC'
+--------------- 15 --------------
+  Tue Nov 30 14:20:50 EST 2021
+ProcessKeyBinding 400 when=1638300050556 modifiers=0 code=0 char=64(d) false false
+--------------- 16 --------------
+  Tue Nov 30 14:20:56 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 17 --------------
+  Tue Nov 30 14:21:16 EST 2021
+ProcessKeyBinding 401 when=1638300076133 modifiers=80 code=11 char=ffff false false
+--------------- 18 --------------
+  Tue Nov 30 14:21:16 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'RowDecoder{ic}': 'artwork:Opened-Thicker-Polygon[art@1].site'
+--------------- 19 --------------
+  Tue Nov 30 14:21:16 EST 2021
+ProcessKeyBinding 400 when=1638300076133 modifiers=80 code=0 char=1a false false
+--------------- 20 --------------
+  Tue Nov 30 14:21:16 EST 2021
+ProcessKeyBinding 402 when=1638300076216 modifiers=0 code=11 char=ffff false false
+--------------- 21 --------------
+  Tue Nov 30 14:21:18 EST 2021
+ProcessKeyBinding 401 when=1638300078176 modifiers=80 code=11 char=ffff false false
+--------------- 22 --------------
+  Tue Nov 30 14:21:18 EST 2021
+Menu Activated: Edit | Undo
+--------------- 23 --------------
+  Tue Nov 30 14:21:18 EST 2021
+ProcessKeyBinding 400 when=1638300078176 modifiers=80 code=0 char=1a false false
+--------------- 24 --------------
+  Tue Nov 30 14:21:25 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 25 --------------
+  Tue Nov 30 14:21:30 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 26 --------------
+  Tue Nov 30 14:21:45 EST 2021
+Menu Activated: File | Open Library...
+--------------- 27 --------------
+  Tue Nov 30 14:29:01 EST 2021
+ProcessKeyBinding 401 when=1638300541814 modifiers=80 code=11 char=ffff false false
+--------------- 28 --------------
+  Tue Nov 30 14:29:02 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'bitLineConditioning{ic}[bitLineC@0].CLK'
+--------------- 29 --------------
+  Tue Nov 30 14:29:02 EST 2021
+ProcessKeyBinding 400 when=1638300542074 modifiers=80 code=0 char=4 false false
+--------------- 30 --------------
+  Tue Nov 30 14:29:02 EST 2021
+ProcessKeyBinding 402 when=1638300542179 modifiers=0 code=11 char=ffff false false
+--------------- 31 --------------
+  Tue Nov 30 14:29:35 EST 2021
+Menu Activated: File | Save Library
+--------------- 32 --------------
+  Tue Nov 30 14:31:10 EST 2021
+ProcessKeyBinding 401 when=1638300670765 modifiers=80 code=11 char=ffff false false
+--------------- 33 --------------
+  Tue Nov 30 14:31:10 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'ColumnDecoderBus{ic}[ColumnDe@0].BL[3]'
+--------------- 34 --------------
+  Tue Nov 30 14:31:11 EST 2021
+ProcessKeyBinding 400 when=1638300670971 modifiers=80 code=0 char=4 false false
+--------------- 35 --------------
+  Tue Nov 30 14:31:11 EST 2021
+ProcessKeyBinding 402 when=1638300671067 modifiers=0 code=11 char=ffff false false
+--------------- 36 --------------
+  Tue Nov 30 14:31:14 EST 2021
+ProcessKeyBinding 401 when=1638300674916 modifiers=80 code=11 char=ffff false false
+--------------- 37 --------------
+  Tue Nov 30 14:31:15 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnDecoderBus{sch}': 'ColumnDriver{ic}[ColumnDr@0].b'
+--------------- 38 --------------
+  Tue Nov 30 14:31:15 EST 2021
+ProcessKeyBinding 400 when=1638300675460 modifiers=80 code=0 char=4 false false
+--------------- 39 --------------
+  Tue Nov 30 14:31:15 EST 2021
+ProcessKeyBinding 402 when=1638300675545 modifiers=0 code=11 char=ffff false false
+--------------- 40 --------------
+  Tue Nov 30 14:43:20 EST 2021
+ProcessKeyBinding 401 when=1638301400025 modifiers=80 code=11 char=ffff false false
+--------------- 41 --------------
+  Tue Nov 30 14:43:20 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'ColumnDecoderBus{ic}[ColumnDe@0].D'[3]'
+--------------- 42 --------------
+  Tue Nov 30 14:43:20 EST 2021
+ProcessKeyBinding 400 when=1638301400330 modifiers=80 code=0 char=4 false false
+--------------- 43 --------------
+  Tue Nov 30 14:43:20 EST 2021
+ProcessKeyBinding 402 when=1638301400438 modifiers=0 code=11 char=ffff false false
+--------------- 44 --------------
+  Tue Nov 30 14:43:56 EST 2021
+ProcessKeyBinding 401 when=1638301436755 modifiers=80 code=11 char=ffff false false
+--------------- 45 --------------
+  Tue Nov 30 14:43:57 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnDecoderBus{sch}': 'ColumnChooser{ic}[ColumnCh@0].In'
+--------------- 46 --------------
+  Tue Nov 30 14:43:57 EST 2021
+ProcessKeyBinding 400 when=1638301437158 modifiers=80 code=0 char=4 false false
+--------------- 47 --------------
+  Tue Nov 30 14:43:57 EST 2021
+ProcessKeyBinding 402 when=1638301437342 modifiers=0 code=11 char=ffff false false
+--------------- 48 --------------
+  Tue Nov 30 14:44:14 EST 2021
+ProcessKeyBinding 401 when=1638301454676 modifiers=80 code=11 char=ffff false false
+--------------- 49 --------------
+  Tue Nov 30 14:44:15 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'ColumnDecoderBus{sch}': 'ColumnDriver{ic}[ColumnDr@0].WR/~R'
+--------------- 50 --------------
+  Tue Nov 30 14:44:15 EST 2021
+ProcessKeyBinding 400 when=1638301455100 modifiers=80 code=0 char=4 false false
+--------------- 51 --------------
+  Tue Nov 30 14:44:15 EST 2021
+ProcessKeyBinding 402 when=1638301455260 modifiers=0 code=11 char=ffff false false
+--------------- 52 --------------
+  Tue Nov 30 14:44:44 EST 2021
+ProcessKeyBinding 401 when=16

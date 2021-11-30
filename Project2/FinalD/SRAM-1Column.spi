@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAM{sch} from library ESE370
 *** Created on Sun Nov 28, 2021 16:03:02
-*** Last revised on Tue Nov 30, 2021 12:10:36
-*** Written on Tue Nov 30, 2021 12:11:05 by Electric VLSI Design System, version 9.07
+*** Last revised on Tue Nov 30, 2021 14:58:21
+*** Written on Tue Nov 30, 2021 15:00:49 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -165,7 +165,7 @@ Xinverter@14 Addr[0] net@281 ESE370__inverter
 .SUBCKT ESE370__bitLineConditioning BL BL_ CLK
 ** GLOBAL vdd
 Mpmos@0 vdd CLK BL_ vdd P L=0.022U W=0.022U
-Mpmos@2 vdd CLK BL vdd P L=0.022U W=0.0220U
+Mpmos@2 vdd CLK BL vdd P L=0.022U W=0.022U
 .ENDS ESE370__bitLineConditioning
 
 *** SUBCIRCUIT ESE370__tristate-inverter FROM CELL tristate-inverter{sch}
@@ -182,7 +182,7 @@ Xinverter@2 En net@28 ESE370__inverter
 .global gnd vdd
 
 *** TOP LEVEL CELL: SRAM{sch}
-XColumnDe@0 net@161 net@147 net@133 net@119 bl_4 bl_3 bl_2 bl_ net@154 net@140 net@126 net@112 bl4 bl3 bl2 bl gnd Q_ Q_ Q_ Q_ Q Q Q Q RW ESE370__ColumnDecoderBus
+XColumnDe@0 net@161 net@147 net@133 net@119 bl_4 bl_3 bl_2 bl_ net@154 net@140 net@126 net@112 bl4 bl3 bl2 bl gnd gnd gnd gnd Q_ gnd gnd gnd Q RW ESE370__ColumnDecoderBus
 XRAM_Cell@0 bl bl_ WL0 ESE370__RAM_Cell
 XRAM_Cell@1 bl2 bl_2 WL0 ESE370__RAM_Cell
 XRAM_Cell@2 bl3 bl_3 WL0 ESE370__RAM_Cell
@@ -260,8 +260,7 @@ XbitLineC@4 net@112 net@119 pcafter ESE370__bitLineConditioning
 XbitLineC@5 net@126 net@133 pcafter ESE370__bitLineConditioning
 XbitLineC@7 net@140 net@147 pcafter ESE370__bitLineConditioning
 XbitLineC@8 net@154 net@161 pcafter ESE370__bitLineConditioning
-Xbuffer@0 net@257 net@356 ESE370__buffer
-Xbuffer@1 net@356 WL0 ESE370__buffer
+Xbuffer@0 net@257 WL0 ESE370__buffer
 Xtri-stat@0 RW net@302 Q ESE370__tri-state-buffer
 Xtristate@0 RW net@302 Q_ ESE370__tristate-inverter
 Xtristate@1 RW pcbefore pcafter ESE370__tristate-buffer-enable-inverted
