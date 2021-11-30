@@ -2766,7 +2766,7 @@ E~PC||D5G2;|conn@15|a|I
 X
 
 # Cell SRAM;1{sch}
-CSRAM;1{sch}||schematic|1638133382304|1638302301682|
+CSRAM;1{sch}||schematic|1638133382304|1638314448724|
 IColumnDecoderBus;1{ic}|ColumnDe@0||26|-79|||D5G4;
 IRAM_Cell;4{ic}|RAM_Cell@0||-18|3|||D5G4;
 IRAM_Cell;4{ic}|RAM_Cell@1||-5|3|||D5G4;
@@ -3241,7 +3241,6 @@ Awire|net@341|||2700|pin@86||-8|-101|pin@87||-8|-100
 Awire|net@342|||0|gnd@2||-90.5|-73|pin@88||-91.5|-73
 Awire|net@343|||900|V_Generi@0|minus|-91.5|-62.5|pin@88||-91.5|-73
 Awire|net@344|||0|V_Generi@0|plus|-91.5|-58.5|pin@89||-92|-58.5
-Awire|net@345|||900|pwr@0||-92|-49.5|pin@89||-92|-58.5
 Awire|net@346|||0|tristate@1|in|-68|27|pin@90||-77|27
 Awire|net@347|||2700|pin@55||-77|27|pin@90||-77|27
 Awire|net@348|||900|tristate@1|out|-58|27|pin@91||-58|27
@@ -3264,6 +3263,7 @@ Awire|net@375|||900|pin@79||40|-91|pin@100||40|-96
 Awire|net@376|||1800|pin@95||20|-96|pin@100||40|-96
 Awire|net@377|||900|ColumnDe@0|D'[3]|46|-86|pin@101||46|-96
 Awire|net@378|||1800|gnd@3||21|-96|pin@101||46|-96
+Awire|net@380|||2700|pin@89||-92|-58.5|pwr@0||-92|-49.5
 Awire|pcafter|D5G1;||0|pin@45||-25|27|pin@91||-58|27
 Awire|pcbefore|D5G1;||2700|pin@54||-77|-12.5|pin@55||-77|27
 Awire|wl1|D5G1;||0|RAM_Cell@12|WL|-18|-1.5|pin@47||-46|-1.5
