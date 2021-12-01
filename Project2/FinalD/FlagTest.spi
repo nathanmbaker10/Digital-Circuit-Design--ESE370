@@ -1,0 +1,100 @@
+*** SPICE deck for cell FlagTest{sch} from library ESE370
+*** Created on Wed Dec 01, 2021 15:16:17
+*** Last revised on Wed Dec 01, 2021 15:19:12
+*** Written on Wed Dec 01, 2021 15:19:20 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include C:\Users\shane\Downloads\22nm_HP.pm
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__buffer FROM CELL buffer{sch}
+.SUBCKT ESE370__buffer a out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 a net@1 ESE370__inverter
+Xinverter@1 net@1 out ESE370__inverter
+.ENDS ESE370__buffer
+
+*** SUBCIRCUIT ESE370__XNOR_PT FROM CELL XNOR_PT{sch}
+.SUBCKT ESE370__XNOR_PT A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 net@53 net@39 B gnd N L=0.022U W=0.022U
+Mnmos@3 net@53 A net@44 gnd N L=0.022U W=0.022U
+Xbuffer@0 net@58 out ESE370__buffer
+Xinverter@0 A net@39 ESE370__inverter
+Xinverter@1 B net@44 ESE370__inverter
+Xinverter@2 net@53 net@58 ESE370__inverter
+.ENDS ESE370__XNOR_PT
+
+*** SUBCIRCUIT ESE370__nand2 FROM CELL nand2{sch}
+.SUBCKT ESE370__nand2 A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.022U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.022U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2
+
+*** SUBCIRCUIT ESE370__and2 FROM CELL and2{sch}
+.SUBCKT ESE370__and2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 net@25 output ESE370__inverter
+Xnand2@0 a b net@25 ESE370__nand2
+.ENDS ESE370__and2
+
+*** SUBCIRCUIT ESE370__inverter1 FROM CELL inverter1{sch}
+.SUBCKT ESE370__inverter1 a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.198U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.614U
+.ENDS ESE370__inverter1
+
+*** SUBCIRCUIT ESE370__nand2_sized FROM CELL nand2_sized{sch}
+.SUBCKT ESE370__nand2_sized A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.264U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.264U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.409U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.409U
+.ENDS ESE370__nand2_sized
+
+*** SUBCIRCUIT ESE370__and2_sized FROM CELL and2_sized{sch}
+.SUBCKT ESE370__and2_sized a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@2 net@45 output ESE370__inverter1
+Xnand2_si@0 a b net@45 ESE370__nand2_sized
+.ENDS ESE370__and2_sized
+
+*** SUBCIRCUIT ESE370__Flag FROM CELL Flag{sch}
+.SUBCKT ESE370__Flag Full rdAddr0 rdaddr1 rdaddr2 rdaddr3 wraddr0 wraddr1 wraddr2 wraddr3
+** GLOBAL gnd
+** GLOBAL vdd
+XXNOR_PT@1 rdAddr0 wraddr0 net@0 ESE370__XNOR_PT
+XXNOR_PT@2 rdaddr1 wraddr1 net@3 ESE370__XNOR_PT
+XXNOR_PT@3 rdaddr2 wraddr2 net@5 ESE370__XNOR_PT
+XXNOR_PT@4 rdaddr3 wraddr3 net@7 ESE370__XNOR_PT
+Xand2@0 net@9 net@11 Full ESE370__and2
+Xand2_siz@0 net@0 net@3 net@9 ESE370__and2_sized
+Xand2_siz@1 net@5 net@7 net@11 ESE370__and2_sized
+.ENDS ESE370__Flag
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: FlagTest{sch}
+XFlag@0 Flag@0_Full vdd vdd vdd vdd vdd vdd vdd vdd ESE370__Flag
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+.END

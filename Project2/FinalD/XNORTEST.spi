@@ -1,0 +1,45 @@
+*** SPICE deck for cell XNORTEST{sch} from library ESE370
+*** Created on Wed Dec 01, 2021 00:23:09
+*** Last revised on Wed Dec 01, 2021 00:35:54
+*** Written on Wed Dec 01, 2021 12:21:24 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include C:\Users\shane\Downloads\22nm_HP.pm
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__buffer FROM CELL buffer{sch}
+.SUBCKT ESE370__buffer a out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 a net@1 ESE370__inverter
+Xinverter@1 net@1 out ESE370__inverter
+.ENDS ESE370__buffer
+
+*** SUBCIRCUIT ESE370__XNOR_PT FROM CELL XNOR_PT{sch}
+.SUBCKT ESE370__XNOR_PT A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 net@53 net@39 B gnd N L=0.022U W=0.022U
+Mnmos@3 net@53 A net@44 gnd N L=0.022U W=0.022U
+Xbuffer@0 net@58 out ESE370__buffer
+Xinverter@0 A net@39 ESE370__inverter
+Xinverter@1 B net@44 ESE370__inverter
+Xinverter@2 net@53 net@58 ESE370__inverter
+.ENDS ESE370__XNOR_PT
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: XNORTEST{sch}
+VVPulse@0 A gnd pulse (0 0.8V 0ps 0ps 0ps 250ps 500ps) DC 0V AC 0V 0
+VVPulse@1 B gnd pulse (0 0.8V 0ps 0ps 0ps 500ps 1ns) DC 0V AC 0V 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+XXNOR_PT@0 B A XNOR_PT@0_out ESE370__XNOR_PT
+.END

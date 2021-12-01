@@ -1,0 +1,17 @@
+*** SPICE deck for cell XNOR_PT{sch} from library ESE370
+*** Created on Wed Dec 01, 2021 00:14:59
+*** Last revised on Wed Dec 01, 2021 00:31:30
+*** Written on Wed Dec 01, 2021 00:31:39 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include C:\Users\shane\Downloads\22nm_HP.pm
+
+.global vdd
+*** WARNING: no ground connection for N-transistor wells in cell 'XNOR_PT{sch}'
+
+*** TOP LEVEL CELL: XNOR_PT{sch}
+Mnmos@0 out A B N L=0.022U W=0.022U
+Mnmos@1 out B A N L=0.022U W=0.022U
+Mpmos@0 vdd A out vdd P L=0.022U W=0.022U
+.END
