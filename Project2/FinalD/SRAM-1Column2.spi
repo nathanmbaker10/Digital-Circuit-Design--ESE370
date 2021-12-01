@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAM{sch} from library ESE370
 *** Created on Sun Nov 28, 2021 16:03:02
-*** Last revised on Tue Nov 30, 2021 14:58:21
-*** Written on Tue Nov 30, 2021 15:00:49 by Electric VLSI Design System, version 9.07
+*** Last revised on Tue Nov 30, 2021 18:41:52
+*** Written on Tue Nov 30, 2021 20:24:50 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -55,10 +55,10 @@ Xtri-stat@0 net@2 in out ESE370__tri-state-buffer
 .SUBCKT ESE370__ColumnDriver b Cin d WR/_R
 ** GLOBAL gnd
 ** GLOBAL vdd
-Xtri-stat@2 WR/_R d net@72 ESE370__tri-state-buffer
-Xtri-stat@3 Cin net@72 b ESE370__tri-state-buffer
-Xtri-stat@4 Cin b net@74 ESE370__tri-state-buffer
-Xtristate@0 WR/_R net@74 d ESE370__tristate-buffer-enable-inverted
+Xtri-stat@0 WR/_R d net@162 ESE370__tri-state-buffer
+Xtri-stat@1 Cin net@162 b ESE370__tri-state-buffer
+Xtri-stat@2 Cin b net@181 ESE370__tri-state-buffer
+Xtristate@8 WR/_R net@181 net@187 ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__ColumnDriver
 
 *** SUBCIRCUIT ESE370__ColumnDecoderBus FROM CELL ColumnDecoderBus{sch}
@@ -164,8 +164,8 @@ Xinverter@14 Addr[0] net@281 ESE370__inverter
 *** SUBCIRCUIT ESE370__bitLineConditioning FROM CELL bitLineConditioning{sch}
 .SUBCKT ESE370__bitLineConditioning BL BL_ CLK
 ** GLOBAL vdd
-Mpmos@0 vdd CLK BL_ vdd P L=0.022U W=0.066U
-Mpmos@2 vdd CLK BL vdd P L=0.022U W=0.066U
+Mpmos@0 vdd CLK BL_ vdd P L=0.022U W=0.022U
+Mpmos@2 vdd CLK BL vdd P L=0.022U W=0.022U
 .ENDS ESE370__bitLineConditioning
 
 *** SUBCIRCUIT ESE370__tristate-inverter FROM CELL tristate-inverter{sch}
@@ -183,14 +183,14 @@ Xinverter@2 En net@28 ESE370__inverter
 
 *** TOP LEVEL CELL: SRAM{sch}
 XColumnDe@0 net@161 net@147 net@133 net@119 bl_4 bl_3 bl_2 bl_ net@154 net@140 net@126 net@112 bl4 bl3 bl2 bl gnd gnd gnd gnd Q_ gnd gnd gnd Q RW ESE370__ColumnDecoderBus
-XRAM_Cell@0 bl bl_ WL0 ESE370__RAM_Cell
-XRAM_Cell@1 bl2 bl_2 WL0 ESE370__RAM_Cell
-XRAM_Cell@2 bl3 bl_3 WL0 ESE370__RAM_Cell
-XRAM_Cell@3 bl4 bl_4 WL0 ESE370__RAM_Cell
-XRAM_Cell@8 net@112 net@119 WL0 ESE370__RAM_Cell
-XRAM_Cell@9 net@126 net@133 WL0 ESE370__RAM_Cell
-XRAM_Cell@10 net@140 net@147 WL0 ESE370__RAM_Cell
-XRAM_Cell@11 net@154 net@161 WL0 ESE370__RAM_Cell
+XRAM_Cell@0 bl bl_ wl0 ESE370__RAM_Cell
+XRAM_Cell@1 bl2 bl_2 wl0 ESE370__RAM_Cell
+XRAM_Cell@2 bl3 bl_3 wl0 ESE370__RAM_Cell
+XRAM_Cell@3 bl4 bl_4 wl0 ESE370__RAM_Cell
+XRAM_Cell@8 net@112 net@119 wl0 ESE370__RAM_Cell
+XRAM_Cell@9 net@126 net@133 wl0 ESE370__RAM_Cell
+XRAM_Cell@10 net@140 net@147 wl0 ESE370__RAM_Cell
+XRAM_Cell@11 net@154 net@161 wl0 ESE370__RAM_Cell
 XRAM_Cell@12 bl bl_ wl1 ESE370__RAM_Cell
 XRAM_Cell@13 bl2 bl_2 wl1 ESE370__RAM_Cell
 XRAM_Cell@14 bl3 bl_3 wl1 ESE370__RAM_Cell
@@ -247,7 +247,7 @@ XRAM_Cell@64 net@112 net@119 wl7 ESE370__RAM_Cell
 XRAM_Cell@65 net@126 net@133 wl7 ESE370__RAM_Cell
 XRAM_Cell@66 net@140 net@147 wl7 ESE370__RAM_Cell
 XRAM_Cell@67 net@154 net@161 wl7 ESE370__RAM_Cell
-XRowDecod@4 gnd gnd gnd net@257 wl1 wl2 wl3 wl4 wl5 wl6 wl7 pcbefore ESE370__RowDecoder
+XRowDecod@4 gnd gnd gnd wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 pcbefore ESE370__RowDecoder
 VVPWL@0 net@302 gnd pwl (0ns 0.8 1ns 0.8 1ns 0 2.667ns 0 2.667ns 0.8) DC 0V AC 0V 0
 VVPulse@0 pcbefore gnd pulse (0.8V 0V 20ps 10ps 10ps 110ps 333ps) DC 0V AC 0V 0
 VVPulse@1 RW gnd pulse (0V 0.8V 0ps 10ps 10ps 333ps 1ns) DC 0V AC 0V 0
@@ -260,7 +260,6 @@ XbitLineC@4 net@112 net@119 pcafter ESE370__bitLineConditioning
 XbitLineC@5 net@126 net@133 pcafter ESE370__bitLineConditioning
 XbitLineC@7 net@140 net@147 pcafter ESE370__bitLineConditioning
 XbitLineC@8 net@154 net@161 pcafter ESE370__bitLineConditioning
-Xbuffer@0 net@257 WL0 ESE370__buffer
 Xtri-stat@0 RW net@302 Q ESE370__tri-state-buffer
 Xtristate@0 RW net@302 Q_ ESE370__tristate-inverter
 Xtristate@1 RW pcbefore pcafter ESE370__tristate-buffer-enable-inverted
