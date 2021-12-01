@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAM{sch} from library ESE370
 *** Created on Sun Nov 28, 2021 16:03:02
 *** Last revised on Tue Nov 30, 2021 18:41:52
-*** Written on Tue Nov 30, 2021 19:23:11 by Electric VLSI Design System, version 9.07
+*** Written on Tue Nov 30, 2021 19:36:21 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -31,14 +31,26 @@ Xbuffer@0 In C1 ESE370__buffer
 Xinverter@0 In C0 ESE370__inverter
 .ENDS ESE370__ColumnChooser
 
+*** SUBCIRCUIT ESE370__tri-state-buffer FROM CELL tri-state-buffer{sch}
+.SUBCKT ESE370__tri-state-buffer En In out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out En net@24 gnd N L=0.022U W=0.022U
+Mnmos@1 net@24 net@3 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 net@1 net@14 out vdd P L=0.022U W=0.022U
+Mpmos@1 vdd net@3 net@1 vdd P L=0.022U W=0.022U
+Xinverter@1 In net@3 ESE370__inverter
+Xinverter@2 En net@14 ESE370__inverter
+.ENDS ESE370__tri-state-buffer
+
 *** SUBCIRCUIT ESE370__TristateBufferSized FROM CELL TristateBufferSized{sch}
 .SUBCKT ESE370__TristateBufferSized En In out
 ** GLOBAL gnd
 ** GLOBAL vdd
-Mnmos@0 out En net@6 gnd N L=0.022U W=0.088U
-Mnmos@1 net@6 net@10 gnd gnd N L=0.022U W=0.088U
-Mpmos@0 net@1 net@17 out vdd P L=0.022U W=0.088U
-Mpmos@1 vdd net@10 net@1 vdd P L=0.022U W=0.088U
+Mnmos@0 out En net@6 gnd N L=0.022U W=0.022U
+Mnmos@1 net@6 net@10 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 net@1 net@17 out vdd P L=0.022U W=0.022U
+Mpmos@1 vdd net@10 net@1 vdd P L=0.022U W=0.022U
 Xinverter@0 In net@10 ESE370__inverter
 Xinverter@1 En net@17 ESE370__inverter
 .ENDS ESE370__TristateBufferSized
@@ -55,10 +67,10 @@ Xinverter@0 En net@2 ESE370__inverter
 .SUBCKT ESE370__ColumnDriver b Cin d WR/_R
 ** GLOBAL gnd
 ** GLOBAL vdd
-XTristate@0 Cin b net@117 ESE370__TristateBufferSized
-XTristate@1 Cin net@110 b ESE370__TristateBufferSized
-XTristate@2 WR/_R d net@110 ESE370__TristateBufferSized
-Xtristate@7 WR/_R net@117 d ESE370__tristateBufferEnableInvertedSized
+Xtri-stat@0 WR/_R d net@162 ESE370__tri-state-buffer
+Xtri-stat@1 Cin net@162 b ESE370__tri-state-buffer
+Xtri-stat@2 Cin b net@122 ESE370__tri-state-buffer
+Xtristate@7 WR/_R net@122 d ESE370__tristateBufferEnableInvertedSized
 .ENDS ESE370__ColumnDriver
 
 *** SUBCIRCUIT ESE370__ColumnDecoderBus FROM CELL ColumnDecoderBus{sch}
@@ -167,18 +179,6 @@ Xinverter@14 Addr[0] net@281 ESE370__inverter
 Mpmos@0 vdd CLK BL_ vdd P L=0.022U W=0.022U
 Mpmos@2 vdd CLK BL vdd P L=0.022U W=0.022U
 .ENDS ESE370__bitLineConditioning
-
-*** SUBCIRCUIT ESE370__tri-state-buffer FROM CELL tri-state-buffer{sch}
-.SUBCKT ESE370__tri-state-buffer En In out
-** GLOBAL gnd
-** GLOBAL vdd
-Mnmos@0 out En net@24 gnd N L=0.022U W=0.022U
-Mnmos@1 net@24 net@3 gnd gnd N L=0.022U W=0.022U
-Mpmos@0 net@1 net@14 out vdd P L=0.022U W=0.022U
-Mpmos@1 vdd net@3 net@1 vdd P L=0.022U W=0.022U
-Xinverter@1 In net@3 ESE370__inverter
-Xinverter@2 En net@14 ESE370__inverter
-.ENDS ESE370__tri-state-buffer
 
 *** SUBCIRCUIT ESE370__tristate-inverter FROM CELL tristate-inverter{sch}
 .SUBCKT ESE370__tristate-inverter En In out
