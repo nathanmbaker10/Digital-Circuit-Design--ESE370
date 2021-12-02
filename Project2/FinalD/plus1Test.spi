@@ -1,11 +1,11 @@
 *** SPICE deck for cell plus1Test{sch} from library ESE370
 *** Created on Wed Dec 01, 2021 18:15:03
 *** Last revised on Wed Dec 01, 2021 18:35:48
-*** Written on Wed Dec 01, 2021 18:36:07 by Electric VLSI Design System, version 9.07
+*** Written on Wed Dec 01, 2021 18:50:46 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
-.include C:\Users\shane\Downloads\22nm_HP.pm
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
 
 *** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
 .SUBCKT ESE370__inverter a not_a_
@@ -79,7 +79,7 @@ Xand2@5 net@97 net@47 net@59 ESE370__and2
 Xinverter@0 a net@47 ESE370__inverter
 Xinverter@1 net@97 net@94 ESE370__inverter
 Xor2@0 net@11 net@13 or2@0_output ESE370__or2
-Xor2@1 net@22 net@20 or2@1_output ESE370__or2
+Xor2@1 net@23 net@20 or2@1_output ESE370__or2
 Xor2@2 net@95 net@59 or2@2_output ESE370__or2
 Xxor2@0 c_in b net@97 ESE370__xor2
 .ENDS ESE370__fa_basic

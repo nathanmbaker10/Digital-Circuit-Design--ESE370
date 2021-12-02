@@ -1,11 +1,11 @@
 *** SPICE deck for cell fa_tester{sch} from library ESE370
 *** Created on Fri Oct 22, 2021 19:15:42
 *** Last revised on Wed Oct 27, 2021 14:08:51
-*** Written on Wed Dec 01, 2021 18:31:28 by Electric VLSI Design System, version 9.07
+*** Written on Wed Dec 01, 2021 18:47:20 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
-.include C:\Users\shane\Downloads\22nm_HP.pm
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
 
 *** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
 .SUBCKT ESE370__inverter a not_a_
@@ -87,9 +87,9 @@ Xxor2@0 c_in b net@97 ESE370__xor2
 .global gnd vdd
 
 *** TOP LEVEL CELL: fa_tester{sch}
-VVPulse@0 net@45 gnd pulse (0 0.8V 2ns 1ps 1ps 2ns 4ns) DC 0V AC 0V 0
-VVPulse@1 net@39 gnd pulse (0 0.8V 4ns 1ps 1ps 4ns 8ns) DC 0V AC 0V 0
-VVPulse@2 net@47 gnd pulse (0 0.8V 8ns 1ps 1ps 8ns 16ns) DC 0V AC 0V 0
+VVPulse@0 net@45 gnd pulse (0 0.8V 2ns 1ps 1ps 2ns 4ns) DC '0V' AC '0V' 0
+VVPulse@1 net@39 gnd pulse (0 0.8V 4ns 1ps 1ps 4ns 8ns) DC '0V' AC '0V' 0
+VVPulse@2 net@47 gnd pulse (0 0.8V 8ns 1ps 1ps 8ns 16ns) DC '0V' AC '0V' 0
 VV_Generi@0 net@49 gnd DC 0.8 AC 0
 VV_Generi@1 vdd net@49 DC 0 AC 0
 Xfa_basic@0 net@47 net@39 net@45 fa_basic@0_c_out fa_basic@0_sum ESE370__fa_basic

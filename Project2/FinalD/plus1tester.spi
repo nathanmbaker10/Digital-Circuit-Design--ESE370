@@ -1,0 +1,80 @@
+*** SPICE deck for cell plus1tester{sch} from library ESE370
+*** Created on Wed Dec 01, 2021 18:58:44
+*** Last revised on Wed Dec 01, 2021 19:25:53
+*** Written on Wed Dec 01, 2021 19:32:28 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__NAND2sized FROM CELL NAND2sized{sch}
+.SUBCKT ESE370__NAND2sized A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@1 B gnd gnd N L=0.022U W=0.11U
+Mnmos@1 out A net@1 gnd N L=0.022U W=0.11U
+Mpmos@0 vdd A out vdd P L=0.022U W=0.176U
+Mpmos@1 vdd B out vdd P L=0.022U W=0.176U
+.ENDS ESE370__NAND2sized
+
+*** SUBCIRCUIT ESE370__nand2dc FROM CELL nand2dc{sch}
+.SUBCKT ESE370__nand2dc A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@1 B gnd gnd N L=0.022U W=0.022U
+Mnmos@1 out A net@1 gnd N L=0.022U W=0.022U
+Mpmos@2 vdd A out vdd P L=0.022U W=0.022U
+Mpmos@3 vdd B out vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2dc
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__newXOR FROM CELL newXOR{sch}
+.SUBCKT ESE370__newXOR A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out A net@18 gnd N L=0.022U W=0.022U
+Mnmos@1 out net@46 net@19 gnd N L=0.022U W=0.022U
+Mnmos@2 net@18 B gnd gnd N L=0.022U W=0.022U
+Mnmos@3 net@19 net@51 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd net@46 net@8 vdd P L=0.022U W=0.022U
+Mpmos@1 vdd A net@7 vdd P L=0.022U W=0.022U
+Mpmos@2 net@8 B out vdd P L=0.022U W=0.022U
+Mpmos@3 net@7 net@51 out vdd P L=0.022U W=0.022U
+Xinverter@0 A net@46 ESE370__inverter
+Xinverter@1 B net@51 ESE370__inverter
+.ENDS ESE370__newXOR
+
+*** SUBCIRCUIT ESE370__Standardadder FROM CELL Standardadder{sch}
+.SUBCKT ESE370__Standardadder A B Cin Cout S
+** GLOBAL gnd
+** GLOBAL vdd
+XNAND2siz@0 net@36 Cin net@51 ESE370__NAND2sized
+XNAND2siz@1 net@51 net@53 Cout ESE370__NAND2sized
+Xnand2dc@0 A B net@53 ESE370__nand2dc
+XnewXOR@0 A B net@36 ESE370__newXOR
+XnewXOR@1 net@36 Cin S ESE370__newXOR
+.ENDS ESE370__Standardadder
+
+*** SUBCIRCUIT ESE370__PlusOne FROM CELL PlusOne{sch}
+.SUBCKT ESE370__PlusOne in0 in1 in2 in3 out0 out1 out2 out3
+** GLOBAL gnd
+** GLOBAL vdd
+XStandard@0 in0 vdd gnd net@5 out0 ESE370__Standardadder
+XStandard@1 in1 gnd net@5 net@6 out1 ESE370__Standardadder
+XStandard@2 in2 gnd net@6 net@9 out2 ESE370__Standardadder
+XStandard@3 in3 gnd net@9 Standard@3_Cout out3 ESE370__Standardadder
+.ENDS ESE370__PlusOne
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: plus1tester{sch}
+XPlusOne@0 gnd gnd gnd gnd PlusOne@0_out0 PlusOne@0_out1 PlusOne@0_out2 PlusOne@0_out3 ESE370__PlusOne
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+.END
