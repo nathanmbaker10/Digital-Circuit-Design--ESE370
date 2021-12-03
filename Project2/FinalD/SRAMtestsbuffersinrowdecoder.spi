@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAMtests{sch} from library ESE370
 *** Created on Thu Dec 02, 2021 20:42:33
 *** Last revised on Fri Dec 03, 2021 00:37:49
-*** Written on Fri Dec 03, 2021 00:38:32 by Electric VLSI Design System, version 9.07
+*** Written on Fri Dec 03, 2021 01:20:47 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -96,6 +96,16 @@ Mpmos@0 vdd net@0 net@10 vdd P L=0.022U W=0.022U
 Mpmos@1 vdd net@10 net@0 vdd P L=0.022U W=0.022U
 .ENDS ESE370__RAM_Cell
 
+*** SUBCIRCUIT ESE370__4buffers FROM CELL 4buffers{sch}
+.SUBCKT ESE370__4buffers A B
+** GLOBAL gnd
+** GLOBAL vdd
+Xbuffer@0 A net@0 ESE370__buffer
+Xbuffer@1 net@0 net@1 ESE370__buffer
+Xbuffer@2 net@1 net@2 ESE370__buffer
+Xbuffer@3 net@2 B ESE370__buffer
+.ENDS ESE370__4buffers
+
 *** SUBCIRCUIT ESE370__nand2 FROM CELL nand2{sch}
 .SUBCKT ESE370__nand2 A B O
 ** GLOBAL gnd
@@ -134,14 +144,15 @@ Mnmos@20 net@149 net@281 net@70 gnd N L=0.022U W=0.022U
 Mnmos@21 net@153 Addr[0] net@81 gnd N L=0.022U W=0.022U
 Mnmos@22 net@161 net@281 net@85 gnd N L=0.022U W=0.022U
 Mnmos@23 net@94 Addr[0] net@341 gnd N L=0.022U W=0.022U
-Mpmos@8 vdd _PC net@125 vdd P L=0.022U W=0.044U
-Mpmos@9 vdd _PC net@130 vdd P L=0.022U W=0.044U
-Mpmos@10 vdd _PC net@139 vdd P L=0.022U W=0.044U
-Mpmos@11 vdd _PC net@145 vdd P L=0.022U W=0.044U
-Mpmos@12 vdd _PC net@149 vdd P L=0.022U W=0.044U
-Mpmos@13 vdd _PC net@153 vdd P L=0.022U W=0.044U
-Mpmos@14 vdd _PC net@161 vdd P L=0.022U W=0.044U
-Mpmos@15 vdd _PC net@94 vdd P L=0.022U W=0.044U
+Mpmos@8 vdd net@210 net@125 vdd P L=0.022U W=0.044U
+Mpmos@9 vdd net@210 net@130 vdd P L=0.022U W=0.044U
+Mpmos@10 vdd net@210 net@139 vdd P L=0.022U W=0.044U
+Mpmos@11 vdd net@210 net@145 vdd P L=0.022U W=0.044U
+Mpmos@12 vdd net@210 net@149 vdd P L=0.022U W=0.044U
+Mpmos@13 vdd net@210 net@153 vdd P L=0.022U W=0.044U
+Mpmos@14 vdd net@210 net@161 vdd P L=0.022U W=0.044U
+Mpmos@15 vdd net@210 net@94 vdd P L=0.022U W=0.044U
+X_4buffers@0 _PC net@210 ESE370__4buffers
 Xand2@0 Addr[1] Addr[2] net@97 ESE370__and2
 Xand2@1 net@10 Addr[2] net@51 ESE370__and2
 Xand2@2 Addr[1] net@9 net@72 ESE370__and2
@@ -248,16 +259,6 @@ XbitLineC@7 net@140 net@147 pcafter ESE370__bitLineConditioning
 XbitLineC@8 net@154 net@161 pcafter ESE370__bitLineConditioning
 Xtristate@1 WR/_R PC pcafter ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__SRAM
-
-*** SUBCIRCUIT ESE370__4buffers FROM CELL 4buffers{sch}
-.SUBCKT ESE370__4buffers A B
-** GLOBAL gnd
-** GLOBAL vdd
-Xbuffer@0 A net@0 ESE370__buffer
-Xbuffer@1 net@0 net@1 ESE370__buffer
-Xbuffer@2 net@1 net@2 ESE370__buffer
-Xbuffer@3 net@2 B ESE370__buffer
-.ENDS ESE370__4buffers
 
 *** SUBCIRCUIT ESE370__AddressSelector FROM CELL AddressSelector{sch}
 .SUBCKT ESE370__AddressSelector Addr0 Addr1 Addr2 Addr3 Raddr0 Raddr1 Raddr2 Raddr3 Wr/_RCtrl Wraddr0 Wraddr1 Wraddr2 Wraddr3
@@ -452,7 +453,7 @@ Mnmos@2 net@38 pc gnd gnd N L=0.044U W=0.044U
 Mnmos@3 net@1 pc gnd gnd N L=0.044U W=0.044U
 X_4bitReg@0 clk net@1 net@38 net@3 net@6 Addr[3] Addr[2] Addr[1] Addr[0] ESE370__4bitReg
 XPlusOne@0 Addr[0] Addr[1] Addr[2] Addr[3] net@18 net@20 net@24 net@25 ESE370__PlusOne
-VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC 0V AC 0V 0
+VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC '0V' AC '0V' 0
 Xtri-stat@0 En/Deq net@20 net@3 ESE370__tri-state-buffer
 Xtri-stat@1 En/Deq net@18 net@6 ESE370__tri-state-buffer
 Xtri-stat@2 En/Deq net@24 net@38 ESE370__tri-state-buffer
@@ -468,19 +469,20 @@ Xtristate@3 En/Deq Addr[0] net@6 ESE370__tristate-buffer-enable-inverted
 ** GLOBAL gnd
 ** GLOBAL vdd
 Mnmos@0 Last__write net@208 gnd gnd N L=0.044U W=0.044U
-X_4buffers@1 WRCtrl net@305 ESE370__4buffers
-XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 net@305 wraddr0 wraddr1 wraddr2 wraddr3 ESE370__AddressSelector
+X_4buffers@2 net@287 net@309 ESE370__4buffers
+XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 net@309 wraddr0 wraddr1 wraddr2 wraddr3 ESE370__AddressSelector
 XPositive@0 clk this__write Last__write ESE370__PositiveRegister
 XReadaddr@0 ptrflag wraddr0 wraddr1 wraddr2 wraddr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 ESE370__Readaddr__Wraddr
 XTristate@0 net@21 Last__write this__write ESE370__TristateBufferSized
-VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC 0V AC 0V 0
+VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC '0V' AC '0V' 0
 XaddressL@0 wraddr3 wraddr2 wraddr1 wraddr0 clk willenq ESE370__addressLoop
 XaddressL@1 rdaddr3 rdaddr2 rdaddr1 rdaddr0 clk willdq ESE370__addressLoop
 Xand2@0 ptrflag net@43 Empty_next ESE370__and2
 Xand2@1 ptrflag Last__write Full_next ESE370__and2
 Xand2@2 ENQ andin willenq ESE370__and2
 Xand2@3 DQ net@110 willdq ESE370__and2
-Xand2@4 clk willenq WRCtrl ESE370__and2
+Xand2@4 clk willenq net@287 ESE370__and2
+Xbuffer@0 net@287 WRCtrl ESE370__buffer
 Xinverter@1 Empty_next net@110 ESE370__inverter
 Xinverter@2 Full_next andin ESE370__inverter
 Xinverter@3 Last__write net@43 ESE370__inverter
@@ -529,7 +531,7 @@ XSRAM@0 addr3 addr2 addr1 addr0 bl0 d3_ d2_ d1_ d0_ d3 d2 d1 d0 pc pcafter wl0 w
 VVPWL@0 enqIn gnd pwl (0 0 2ns 0V 2ns 0.8V 6ns 0.8V 6ns 0V 8ns 0V) DC 0V AC 0V 0
 VVPWL@1 DQIn gnd pwl (0 0 6ns 0V 6ns 0.8V 8ns 0.8V 8ns 0V 10ns 0V) DC 0V AC 0V 0
 VVPulse@0 clk gnd pulse (0 0.8V 0ns 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
-VVPulse@1 pc gnd pulse (0.8V 0V 0ns 10ps 10ps 110ps 2ns) DC 0V AC 0V 0
+VVPulse@1 pc gnd pulse (0.8V 0V -500ps 10ps 10ps 110ps 1ns) DC 0V AC 0V 0
 VVPulse@2 in gnd pulse (0.8 0V 0ns 10ps 10ps 3.9ns 1s) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
 XcontrolL@0 addr0 addr1 addr2 addr3 clk dq empty enq full rw ESE370__controlLogic

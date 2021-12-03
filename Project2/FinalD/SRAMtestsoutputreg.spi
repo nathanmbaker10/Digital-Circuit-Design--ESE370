@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAMtests{sch} from library ESE370
 *** Created on Thu Dec 02, 2021 20:42:33
-*** Last revised on Fri Dec 03, 2021 00:37:49
-*** Written on Fri Dec 03, 2021 00:38:32 by Electric VLSI Design System, version 9.07
+*** Last revised on Fri Dec 03, 2021 02:12:03
+*** Written on Fri Dec 03, 2021 02:12:19 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -452,7 +452,7 @@ Mnmos@2 net@38 pc gnd gnd N L=0.044U W=0.044U
 Mnmos@3 net@1 pc gnd gnd N L=0.044U W=0.044U
 X_4bitReg@0 clk net@1 net@38 net@3 net@6 Addr[3] Addr[2] Addr[1] Addr[0] ESE370__4bitReg
 XPlusOne@0 Addr[0] Addr[1] Addr[2] Addr[3] net@18 net@20 net@24 net@25 ESE370__PlusOne
-VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC 0V AC 0V 0
+VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC '0V' AC '0V' 0
 Xtri-stat@0 En/Deq net@20 net@3 ESE370__tri-state-buffer
 Xtri-stat@1 En/Deq net@18 net@6 ESE370__tri-state-buffer
 Xtri-stat@2 En/Deq net@24 net@38 ESE370__tri-state-buffer
@@ -468,19 +468,20 @@ Xtristate@3 En/Deq Addr[0] net@6 ESE370__tristate-buffer-enable-inverted
 ** GLOBAL gnd
 ** GLOBAL vdd
 Mnmos@0 Last__write net@208 gnd gnd N L=0.044U W=0.044U
-X_4buffers@1 WRCtrl net@305 ESE370__4buffers
-XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 net@305 wraddr0 wraddr1 wraddr2 wraddr3 ESE370__AddressSelector
+X_4buffers@2 net@287 net@309 ESE370__4buffers
+XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 net@309 wraddr0 wraddr1 wraddr2 wraddr3 ESE370__AddressSelector
 XPositive@0 clk this__write Last__write ESE370__PositiveRegister
 XReadaddr@0 ptrflag wraddr0 wraddr1 wraddr2 wraddr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 ESE370__Readaddr__Wraddr
 XTristate@0 net@21 Last__write this__write ESE370__TristateBufferSized
-VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC 0V AC 0V 0
+VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC '0V' AC '0V' 0
 XaddressL@0 wraddr3 wraddr2 wraddr1 wraddr0 clk willenq ESE370__addressLoop
 XaddressL@1 rdaddr3 rdaddr2 rdaddr1 rdaddr0 clk willdq ESE370__addressLoop
 Xand2@0 ptrflag net@43 Empty_next ESE370__and2
 Xand2@1 ptrflag Last__write Full_next ESE370__and2
 Xand2@2 ENQ andin willenq ESE370__and2
 Xand2@3 DQ net@110 willdq ESE370__and2
-Xand2@4 clk willenq WRCtrl ESE370__and2
+Xand2@4 clk willenq net@287 ESE370__and2
+Xbuffer@0 net@287 WRCtrl ESE370__buffer
 Xinverter@1 Empty_next net@110 ESE370__inverter
 Xinverter@2 Full_next andin ESE370__inverter
 Xinverter@3 Last__write net@43 ESE370__inverter
@@ -522,6 +523,15 @@ XPositive@0 clk enqueue EQC ESE370__PositiveRegister
 XPositive@1 clk dequeue DQC ESE370__PositiveRegister
 .ENDS ESE370__inputRegister
 
+*** SUBCIRCUIT ESE370__outputRegister FROM CELL outputRegister{sch}
+.SUBCKT ESE370__outputRegister clk empty emptyIn full fullIn out0 out1 out2 out3 outC0 outC1 outC2 outC3
+** GLOBAL gnd
+** GLOBAL vdd
+X_4bitReg@0 clk outC3 outC2 outC1 outC0 out3 out2 out1 out0 ESE370__4bitReg
+XPositive@2 clk emptyIn empty ESE370__PositiveRegister
+XPositive@3 clk fullIn full ESE370__PositiveRegister
+.ENDS ESE370__outputRegister
+
 .global gnd vdd
 
 *** TOP LEVEL CELL: SRAMtests{sch}
@@ -529,10 +539,11 @@ XSRAM@0 addr3 addr2 addr1 addr0 bl0 d3_ d2_ d1_ d0_ d3 d2 d1 d0 pc pcafter wl0 w
 VVPWL@0 enqIn gnd pwl (0 0 2ns 0V 2ns 0.8V 6ns 0.8V 6ns 0V 8ns 0V) DC 0V AC 0V 0
 VVPWL@1 DQIn gnd pwl (0 0 6ns 0V 6ns 0.8V 8ns 0.8V 8ns 0V 10ns 0V) DC 0V AC 0V 0
 VVPulse@0 clk gnd pulse (0 0.8V 0ns 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
-VVPulse@1 pc gnd pulse (0.8V 0V 0ns 10ps 10ps 110ps 2ns) DC 0V AC 0V 0
+VVPulse@1 pc gnd pulse (0.8V 0V 0ps 10ps 10ps 110ps 1ns) DC 0V AC 0V 0
 VVPulse@2 in gnd pulse (0.8 0V 0ns 10ps 10ps 3.9ns 1s) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
 XcontrolL@0 addr0 addr1 addr2 addr3 clk dq empty enq full rw ESE370__controlLogic
 XdataDriv@0 in0 in1 in2 in3 d0 d0_ d1 d1_ d2 d2_ d3 d3_ rw ESE370__dataDriver
 XinputReg@0 clk DQIn dq enqIn enq in in0 in in1 in in2 in in3 ESE370__inputRegister
+XoutputRe@0 outputRe@0_clk outputRe@0_empty empty outputRe@0_full full outputRe@0_out0 outputRe@0_out1 outputRe@0_out2 outputRe@0_out3 outputRe@0_outC0 outputRe@0_outC1 outputRe@0_outC2 outputRe@0_outC3 ESE370__outputRegister
 .END
