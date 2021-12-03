@@ -1,7 +1,7 @@
 *** SPICE deck for cell 4bitregtest{sch} from library ESE370
 *** Created on Wed Dec 01, 2021 17:45:33
-*** Last revised on Wed Dec 01, 2021 17:48:46
-*** Written on Wed Dec 01, 2021 17:48:52 by Electric VLSI Design System, version 9.07
+*** Last revised on Thu Dec 02, 2021 22:53:41
+*** Written on Thu Dec 02, 2021 22:53:49 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -85,7 +85,7 @@ XPositive@4 CLK In[0] Out[0] ESE370__PositiveRegister
 .global gnd vdd
 
 *** TOP LEVEL CELL: 4bitregtest{sch}
-X_4bitReg@0 clk in3 in2 in1 in0 _4bitReg@0_Out[3] _4bitReg@0_Out[2] _4bitReg@0_Out[1] _4bitReg@0_Out[0] ESE370__4bitReg
+X_4bitReg@0 clk in3 in2 in1 in0 out3 out2 out1 out0 ESE370__4bitReg
 VVPulse@0 clk gnd pulse (0 0.8V 30ps 10ps 10ps 250ps 500ps) DC 0V AC 0V 0
 VVPulse@4 in3 gnd pulse (0.8V 0V 0ns 10ps 10ps 4000ps 8000ps) DC 0V AC 0V 0
 VVPulse@1 in2 gnd pulse (0.8V 0V 0ns 10ps 10ps 2000ps 4000ps) DC 0V AC 0V 0

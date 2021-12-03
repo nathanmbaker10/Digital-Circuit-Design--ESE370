@@ -249,8 +249,8 @@ XRAM_Cell@66 net@140 net@147 wl7 ESE370__RAM_Cell
 XRAM_Cell@67 net@154 net@161 wl7 ESE370__RAM_Cell
 XRowDecod@4 gnd gnd gnd wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 pcbefore ESE370__RowDecoder
 VVPWL@0 net@302 gnd pwl (0ns 0.8 1ns 0.8 1ns 0 2.667ns 0 2.667ns 0.8) DC 0V AC 0V 0
-VVPulse@0 pcbefore gnd pulse (0.8V 0V 20ps 10ps 10ps 110ps 333ps) DC 0V AC 0V 0
-VVPulse@1 RW gnd pulse (0V 0.8V 0ps 10ps 10ps 333ps 1ns) DC 0V AC 0V 0
+VVPulse@0 pcbefore gnd pulse (0.8V 0V 20ps 10ps 10ps 110ps 1ns) DC 0V AC 0V 0
+VVPulse@1 RW gnd pulse (0V 0.8V 0ps 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
 XbitLineC@0 bl bl_ pcafter ESE370__bitLineConditioning
 XbitLineC@1 bl2 bl_2 pcafter ESE370__bitLineConditioning
