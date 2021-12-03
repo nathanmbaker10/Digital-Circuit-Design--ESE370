@@ -1,7 +1,7 @@
-*** SPICE deck for cell Looptest{sch} from library ESE370
-*** Created on Wed Dec 01, 2021 17:04:15
-*** Last revised on Thu Dec 02, 2021 14:05:28
-*** Written on Thu Dec 02, 2021 14:11:56 by Electric VLSI Design System, version 9.07
+*** SPICE deck for cell controlLogic{sch} from library ESE370
+*** Created on Wed Dec 01, 2021 22:51:44
+*** Last revised on Thu Dec 02, 2021 15:03:07
+*** Written on Thu Dec 02, 2021 15:03:35 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -251,33 +251,24 @@ Xtristate@2 En/Deq Addr[1] net@3 ESE370__tristate-buffer-enable-inverted
 Xtristate@3 En/Deq Addr[0] net@6 ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__addressLoop
 
-*** SUBCIRCUIT ESE370__controlLogic FROM CELL controlLogic{sch}
-.SUBCKT ESE370__controlLogic clk DQ Empty_next Empty_prev ENQ Full_next Full_prev R/_WrCtrl
-** GLOBAL gnd
-** GLOBAL vdd
-XPositive@0 clk net@32 Last__Read ESE370__PositiveRegister
+.global gnd vdd
+
+*** TOP LEVEL CELL: controlLogic{sch}
+XPositive@0 gnd net@32 Last__Read ESE370__PositiveRegister
 XReadaddr@0 net@42 Readaddr[0] Readaddr[1] Readaddr[2] Readaddr[3] WRaddr[0] WRaddr[1] WRaddr[2] WRaddr[3] ESE370__Readaddr__Wraddr
 XTristate@0 net@21 Last__Read net@32 ESE370__TristateBufferSized
-XaddressL@0 Readaddr[3] Readaddr[2] Readaddr[1] Readaddr[0] clk net@94 ESE370__addressLoop
-XaddressL@1 WRaddr[3] WRaddr[2] WRaddr[1] WRaddr[0] clk net@22 ESE370__addressLoop
+VVPWL@0 DQ gnd pwl (0 0 1 1) DC 0V AC 0V 0
+VVPulse@0 gnd gnd pulse (0 1V 0ns 200ps 200ps 3ns 6ns) DC 0V AC 0V 0
+XaddressL@0 Readaddr[3] Readaddr[2] Readaddr[1] Readaddr[0] gnd net@94 ESE370__addressLoop
+XaddressL@1 WRaddr[3] WRaddr[2] WRaddr[1] WRaddr[0] gnd net@22 ESE370__addressLoop
 Xand2@0 net@42 Last__Read Empty_next ESE370__and2
 Xand2@1 net@42 net@47 Full_next ESE370__and2
 Xand2@2 ENQ net@93 net@94 ESE370__and2
 Xand2@3 DQ net@110 net@22 ESE370__and2
-Xand2@4 clk net@94 R/_WrCtrl ESE370__and2
+Xand2@4 gnd net@94 R/_WrCtrl ESE370__and2
 Xinverter@0 Last__Read net@47 ESE370__inverter
-Xinverter@1 Empty_prev net@110 ESE370__inverter
-Xinverter@2 Full_prev net@93 ESE370__inverter
+Xinverter@1 vdd net@110 ESE370__inverter
+Xinverter@2 gnd net@93 ESE370__inverter
 Xnor2@0 net@94 net@22 net@21 ESE370__nor2
 Xtristate@2 net@21 net@22 net@32 ESE370__tristate-buffer-enable-inverted
-.ENDS ESE370__controlLogic
-
-.global gnd vdd
-
-*** TOP LEVEL CELL: Looptest{sch}
-VVPWL@0 equeue gnd pwl (0ns 0.8V 4ns 0.8V) DC 0V AC 0V 0
-VVPWL@1 dq gnd pwl (0ns 0 4ns 0V) DC 0V AC 0V 0
-VVPulse@0 clk gnd pulse (0 0.8V 0ps 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
-VV_Generi@0 vdd gnd DC 0.8 AC 0
-XcontrolL@0 clk dq emptynext vdd equeue fullnext gnd w/r ESE370__controlLogic
 .END

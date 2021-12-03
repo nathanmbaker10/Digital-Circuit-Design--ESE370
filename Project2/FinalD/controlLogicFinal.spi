@@ -1,7 +1,7 @@
-*** SPICE deck for cell Looptest{sch} from library ESE370
-*** Created on Wed Dec 01, 2021 17:04:15
-*** Last revised on Thu Dec 02, 2021 14:05:28
-*** Written on Thu Dec 02, 2021 14:11:56 by Electric VLSI Design System, version 9.07
+*** SPICE deck for cell controlLogic{sch} from library ESE370
+*** Created on Wed Dec 01, 2021 22:51:44
+*** Last revised on Thu Dec 02, 2021 19:34:46
+*** Written on Thu Dec 02, 2021 19:35:19 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -14,6 +14,40 @@
 Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
 Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
 .ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__tri-state-buffer FROM CELL tri-state-buffer{sch}
+.SUBCKT ESE370__tri-state-buffer En In out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out En net@24 gnd N L=0.022U W=0.022U
+Mnmos@1 net@24 net@3 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 net@1 net@14 out vdd P L=0.022U W=0.022U
+Mpmos@1 vdd net@3 net@1 vdd P L=0.022U W=0.022U
+Xinverter@1 In net@3 ESE370__inverter
+Xinverter@2 En net@14 ESE370__inverter
+.ENDS ESE370__tri-state-buffer
+
+*** SUBCIRCUIT ESE370__tristate-buffer-enable-inverted FROM CELL tristate-buffer-enable-inverted{sch}
+.SUBCKT ESE370__tristate-buffer-enable-inverted en in out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 en net@2 ESE370__inverter
+Xtri-stat@0 net@2 in out ESE370__tri-state-buffer
+.ENDS ESE370__tristate-buffer-enable-inverted
+
+*** SUBCIRCUIT ESE370__AddressSelector FROM CELL AddressSelector{sch}
+.SUBCKT ESE370__AddressSelector Addr0 Addr1 Addr2 Addr3 Raddr0 Raddr1 Raddr2 Raddr3 Wr/_RCtrl Wraddr0 Wraddr1 Wraddr2 Wraddr3
+** GLOBAL gnd
+** GLOBAL vdd
+Xtri-stat@0 Wr/_RCtrl Wraddr0 Addr0 ESE370__tri-state-buffer
+Xtri-stat@1 Wr/_RCtrl Wraddr1 Addr1 ESE370__tri-state-buffer
+Xtri-stat@2 Wr/_RCtrl Wraddr2 Addr2 ESE370__tri-state-buffer
+Xtri-stat@3 Wr/_RCtrl Wraddr3 Addr3 ESE370__tri-state-buffer
+Xtristate@0 Wr/_RCtrl Raddr0 Addr0 ESE370__tristate-buffer-enable-inverted
+Xtristate@1 Wr/_RCtrl Raddr1 Addr1 ESE370__tristate-buffer-enable-inverted
+Xtristate@2 Wr/_RCtrl Raddr2 Addr2 ESE370__tristate-buffer-enable-inverted
+Xtristate@3 Wr/_RCtrl Raddr3 Addr3 ESE370__tristate-buffer-enable-inverted
+.ENDS ESE370__AddressSelector
 
 *** SUBCIRCUIT ESE370__buffer FROM CELL buffer{sch}
 .SUBCKT ESE370__buffer a out
@@ -210,26 +244,6 @@ XStandard@2 in2 gnd net@6 net@9 out2 ESE370__Standardadder
 XStandard@3 in3 gnd net@9 Standard@3_Cout out3 ESE370__Standardadder
 .ENDS ESE370__PlusOne
 
-*** SUBCIRCUIT ESE370__tri-state-buffer FROM CELL tri-state-buffer{sch}
-.SUBCKT ESE370__tri-state-buffer En In out
-** GLOBAL gnd
-** GLOBAL vdd
-Mnmos@0 out En net@24 gnd N L=0.022U W=0.022U
-Mnmos@1 net@24 net@3 gnd gnd N L=0.022U W=0.022U
-Mpmos@0 net@1 net@14 out vdd P L=0.022U W=0.022U
-Mpmos@1 vdd net@3 net@1 vdd P L=0.022U W=0.022U
-Xinverter@1 In net@3 ESE370__inverter
-Xinverter@2 En net@14 ESE370__inverter
-.ENDS ESE370__tri-state-buffer
-
-*** SUBCIRCUIT ESE370__tristate-buffer-enable-inverted FROM CELL tristate-buffer-enable-inverted{sch}
-.SUBCKT ESE370__tristate-buffer-enable-inverted en in out
-** GLOBAL gnd
-** GLOBAL vdd
-Xinverter@0 en net@2 ESE370__inverter
-Xtri-stat@0 net@2 in out ESE370__tri-state-buffer
-.ENDS ESE370__tristate-buffer-enable-inverted
-
 *** SUBCIRCUIT ESE370__addressLoop FROM CELL addressLoop{sch}
 .SUBCKT ESE370__addressLoop Addr[3] Addr[2] Addr[1] Addr[0] clk En/Deq
 ** GLOBAL gnd
@@ -240,7 +254,7 @@ Mnmos@2 net@38 pc gnd gnd N L=0.044U W=0.044U
 Mnmos@3 net@1 pc gnd gnd N L=0.044U W=0.044U
 X_4bitReg@0 clk net@1 net@38 net@3 net@6 Addr[3] Addr[2] Addr[1] Addr[0] ESE370__4bitReg
 XPlusOne@0 Addr[0] Addr[1] Addr[2] Addr[3] net@18 net@20 net@24 net@25 ESE370__PlusOne
-VVPulse@0 pc gnd pulse (0 1V 0ns 200ps 200ps 3ns 6ns) DC 0V AC 0V 0
+VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC 0V AC 0V 0
 Xtri-stat@0 En/Deq net@20 net@3 ESE370__tri-state-buffer
 Xtri-stat@1 En/Deq net@18 net@6 ESE370__tri-state-buffer
 Xtri-stat@2 En/Deq net@24 net@38 ESE370__tri-state-buffer
@@ -251,33 +265,29 @@ Xtristate@2 En/Deq Addr[1] net@3 ESE370__tristate-buffer-enable-inverted
 Xtristate@3 En/Deq Addr[0] net@6 ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__addressLoop
 
-*** SUBCIRCUIT ESE370__controlLogic FROM CELL controlLogic{sch}
-.SUBCKT ESE370__controlLogic clk DQ Empty_next Empty_prev ENQ Full_next Full_prev R/_WrCtrl
-** GLOBAL gnd
-** GLOBAL vdd
-XPositive@0 clk net@32 Last__Read ESE370__PositiveRegister
-XReadaddr@0 net@42 Readaddr[0] Readaddr[1] Readaddr[2] Readaddr[3] WRaddr[0] WRaddr[1] WRaddr[2] WRaddr[3] ESE370__Readaddr__Wraddr
-XTristate@0 net@21 Last__Read net@32 ESE370__TristateBufferSized
-XaddressL@0 Readaddr[3] Readaddr[2] Readaddr[1] Readaddr[0] clk net@94 ESE370__addressLoop
-XaddressL@1 WRaddr[3] WRaddr[2] WRaddr[1] WRaddr[0] clk net@22 ESE370__addressLoop
-Xand2@0 net@42 Last__Read Empty_next ESE370__and2
-Xand2@1 net@42 net@47 Full_next ESE370__and2
-Xand2@2 ENQ net@93 net@94 ESE370__and2
-Xand2@3 DQ net@110 net@22 ESE370__and2
-Xand2@4 clk net@94 R/_WrCtrl ESE370__and2
-Xinverter@0 Last__Read net@47 ESE370__inverter
-Xinverter@1 Empty_prev net@110 ESE370__inverter
-Xinverter@2 Full_prev net@93 ESE370__inverter
-Xnor2@0 net@94 net@22 net@21 ESE370__nor2
-Xtristate@2 net@21 net@22 net@32 ESE370__tristate-buffer-enable-inverted
-.ENDS ESE370__controlLogic
-
 .global gnd vdd
 
-*** TOP LEVEL CELL: Looptest{sch}
-VVPWL@0 equeue gnd pwl (0ns 0.8V 4ns 0.8V) DC 0V AC 0V 0
-VVPWL@1 dq gnd pwl (0ns 0 4ns 0V) DC 0V AC 0V 0
-VVPulse@0 clk gnd pulse (0 0.8V 0ps 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
+*** TOP LEVEL CELL: controlLogic{sch}
+Mnmos@0 Last__write net@208 gnd gnd N L=0.044U W=0.044U
+XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 WRCtrl wraddr0 wraddr1 wraddr2 wraddr3 ESE370__AddressSelector
+XPositive@0 clk this__write Last__write ESE370__PositiveRegister
+XReadaddr@0 ptrflag wraddr0 wraddr1 wraddr2 wraddr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 ESE370__Readaddr__Wraddr
+XTristate@0 net@21 Last__write this__write ESE370__TristateBufferSized
+VVPWL@0 DQ gnd pwl (0ns 0 4ns 0V) DC 0V AC 0V 0
+VVPWL@1 ENQ gnd pwl (0ns 0 2ns 0 2ns 0.8V 4ns 0.8V) DC 0V AC 0V 0
+VVPulse@1 clk gnd pulse (0 0.8V 1ns 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
+VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
-XcontrolL@0 clk dq emptynext vdd equeue fullnext gnd w/r ESE370__controlLogic
+XaddressL@0 wraddr3 wraddr2 wraddr1 wraddr0 clk willenq ESE370__addressLoop
+XaddressL@1 rdaddr3 rdaddr2 rdaddr1 rdaddr0 clk willdq ESE370__addressLoop
+Xand2@0 ptrflag net@43 Empty_next ESE370__and2
+Xand2@1 ptrflag Last__write Full_next ESE370__and2
+Xand2@2 ENQ andin willenq ESE370__and2
+Xand2@3 DQ net@110 willdq ESE370__and2
+Xand2@4 clk willenq WRCtrl ESE370__and2
+Xinverter@1 Empty_next net@110 ESE370__inverter
+Xinverter@2 Full_next andin ESE370__inverter
+Xinverter@3 Last__write net@43 ESE370__inverter
+Xnor2@0 willenq willdq net@21 ESE370__nor2
+Xtristate@2 net@21 willenq this__write ESE370__tristate-buffer-enable-inverted
 .END
