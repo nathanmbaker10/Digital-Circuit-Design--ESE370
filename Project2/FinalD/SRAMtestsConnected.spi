@@ -5,7 +5,7 @@
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
-.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+.include C:\Users\shane\Downloads\22nm_HP.pm
 
 *** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
 .SUBCKT ESE370__inverter a not_a_
