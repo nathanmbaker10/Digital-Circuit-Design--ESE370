@@ -1,499 +1,502 @@
 Electric Version 9.07
 --------------- 0 --------------
-  Wed Dec 01 19:18:28 EST 2021
+  Sat Dec 04 15:32:16 EST 2021
 Menu Activated: File | Open Library...
 --------------- 1 --------------
-  Wed Dec 01 19:19:19 EST 2021
-Menu Activated: Edit | Erase | Selected
+  Sat Dec 04 15:43:57 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'fa_basic{ic}[fa_basic@0].a'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@144']
 --------------- 2 --------------
-  Wed Dec 01 19:19:19 EST 2021
-ProcessKeyBinding 400 when=1638404359267 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:11 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@144']
 --------------- 3 --------------
-  Wed Dec 01 19:19:21 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'fa_basic{ic}[fa_basic@1].c_out'
+  Sat Dec 04 15:46:11 EST 2021
+ProcessKeyBinding 400 when=1638650771188 modifiers=0 code=0 char=8 false false
 --------------- 4 --------------
-  Wed Dec 01 19:19:21 EST 2021
-ProcessKeyBinding 400 when=1638404361372 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:26 EST 2021
+ProcessKeyBinding 401 when=1638650786603 modifiers=80 code=11 char=ffff false false
 --------------- 5 --------------
-  Wed Dec 01 19:19:22 EST 2021
-Menu Activated: Edit | Erase | Selected
+  Sat Dec 04 15:46:26 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'fa_basic{ic}[fa_basic@2].a'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@0']
 --------------- 6 --------------
-  Wed Dec 01 19:19:22 EST 2021
-ProcessKeyBinding 400 when=1638404362818 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:26 EST 2021
+ProcessKeyBinding 400 when=1638650786747 modifiers=80 code=0 char=a false false
 --------------- 7 --------------
-  Wed Dec 01 19:19:23 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'fa_basic{ic}[fa_basic@3].b'
+  Sat Dec 04 15:46:26 EST 2021
+ProcessKeyBinding 402 when=1638650786956 modifiers=0 code=11 char=ffff false false
 --------------- 8 --------------
-  Wed Dec 01 19:19:23 EST 2021
-ProcessKeyBinding 400 when=1638404363836 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:29 EST 2021
+ProcessKeyBinding 401 when=1638650789746 modifiers=80 code=11 char=ffff false false
 --------------- 9 --------------
-  Wed Dec 01 19:19:59 EST 2021
-Menu Activated: Edit | Erase | Selected
+  Sat Dec 04 15:46:30 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@43']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@1']
 --------------- 10 --------------
-  Wed Dec 01 19:19:59 EST 2021
-ProcessKeyBinding 400 when=1638404399827 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:30 EST 2021
+ProcessKeyBinding 400 when=1638650790434 modifiers=80 code=0 char=a false false
 --------------- 11 --------------
-  Wed Dec 01 19:20:01 EST 2021
-Menu Activated: Shortcuts | Wire Up One Level
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'Wire_Pin[pin@15].wire'
+  Sat Dec 04 15:46:30 EST 2021
+ProcessKeyBinding 402 when=1638650790609 modifiers=0 code=11 char=ffff false false
 --------------- 12 --------------
-  Wed Dec 01 19:20:01 EST 2021
-ProcessKeyBinding 400 when=1638404401024 modifiers=0 code=0 char=3d(=) false false
+  Sat Dec 04 15:46:41 EST 2021
+ProcessKeyBinding 401 when=1638650801243 modifiers=80 code=11 char=ffff false false
 --------------- 13 --------------
-  Wed Dec 01 19:20:01 EST 2021
-Menu Activated: Edit | Erase | Selected
+  Sat Dec 04 15:46:41 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'Wire_Pin[pin@15].wire'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@2']
 --------------- 14 --------------
-  Wed Dec 01 19:20:01 EST 2021
-ProcessKeyBinding 400 when=1638404401486 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:41 EST 2021
+ProcessKeyBinding 400 when=1638650801531 modifiers=80 code=0 char=a false false
 --------------- 15 --------------
-  Wed Dec 01 19:20:21 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    Export 'out[3]'
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Wire_Pin['pin@9']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Wire_Pin['pin@25']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Wire_Pin['pin@11']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Off-Page['conn@5']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Ground['gnd@0']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Wire_Pin['pin@22']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Off-Page['conn@7']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Wire_Pin['pin@8']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Off-Page['conn@6']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': Wire_Pin['pin@3']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@28']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@32']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@27']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@48']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@50']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@34']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@36']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@59']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@55']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@25']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': wire['net@51']
+  Sat Dec 04 15:46:42 EST 2021
+ProcessKeyBinding 402 when=1638650802143 modifiers=0 code=11 char=ffff false false
 --------------- 16 --------------
-  Wed Dec 01 19:20:21 EST 2021
-ProcessKeyBinding 400 when=1638404421080 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 15:46:52 EST 2021
+ProcessKeyBinding 401 when=1638650812204 modifiers=80 code=11 char=ffff false false
 --------------- 17 --------------
-  Wed Dec 01 19:20:30 EST 2021
-ProcessKeyBinding 401 when=1638404430542 modifiers=80 code=11 char=ffff false false
+  Sat Dec 04 15:46:52 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@3']
 --------------- 18 --------------
-  Wed Dec 01 19:20:30 EST 2021
-Menu Activated: Edit | Undo
+  Sat Dec 04 15:46:52 EST 2021
+ProcessKeyBinding 400 when=1638650812326 modifiers=80 code=0 char=a false false
 --------------- 19 --------------
-  Wed Dec 01 19:20:30 EST 2021
-ProcessKeyBinding 400 when=1638404430542 modifiers=80 code=0 char=1a false false
+  Sat Dec 04 15:46:52 EST 2021
+ProcessKeyBinding 402 when=1638650812686 modifiers=0 code=11 char=ffff false false
 --------------- 20 --------------
-  Wed Dec 01 19:20:30 EST 2021
-ProcessKeyBinding 402 when=1638404430692 modifiers=0 code=11 char=ffff false false
+  Sat Dec 04 15:47:04 EST 2021
+ProcessKeyBinding 401 when=1638650824684 modifiers=80 code=11 char=ffff false false
 --------------- 21 --------------
-  Wed Dec 01 19:20:31 EST 2021
-ProcessKeyBinding 401 when=1638404431074 modifiers=80 code=11 char=ffff false false
+  Sat Dec 04 15:47:04 EST 2021
+Menu Activated: Edit | Copy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@3']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@146']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@147']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@148']
 --------------- 22 --------------
-  Wed Dec 01 19:20:31 EST 2021
-Menu Activated: Edit | Undo
+  Sat Dec 04 15:47:04 EST 2021
+ProcessKeyBinding 400 when=1638650824684 modifiers=80 code=0 char=3 false false
 --------------- 23 --------------
-  Wed Dec 01 19:20:31 EST 2021
-ProcessKeyBinding 400 when=1638404431074 modifiers=80 code=0 char=1a false false
+  Sat Dec 04 15:47:04 EST 2021
+ProcessKeyBinding 402 when=1638650824754 modifiers=0 code=11 char=ffff false false
 --------------- 24 --------------
-  Wed Dec 01 19:20:31 EST 2021
-ProcessKeyBinding 402 when=1638404431174 modifiers=0 code=11 char=ffff false false
+  Sat Dec 04 15:47:06 EST 2021
+ProcessKeyBinding 401 when=1638650826101 modifiers=80 code=11 char=ffff false false
 --------------- 25 --------------
-  Wed Dec 01 19:20:31 EST 2021
-ProcessKeyBinding 401 when=1638404431584 modifiers=80 code=11 char=ffff false false
+  Sat Dec 04 15:47:06 EST 2021
+Menu Activated: Edit | Paste
 --------------- 26 --------------
-  Wed Dec 01 19:20:31 EST 2021
-Menu Activated: Edit | Undo
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'Ground[gnd@1].gnd'
+  Sat Dec 04 15:47:06 EST 2021
+ProcessKeyBinding 400 when=1638650826101 modifiers=80 code=0 char=16 false false
 --------------- 27 --------------
-  Wed Dec 01 19:20:31 EST 2021
-ProcessKeyBinding 400 when=1638404431584 modifiers=80 code=0 char=1a false false
+  Sat Dec 04 15:47:06 EST 2021
+ProcessKeyBinding 402 when=1638650826169 modifiers=0 code=11 char=ffff false false
 --------------- 28 --------------
-  Wed Dec 01 19:20:31 EST 2021
-ProcessKeyBinding 402 when=1638404431716 modifiers=0 code=11 char=ffff false false
+  Sat Dec 04 15:47:27 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 'Wire_Pin[pin@96].wire'
 --------------- 29 --------------
-  Wed Dec 01 19:20:32 EST 2021
-ProcessKeyBinding 401 when=1638404432042 modifiers=80 code=11 char=ffff false false
+  Sat Dec 04 15:47:27 EST 2021
+ProcessKeyBinding 400 when=1638650847327 modifiers=0 code=0 char=8 false false
 --------------- 30 --------------
-  Wed Dec 01 19:20:32 EST 2021
-Menu Activated: Edit | Undo
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'Ground[gnd@1].gnd'
+  Sat Dec 04 15:47:33 EST 2021
+ProcessKeyBinding 401 when=1638650853379 modifiers=80 code=11 char=ffff false false
 --------------- 31 --------------
-  Wed Dec 01 19:20:32 EST 2021
-ProcessKeyBinding 400 when=1638404432042 modifiers=80 code=0 char=1a false false
+  Sat Dec 04 15:47:33 EST 2021
+Menu Activated: Edit | Undo
 --------------- 32 --------------
-  Wed Dec 01 19:20:32 EST 2021
-ProcessKeyBinding 402 when=1638404432164 modifiers=0 code=11 char=ffff false false
+  Sat Dec 04 15:47:33 EST 2021
+ProcessKeyBinding 400 when=1638650853379 modifiers=80 code=0 char=1a false false
 --------------- 33 --------------
-  Wed Dec 01 19:20:32 EST 2021
-ProcessKeyBinding 401 when=1638404432518 modifiers=80 code=11 char=ffff false false
+  Sat Dec 04 15:47:33 EST 2021
+ProcessKeyBinding 402 when=1638650853436 modifiers=0 code=11 char=ffff false false
 --------------- 34 --------------
-  Wed Dec 01 19:20:32 EST 2021
-Menu Activated: Edit | Undo
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'Ground[gnd@1].gnd'
+  Sat Dec 04 15:47:33 EST 2021
+ProcessKeyBinding 401 when=1638650853830 modifiers=80 code=11 char=ffff false false
 --------------- 35 --------------
-  Wed Dec 01 19:20:32 EST 2021
-ProcessKeyBinding 400 when=1638404432518 modifiers=80 code=0 char=1a false false
+  Sat Dec 04 15:47:33 EST 2021
+Menu Activated: Edit | Undo
 --------------- 36 --------------
-  Wed Dec 01 19:20:32 EST 2021
-ProcessKeyBinding 402 when=1638404432624 modifiers=0 code=11 char=ffff false false
+  Sat Dec 04 15:47:33 EST 2021
+ProcessKeyBinding 400 when=1638650853830 modifiers=80 code=0 char=1a false false
 --------------- 37 --------------
-  Wed Dec 01 19:21:11 EST 2021
-Menu Activated: File | Open Library...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Plus1{sch}': 'Ground[gnd@1].gnd'
+  Sat Dec 04 15:47:33 EST 2021
+ProcessKeyBinding 402 when=1638650853901 modifiers=0 code=11 char=ffff false false
 --------------- 38 --------------
-  Wed Dec 01 19:22:28 EST 2021
-Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+  Sat Dec 04 15:47:34 EST 2021
+ProcessKeyBinding 401 when=1638650854291 modifiers=80 code=11 char=ffff false false
 --------------- 39 --------------
-  Wed Dec 01 19:23:56 EST 2021
-Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+  Sat Dec 04 15:47:34 EST 2021
+Menu Activated: Edit | Undo
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'plus1tester{sch}': 'PlusOne{ic}[PlusOne@0].in0'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': '4buffers{ic}[4buffers@7].B'
 --------------- 40 --------------
-  Wed Dec 01 19:29:59 EST 2021
-ProcessKeyBinding 401 when=1638404999018 modifiers=80 code=11 char=ffff false false
+  Sat Dec 04 15:47:34 EST 2021
+ProcessKeyBinding 400 when=1638650854291 modifiers=80 code=0 char=1a false false
 --------------- 41 --------------
-  Wed Dec 01 19:29:59 EST 2021
-Menu Activated: Cell | Down Hierarchy | Down Hierarchy
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'plus1tester{sch}': 'PlusOne{ic}[PlusOne@0].in3'
+  Sat Dec 04 15:47:34 EST 2021
+ProcessKeyBinding 402 when=1638650854381 modifiers=0 code=11 char=ffff false false
 --------------- 42 --------------
-  Wed Dec 01 19:29:59 EST 2021
-ProcessKeyBinding 400 when=1638404999261 modifiers=80 code=0 char=4 false false
+  Sat Dec 04 15:47:54 EST 2021
+ProcessKeyBinding 401 when=1638650874247 modifiers=80 code=11 char=ffff false false
 --------------- 43 --------------
-  Wed Dec 01 19:29:59 EST 2021
-ProcessKeyBinding 402 when=1638404999371 modifiers=0 code=11 char=ffff false false
---------------- 44 --------------
-  Wed Dec 01 19:30:00 EST 2021
-ProcessKeyBinding 401 when=1638405000712 modifiers=80 code=11 char=ffff false false
---------------- 45 --------------
-  Wed Dec 01 19:30:01 EST 2021
-Menu Activated: Cell | Down Hierarchy | Down Hierarchy
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'PlusOne{sch}': 'Standardadder{ic}[Standard@0].Cout'
---------------- 46 --------------
-  Wed Dec 01 19:30:01 EST 2021
-ProcessKeyBinding 400 when=1638405001010 modifiers=80 code=0 char=4 false false
---------------- 47 --------------
-  Wed Dec 01 19:30:01 EST 2021
-ProcessKeyBinding 402 when=1638405001128 modifiers=0 code=11 char=ffff false false
---------------- 48 --------------
-  Wed Dec 01 19:30:04 EST 2021
-ProcessKeyBinding 401 when=1638405004543 modifiers=80 code=11 char=ffff false false
---------------- 49 --------------
-  Wed Dec 01 19:30:04 EST 2021
-Menu Activated: Cell | Down Hierarchy | Down Hierarchy
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Standardadder{sch}': 'NAND2sized{ic}[NAND2siz@0].out'
---------------- 50 --------------
-  Wed Dec 01 19:30:04 EST 2021
-ProcessKeyBinding 400 when=1638405004678 modifiers=80 code=0 char=4 false false
---------------- 51 --------------
-  Wed Dec 01 19:30:04 EST 2021
-ProcessKeyBinding 402 when=1638405004775 modifiers=0 code=11 char=ffff false false
---------------- 52 --------------
-  Wed Dec 01 19:30:29 EST 2021
-ProcessKeyBinding 401 when=1638405029747 modifiers=80 code=11 char=ffff false false
---------------- 53 --------------
-  Wed Dec 01 19:30:29 EST 2021
-Menu Activated: Cell | Down Hierarchy | Down Hierarchy
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Standardadder{sch}': 'newXOR{ic}[newXOR@0].out'
---------------- 54 --------------
-  Wed Dec 01 19:30:29 EST 2021
-ProcessKeyBinding 400 when=1638405029907 modifiers=80 code=0 char=4 false false
---------------- 55 --------------
-  Wed Dec 01 19:30:30 EST 2021
-ProcessKeyBinding 402 when=1638405030016 modifiers=0 code=11 char=ffff false false
---------------- 56 --------------
-  Wed Dec 01 19:31:14 EST 2021
-Menu Activated: File | Save Library
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'newXOR{sch}': 'newXOR{ic}[newXOR@0].out'
---------------- 57 --------------
-  Wed Dec 01 19:31:39 EST 2021
-Menu Activated: File | Save Library
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'newXOR{sch}': 'newXOR{ic}[newXOR@0].out'
---------------- 58 --------------
-  Wed Dec 01 19:31:43 EST 2021
-Menu Activated: File | Save Library
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'newXOR{sch}': 'newXOR{ic}[newXOR@0].out'
---------------- 59 --------------
-  Wed Dec 01 19:32:25 EST 2021
-Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
---------------- 60 --------------
-  Wed Dec 01 19:34:32 EST 2021
-ProcessKeyBinding 401 when=1638405272534 modifiers=80 code=11 char=ffff false false
---------------- 61 --------------
-  Wed Dec 01 19:34:33 EST 2021
-Menu Activated: Cell | Down Hierarchy | Down Hierarchy
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Looptest{sch}': 'addressLoop{ic}[addressL@0].Addr[3]'
---------------- 62 --------------
-  Wed Dec 01 19:34:33 EST 2021
-ProcessKeyBinding 400 when=1638405273119 modifiers=80 code=0 char=4 false false
---------------- 63 --------------
-  Wed Dec 01 19:34:33 EST 2021
-ProcessKeyBinding 402 when=1638405273279 modifiers=0 code=11 char=ffff false false
---------------- 64 --------------
-  Wed Dec 01 19:34:35 EST 2021
-ProcessKeyBinding 401 when=1638405275168 modifiers=80 code=11 char=ffff false false
---------------- 65 --------------
-  Wed Dec 01 19:34:35 EST 2021
-ProcessKeyBinding 402 when=1638405275859 modifiers=0 code=11 char=ffff false false
---------------- 66 --------------
-  Wed Dec 01 19:34:41 EST 2021
-Menu Activated: Edit | Modes | Edit | Toggle Zoom
---------------- 67 --------------
-  Wed Dec 01 19:34:48 EST 2021
-Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
---------------- 68 --------------
-  Wed Dec 01 19:34:51 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': 'Plus1{ic}[Plus1@0].out[2]'
---------------- 69 --------------
-  Wed Dec 01 19:34:51 EST 2021
-ProcessKeyBinding 400 when=1638405291837 modifiers=0 code=0 char=8 false false
---------------- 70 --------------
-  Wed Dec 01 19:35:27 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': 'PlusOne{ic}[PlusOne@0].in2'
---------------- 71 --------------
-  Wed Dec 01 19:35:27 EST 2021
-ProcessKeyBinding 400 when=1638405327434 modifiers=0 code=0 char=8 false false
---------------- 72 --------------
-  Wed Dec 01 19:35:29 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@158']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@159']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@161']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@160']
---------------- 73 --------------
-  Wed Dec 01 19:35:29 EST 2021
-ProcessKeyBinding 400 when=1638405329090 modifiers=0 code=0 char=8 false false
---------------- 74 --------------
-  Wed Dec 01 19:35:33 EST 2021
-ProcessKeyBinding 401 when=1638405333903 modifiers=80 code=11 char=ffff false false
---------------- 75 --------------
-  Wed Dec 01 19:35:33 EST 2021
-Menu Activated: Edit | Undo
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': 'Wire_Pin[pin@83].wire'
---------------- 76 --------------
-  Wed Dec 01 19:35:33 EST 2021
-ProcessKeyBinding 400 when=1638405333903 modifiers=80 code=0 char=1a false false
---------------- 77 --------------
-  Wed Dec 01 19:35:33 EST 2021
-ProcessKeyBinding 402 when=1638405333958 modifiers=0 code=11 char=ffff false false
---------------- 78 --------------
-  Wed Dec 01 19:35:38 EST 2021
-ProcessKeyBinding 401 when=1638405338089 modifiers=80 code=11 char=ffff false false
---------------- 79 --------------
-  Wed Dec 01 19:35:38 EST 2021
-Menu Activated: Edit | Undo
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': 'Wire_Pin[pin@78].wire'
---------------- 80 --------------
-  Wed Dec 01 19:35:38 EST 2021
-ProcessKeyBinding 400 when=1638405338089 modifiers=80 code=0 char=1a false false
---------------- 81 --------------
-  Wed Dec 01 19:35:38 EST 2021
-ProcessKeyBinding 402 when=1638405338183 modifiers=0 code=11 char=ffff false false
---------------- 82 --------------
-  Wed Dec 01 19:36:47 EST 2021
-ProcessKeyBinding 401 when=1638405407692 modifiers=40 code=10 char=ffff false true
---------------- 83 --------------
-  Wed Dec 01 19:36:47 EST 2021
-ProcessKeyBinding 401 when=1638405407826 modifiers=40 code=50 char=50(P) false true
---------------- 84 --------------
-  Wed Dec 01 19:36:47 EST 2021
-ProcessKeyBinding 402 when=1638405407881 modifiers=40 code=50 char=50(P) false true
---------------- 85 --------------
-  Wed Dec 01 19:36:47 EST 2021
-ProcessKeyBinding 402 when=1638405407941 modifiers=0 code=10 char=ffff false true
---------------- 86 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 401 when=1638405408107 modifiers=0 code=4c char=6c(l) false true
---------------- 87 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 402 when=1638405408177 modifiers=0 code=4c char=6c(l) false true
---------------- 88 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 401 when=1638405408276 modifiers=0 code=55 char=75(u) false true
---------------- 89 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 402 when=1638405408354 modifiers=0 code=55 char=75(u) false true
---------------- 90 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 401 when=1638405408565 modifiers=0 code=53 char=73(s) false true
---------------- 91 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 402 when=1638405408653 modifiers=0 code=53 char=73(s) false true
---------------- 92 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 401 when=1638405408727 modifiers=40 code=10 char=ffff false true
---------------- 93 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 401 when=1638405408827 modifiers=40 code=4f char=4f(O) false true
---------------- 94 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 401 when=1638405408935 modifiers=40 code=4e char=4e(N) false true
---------------- 95 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 402 when=1638405408939 modifiers=40 code=4f char=4f(O) false true
---------------- 96 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 402 when=1638405408967 modifiers=0 code=10 char=ffff false true
---------------- 97 --------------
-  Wed Dec 01 19:36:48 EST 2021
-ProcessKeyBinding 402 when=1638405408983 modifiers=0 code=4e char=6e(n) false true
---------------- 98 --------------
-  Wed Dec 01 19:36:49 EST 2021
-ProcessKeyBinding 402 when=1638405409683 modifiers=0 code=8 char=8 false true
---------------- 99 --------------
-  Wed Dec 01 19:36:49 EST 2021
-ProcessKeyBinding 401 when=1638405409843 modifiers=0 code=4e char=6e(n) false true
---------------- 100 --------------
-  Wed Dec 01 19:36:49 EST 2021
-ProcessKeyBinding 402 when=1638405409909 modifiers=0 code=4e char=6e(n) false true
---------------- 101 --------------
-  Wed Dec 01 19:36:49 EST 2021
-ProcessKeyBinding 401 when=1638405409928 modifiers=0 code=45 char=65(e) false true
---------------- 102 --------------
-  Wed Dec 01 19:36:50 EST 2021
-ProcessKeyBinding 402 when=1638405410002 modifiers=0 code=45 char=65(e) false true
---------------- 103 --------------
-  Wed Dec 01 19:36:50 EST 2021
-ProcessKeyBinding 402 when=1638405410168 modifiers=0 code=a char=a false true
---------------- 104 --------------
-  Wed Dec 01 19:36:50 EST 2021
-ProcessKeyBinding 402 when=1638405410935 modifiers=0 code=8 char=8 false true
---------------- 105 --------------
-  Wed Dec 01 19:38:13 EST 2021
-Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
---------------- 106 --------------
-  Wed Dec 01 19:38:47 EST 2021
-Menu Activated: File | Save Library
---------------- 107 --------------
-  Wed Dec 01 19:42:00 EST 2021
-ProcessKeyBinding 401 when=1638405720961 modifiers=80 code=11 char=ffff false false
---------------- 108 --------------
-  Wed Dec 01 19:42:01 EST 2021
-Menu Activated: Cell | Down Hierarchy | Down Hierarchy
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Looptest{sch}': 'addressLoop{ic}[addressL@0].En/Deq'
---------------- 109 --------------
-  Wed Dec 01 19:42:01 EST 2021
-ProcessKeyBinding 400 when=1638405721458 modifiers=80 code=0 char=4 false false
---------------- 110 --------------
-  Wed Dec 01 19:42:01 EST 2021
-ProcessKeyBinding 402 when=1638405721551 modifiers=0 code=11 char=ffff false false
---------------- 111 --------------
-  Wed Dec 01 19:42:04 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': Power['pwr@0']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': Wire_Pin['pin@73']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': Ground['gnd@2']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': spicepartsS3:V_Generic{ic}['V_Generi@0']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@141']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@142']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@143']
---------------- 112 --------------
-  Wed Dec 01 19:42:04 EST 2021
-ProcessKeyBinding 400 when=1638405724878 modifiers=0 code=0 char=8 false false
---------------- 113 --------------
-  Wed Dec 01 19:42:11 EST 2021
-Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
---------------- 114 --------------
-  Wed Dec 01 19:43:57 EST 2021
-ProcessKeyBinding 402 when=1638405837591 modifiers=0 code=a char=a false false
---------------- 115 --------------
-  Wed Dec 01 19:44:00 EST 2021
-ProcessKeyBinding 402 when=1638405840771 modifiers=0 code=a char=a false false
---------------- 116 --------------
-  Wed Dec 01 19:44:01 EST 2021
-ProcessKeyBinding 401 when=1638405841972 modifiers=80 code=11 char=ffff false false
---------------- 117 --------------
-  Wed Dec 01 19:44:01 EST 2021
+  Sat Dec 04 15:47:54 EST 2021
 Menu Activated: File | Save All Libraries
+--------------- 44 --------------
+  Sat Dec 04 15:47:54 EST 2021
+ProcessKeyBinding 400 when=1638650874247 modifiers=80 code=0 char=13 false false
+--------------- 45 --------------
+  Sat Dec 04 15:47:57 EST 2021
+Menu Activated: Edit | Erase | Selected
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Looptest{sch}': wire['a0']
---------------- 118 --------------
-  Wed Dec 01 19:44:01 EST 2021
-ProcessKeyBinding 400 when=1638405841972 modifiers=80 code=0 char=13 false false
---------------- 119 --------------
-  Wed Dec 01 19:44:07 EST 2021
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@3']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@2']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@1']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 4buffers{ic}['4buffers@0']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@146']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@147']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': wire['net@148']
+--------------- 46 --------------
+  Sat Dec 04 15:47:57 EST 2021
+ProcessKeyBinding 400 when=1638650877969 modifiers=0 code=0 char=8 false false
+--------------- 47 --------------
+  Sat Dec 04 15:48:04 EST 2021
 Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Looptest{sch}': wire['a0']
---------------- 120 --------------
-  Wed Dec 01 19:45:46 EST 2021
-ProcessKeyBinding 401 when=1638405946313 modifiers=200 code=12 char=ffff false false
---------------- 121 --------------
-  Wed Dec 01 19:45:46 EST 2021
-ProcessKeyBinding 401 when=1638405946313 modifiers=200 code=44 char=64(d) false false
---------------- 122 --------------
-  Wed Dec 01 19:45:46 EST 2021
-ProcessKeyBinding 400 when=1638405946313 modifiers=200 code=0 char=64(d) false false
---------------- 123 --------------
-  Wed Dec 01 19:45:46 EST 2021
-ProcessKeyBinding 402 when=1638405946356 modifiers=200 code=44 char=64(d) false false
---------------- 124 --------------
-  Wed Dec 01 19:45:47 EST 2021
-ProcessKeyBinding 402 when=1638405947341 modifiers=0 code=12 char=ffff false false
---------------- 125 --------------
-  Wed Dec 01 19:45:48 EST 2021
-ProcessKeyBinding 401 when=1638405948231 modifiers=80 code=11 char=ffff false false
---------------- 126 --------------
-  Wed Dec 01 19:45:48 EST 2021
+--------------- 48 --------------
+  Sat Dec 04 15:48:12 EST 2021
+ProcessKeyBinding 402 when=1638650892877 modifiers=0 code=a char=a false false
+--------------- 49 --------------
+  Sat Dec 04 15:52:01 EST 2021
+ProcessKeyBinding 401 when=1638651121400 modifiers=80 code=11 char=ffff false false
+--------------- 50 --------------
+  Sat Dec 04 15:52:01 EST 2021
 Menu Activated: Cell | Down Hierarchy | Down Hierarchy
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'Looptest{sch}': 'addressLoop{ic}[addressL@0].En/Deq'
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 'SRAM{ic}[SRAM@0].Addr[3]'
+--------------- 51 --------------
+  Sat Dec 04 15:52:01 EST 2021
+ProcessKeyBinding 400 when=1638651121526 modifiers=80 code=0 char=4 false false
+--------------- 52 --------------
+  Sat Dec 04 15:52:01 EST 2021
+ProcessKeyBinding 402 when=1638651121601 modifiers=0 code=11 char=ffff false false
+--------------- 53 --------------
+  Sat Dec 04 15:52:05 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'buffer{ic}[buffer@0].a'
+--------------- 54 --------------
+  Sat Dec 04 15:52:05 EST 2021
+ProcessKeyBinding 400 when=1638651125508 modifiers=0 code=0 char=8 false false
+--------------- 55 --------------
+  Sat Dec 04 15:52:06 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': wire['net@449']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': wire['net@448']
+--------------- 56 --------------
+  Sat Dec 04 15:52:06 EST 2021
+ProcessKeyBinding 400 when=1638651126972 modifiers=0 code=0 char=8 false false
+--------------- 57 --------------
+  Sat Dec 04 15:52:21 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 58 --------------
+  Sat Dec 04 15:54:38 EST 2021
+ProcessKeyBinding 401 when=1638651278978 modifiers=80 code=11 char=ffff false false
+--------------- 59 --------------
+  Sat Dec 04 15:54:39 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 'SRAM{ic}[SRAM@0].D'[2]'
+--------------- 60 --------------
+  Sat Dec 04 15:54:39 EST 2021
+ProcessKeyBinding 400 when=1638651279121 modifiers=80 code=0 char=4 false false
+--------------- 61 --------------
+  Sat Dec 04 15:54:39 EST 2021
+ProcessKeyBinding 402 when=1638651279239 modifiers=0 code=11 char=ffff false false
+--------------- 62 --------------
+  Sat Dec 04 15:55:01 EST 2021
+ProcessKeyBinding 401 when=1638651301703 modifiers=80 code=11 char=ffff false false
+--------------- 63 --------------
+  Sat Dec 04 15:55:01 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'tristate-buffer-enable-inverted{ic}[tristate@1].in'
+--------------- 64 --------------
+  Sat Dec 04 15:55:01 EST 2021
+ProcessKeyBinding 400 when=1638651301880 modifiers=80 code=0 char=4 false false
+--------------- 65 --------------
+  Sat Dec 04 15:55:01 EST 2021
+ProcessKeyBinding 402 when=1638651301974 modifiers=0 code=11 char=ffff false false
+--------------- 66 --------------
+  Sat Dec 04 15:55:51 EST 2021
+ProcessKeyBinding 401 when=1638651351177 modifiers=80 code=11 char=ffff false false
+--------------- 67 --------------
+  Sat Dec 04 15:55:51 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristateBufferEnableInvertedSized{sch}': 'TristateBufferSized{ic}[Tristate@0].En'
+--------------- 68 --------------
+  Sat Dec 04 15:55:51 EST 2021
+ProcessKeyBinding 400 when=1638651351255 modifiers=80 code=0 char=4 false false
+--------------- 69 --------------
+  Sat Dec 04 15:55:51 EST 2021
+ProcessKeyBinding 402 when=1638651351335 modifiers=0 code=11 char=ffff false false
+--------------- 70 --------------
+  Sat Dec 04 16:02:27 EST 2021
+ProcessKeyBinding 401 when=1638651747840 modifiers=0 code=34 char=34(4) false true
+--------------- 71 --------------
+  Sat Dec 04 16:02:27 EST 2021
+ProcessKeyBinding 402 when=1638651747940 modifiers=0 code=34 char=34(4) false true
+--------------- 72 --------------
+  Sat Dec 04 16:02:28 EST 2021
+ProcessKeyBinding 402 when=1638651748031 modifiers=0 code=a char=a false false
+--------------- 73 --------------
+  Sat Dec 04 16:02:33 EST 2021
+ProcessKeyBinding 401 when=1638651753600 modifiers=0 code=33 char=33(3) false true
+--------------- 74 --------------
+  Sat Dec 04 16:02:33 EST 2021
+ProcessKeyBinding 402 when=1638651753692 modifiers=0 code=33 char=33(3) false true
+--------------- 75 --------------
+  Sat Dec 04 16:02:33 EST 2021
+ProcessKeyBinding 402 when=1638651753813 modifiers=0 code=a char=a false false
+--------------- 76 --------------
+  Sat Dec 04 16:03:08 EST 2021
+Menu Activated: Cell | Edit Cell...
+--------------- 77 --------------
+  Sat Dec 04 16:04:34 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'TristateBufferSized{sch}': 'inverter{ic}[inverter@0].not(a)'
+--------------- 78 --------------
+  Sat Dec 04 16:04:34 EST 2021
+ProcessKeyBinding 400 when=1638651874979 modifiers=0 code=0 char=8 false false
+--------------- 79 --------------
+  Sat Dec 04 16:04:50 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'TristateBufferSized{sch}': 'inverter{ic}[inverter@1].not(a)'
+--------------- 80 --------------
+  Sat Dec 04 16:04:50 EST 2021
+ProcessKeyBinding 400 when=1638651890717 modifiers=0 code=0 char=8 false false
+--------------- 81 --------------
+  Sat Dec 04 16:05:11 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'TristateBufferSized{sch}': 'inverter1{ic}[inverter@3].a'
+--------------- 82 --------------
+  Sat Dec 04 16:05:11 EST 2021
+ProcessKeyBinding 400 when=1638651911335 modifiers=0 code=0 char=8 false false
+--------------- 83 --------------
+  Sat Dec 04 16:05:12 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'TristateBufferSized{sch}': wire['net@36']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'TristateBufferSized{sch}': wire['net@34']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'TristateBufferSized{sch}': wire['net@35']
+--------------- 84 --------------
+  Sat Dec 04 16:05:12 EST 2021
+ProcessKeyBinding 400 when=1638651912693 modifiers=0 code=0 char=8 false false
+--------------- 85 --------------
+  Sat Dec 04 16:05:55 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristateBufferEnableInvertedSized{sch}': 'inverter{ic}[inverter@0].a'
+--------------- 86 --------------
+  Sat Dec 04 16:05:55 EST 2021
+ProcessKeyBinding 400 when=1638651955439 modifiers=0 code=0 char=8 false false
+--------------- 87 --------------
+  Sat Dec 04 16:05:57 EST 2021
+ProcessKeyBinding 401 when=1638651957342 modifiers=80 code=11 char=ffff false false
+--------------- 88 --------------
+  Sat Dec 04 16:05:57 EST 2021
+ProcessKeyBinding 402 when=1638651957970 modifiers=0 code=11 char=ffff false false
+--------------- 89 --------------
+  Sat Dec 04 16:06:02 EST 2021
+ProcessKeyBinding 401 when=1638651962152 modifiers=80 code=11 char=ffff false false
+--------------- 90 --------------
+  Sat Dec 04 16:06:02 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristateBufferEnableInvertedSized{sch}': inverter1{ic}['inverter@1']
+--------------- 91 --------------
+  Sat Dec 04 16:06:02 EST 2021
+ProcessKeyBinding 400 when=1638651962439 modifiers=80 code=0 char=a false false
+--------------- 92 --------------
+  Sat Dec 04 16:06:02 EST 2021
+ProcessKeyBinding 402 when=1638651962787 modifiers=0 code=11 char=ffff false false
+--------------- 93 --------------
+  Sat Dec 04 16:06:03 EST 2021
+ProcessKeyBinding 401 when=1638651963025 modifiers=80 code=11 char=ffff false false
+--------------- 94 --------------
+  Sat Dec 04 16:06:03 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristateBufferEnableInvertedSized{sch}': inverter1{ic}['inverter@1']
+--------------- 95 --------------
+  Sat Dec 04 16:06:03 EST 2021
+ProcessKeyBinding 400 when=1638651963170 modifiers=80 code=0 char=a false false
+--------------- 96 --------------
+  Sat Dec 04 16:06:03 EST 2021
+ProcessKeyBinding 402 when=1638651963405 modifiers=0 code=11 char=ffff false false
+--------------- 97 --------------
+  Sat Dec 04 16:06:03 EST 2021
+ProcessKeyBinding 401 when=1638651963633 modifiers=80 code=11 char=ffff false false
+--------------- 98 --------------
+  Sat Dec 04 16:06:03 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristateBufferEnableInvertedSized{sch}': inverter1{ic}['inverter@1']
+--------------- 99 --------------
+  Sat Dec 04 16:06:03 EST 2021
+ProcessKeyBinding 400 when=1638651963785 modifiers=80 code=0 char=a false false
+--------------- 100 --------------
+  Sat Dec 04 16:06:04 EST 2021
+ProcessKeyBinding 402 when=1638651964017 modifiers=0 code=11 char=ffff false false
+--------------- 101 --------------
+  Sat Dec 04 16:06:43 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'tristate-buffer-enable-inverted{ic}[tristate@1].in'
+--------------- 102 --------------
+  Sat Dec 04 16:06:43 EST 2021
+ProcessKeyBinding 400 when=1638652003532 modifiers=0 code=0 char=8 false false
+--------------- 103 --------------
+  Sat Dec 04 16:07:07 EST 2021
+ProcessKeyBinding 401 when=1638652027701 modifiers=80 code=11 char=ffff false false
+--------------- 104 --------------
+  Sat Dec 04 16:07:07 EST 2021
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'Wire_Pin[pin@91].wire'
+--------------- 105 --------------
+  Sat Dec 04 16:07:07 EST 2021
+ProcessKeyBinding 400 when=1638652027701 modifiers=80 code=0 char=1a false false
+--------------- 106 --------------
+  Sat Dec 04 16:07:07 EST 2021
+ProcessKeyBinding 402 when=1638652027772 modifiers=0 code=11 char=ffff false false
+--------------- 107 --------------
+  Sat Dec 04 16:07:35 EST 2021
+ProcessKeyBinding 401 when=1638652055527 modifiers=80 code=11 char=ffff false false
+--------------- 108 --------------
+  Sat Dec 04 16:07:35 EST 2021
+Menu Activated: File | Save All Libraries
+--------------- 109 --------------
+  Sat Dec 04 16:07:35 EST 2021
+ProcessKeyBinding 400 when=1638652055527 modifiers=80 code=0 char=13 false false
+--------------- 110 --------------
+  Sat Dec 04 16:07:45 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 111 --------------
+  Sat Dec 04 16:10:22 EST 2021
+ProcessKeyBinding 401 when=1638652222152 modifiers=80 code=11 char=ffff false false
+--------------- 112 --------------
+  Sat Dec 04 16:10:22 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 'SRAM{ic}[SRAM@0].D'[2]'
+--------------- 113 --------------
+  Sat Dec 04 16:10:22 EST 2021
+ProcessKeyBinding 400 when=1638652222684 modifiers=80 code=0 char=4 false false
+--------------- 114 --------------
+  Sat Dec 04 16:10:22 EST 2021
+ProcessKeyBinding 402 when=1638652222784 modifiers=0 code=11 char=ffff false false
+--------------- 115 --------------
+  Sat Dec 04 16:10:33 EST 2021
+ProcessKeyBinding 401 when=1638652233721 modifiers=80 code=11 char=ffff false false
+--------------- 116 --------------
+  Sat Dec 04 16:10:33 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAM{sch}': 'tristateBufferEnableInvertedSized{ic}[tristate@2].En'
+--------------- 117 --------------
+  Sat Dec 04 16:10:33 EST 2021
+ProcessKeyBinding 400 when=1638652233889 modifiers=80 code=0 char=4 false false
+--------------- 118 --------------
+  Sat Dec 04 16:10:33 EST 2021
+ProcessKeyBinding 402 when=1638652233972 modifiers=0 code=11 char=ffff false false
+--------------- 119 --------------
+  Sat Dec 04 16:10:37 EST 2021
+ProcessKeyBinding 401 when=1638652237274 modifiers=80 code=11 char=ffff false false
+--------------- 120 --------------
+  Sat Dec 04 16:10:37 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'tristateBufferEnableInvertedSized{sch}': 'inverter1{ic}[inverter@1].not(a)'
+--------------- 121 --------------
+  Sat Dec 04 16:10:37 EST 2021
+ProcessKeyBinding 400 when=1638652237419 modifiers=80 code=0 char=4 false false
+--------------- 122 --------------
+  Sat Dec 04 16:10:37 EST 2021
+ProcessKeyBinding 402 when=1638652237513 modifiers=0 code=11 char=ffff false false
+--------------- 123 --------------
+  Sat Dec 04 16:10:45 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'inverter1{sch}': wire['net@11']
+--------------- 124 --------------
+  Sat Dec 04 16:10:45 EST 2021
+ProcessKeyBinding 400 when=1638652245402 modifiers=0 code=0 char=8 false false
+--------------- 125 --------------
+  Sat Dec 04 16:10:50 EST 2021
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'inverter1{sch}': 'Off-Page[conn@1].a'
+--------------- 126 --------------
+  Sat Dec 04 16:10:50 EST 2021
+ProcessKeyBinding 400 when=1638652250071 modifiers=0 code=0 char=8 false false
 --------------- 127 --------------
-  Wed Dec 01 19:45:48 EST 2021
-ProcessKeyBinding 400 when=1638405948387 modifiers=80 code=0 char=4 false false
+  Sat Dec 04 16:10:51 EST 2021
+ProcessKeyBinding 401 when=1638652251703 modifiers=80 code=11 char=ffff false false
 --------------- 128 --------------
-  Wed Dec 01 19:45:48 EST 2021
-ProcessKeyBinding 402 when=1638405948481 modifiers=0 code=11 char=ffff false false
+  Sat Dec 04 16:10:51 EST 2021
+Menu Activated: Edit | Undo
 --------------- 129 --------------
-  Wed Dec 01 19:46:10 EST 2021
-Menu Activated: Edit | Erase | Selected
-Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': 'spicepartsS3:VPulse{ic}[VPulse@1].plus'
+  Sat Dec 04 16:10:51 EST 2021
+ProcessKeyBinding 400 when=1638652251703 modifiers=80 code=0 char=1a false false
 --------------- 130 --------------
-  Wed Dec 01 19:46:10 EST 2021
-ProcessKeyBinding 400 when=1638405970699 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 16:10:51 EST 2021
+ProcessKeyBinding 402 when=1638652251827 modifiers=0 code=11 char=ffff false false
 --------------- 131 --------------
-  Wed Dec 01 19:46:13 EST 2021
+  Sat Dec 04 16:11:03 EST 2021
 Menu Activated: Edit | Erase | Selected
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@173']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'addressLoop{sch}': wire['net@172']
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'inverter1{sch}': 'Wire_Pin[pin@4].wire'
 --------------- 132 --------------
-  Wed Dec 01 19:46:13 EST 2021
-ProcessKeyBinding 400 when=1638405973824 modifiers=0 code=0 char=8 false false
+  Sat Dec 04 16:11:03 EST 2021
+ProcessKeyBinding 400 when=1638652263047 modifiers=0 code=0 char=8 false false
 --------------- 133 --------------
-  Wed D
+  Sat Dec 04 16:15:30 EST 2021
+ProcessKeyBinding 401 when=1638652530123 modifiers=200 code=12 char=ffff false false
+--------------- 134 --------------
+  Sat Dec 04 16:15:30 EST 2021
+ProcessKeyBinding 401 when=1638652530123 modifiers=200 code=44 char=64(d) false false
+--------------- 135 --------------
+  Sat Dec 04 16:15:30 EST 2021
+ProcessKeyBinding 400 when=1638652530123 modifiers=200 code=0 char=64(d) false false
+--------------- 136 --------------
+  Sat Dec 04 16:15:30 EST 2021
+ProcessKeyBinding 402 when=1638652530202 modifiers=200 code=44 char=64(d) false false
+--------------- 137 --------------
+  Sat Dec 04 16:15:30 EST 2021
+ProcessKeyBinding 402 when=1638652530205 modifiers=0 code=12 char=ffff false false
+--------------- 138 --------------
+  Sat Dec 04 16:15:32 EST 2021
+ProcessKeyBinding 401 when=1638652532706 modifiers=80 code=11 char=ffff false false
+--------------- 139 --------------
+  Sat Dec 04 16:15:32 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+ 

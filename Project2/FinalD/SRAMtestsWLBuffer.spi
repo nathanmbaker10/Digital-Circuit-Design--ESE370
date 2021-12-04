@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAMtests{sch} from library ESE370
 *** Created on Thu Dec 02, 2021 20:42:33
 *** Last revised on Fri Dec 03, 2021 03:27:37
-*** Written on Fri Dec 03, 2021 15:42:31 by Electric VLSI Design System, version 9.07
+*** Written on Fri Dec 03, 2021 16:47:56 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -247,7 +247,7 @@ XRAM_Cell@64 net@112 net@119 wl7 ESE370__RAM_Cell
 XRAM_Cell@65 net@126 net@133 wl7 ESE370__RAM_Cell
 XRAM_Cell@66 net@140 net@147 wl7 ESE370__RAM_Cell
 XRAM_Cell@67 net@154 net@161 wl7 ESE370__RAM_Cell
-XRowDecod@4 Addr[2] Addr[1] Addr[0] wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 PC ESE370__RowDecoder
+XRowDecod@4 Addr[2] Addr[1] Addr[0] wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 net@394 ESE370__RowDecoder
 XbitLineC@0 bl0 bl_ pcafter ESE370__bitLineConditioning
 XbitLineC@1 bl2 bl_2 pcafter ESE370__bitLineConditioning
 XbitLineC@2 bl3 bl_3 pcafter ESE370__bitLineConditioning
@@ -256,6 +256,7 @@ XbitLineC@4 net@112 net@119 pcafter ESE370__bitLineConditioning
 XbitLineC@5 net@126 net@133 pcafter ESE370__bitLineConditioning
 XbitLineC@7 net@140 net@147 pcafter ESE370__bitLineConditioning
 XbitLineC@8 net@154 net@161 pcafter ESE370__bitLineConditioning
+Xbuffer@0 PC net@394 ESE370__buffer
 Xtristate@1 WR/_R PC pcafter ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__SRAM
 
@@ -452,7 +453,7 @@ Mnmos@2 net@38 pc gnd gnd N L=0.044U W=0.044U
 Mnmos@3 net@1 pc gnd gnd N L=0.044U W=0.044U
 X_4bitReg@0 clk net@1 net@38 net@3 net@6 Addr[3] Addr[2] Addr[1] Addr[0] ESE370__4bitReg
 XPlusOne@0 Addr[0] Addr[1] Addr[2] Addr[3] net@18 net@20 net@24 net@25 ESE370__PlusOne
-VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC 0V AC 0V 0
+VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC '0V' AC '0V' 0
 Xtri-stat@0 En/Deq net@20 net@3 ESE370__tri-state-buffer
 Xtri-stat@1 En/Deq net@18 net@6 ESE370__tri-state-buffer
 Xtri-stat@2 En/Deq net@24 net@38 ESE370__tri-state-buffer
@@ -478,7 +479,7 @@ XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 net@305 wrad
 XPositive@0 clk this__write last_write ESE370__PositiveRegister
 XReadaddr@0 ptrflag wraddr0 wraddr1 wraddr2 wraddr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 ESE370__Readaddr__Wraddr
 XTristate@0 net@21 last_write this__write ESE370__TristateBufferSized
-VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC 0V AC 0V 0
+VVPulse@3 net@208 gnd pulse (0 0.8 0ns 10ps 10ps 80ps 100ns) DC '0V' AC '0V' 0
 XaddressL@0 wraddr3 wraddr2 wraddr1 wraddr0 clk willenq ESE370__addressLoop
 XaddressL@1 rdaddr3 rdaddr2 rdaddr1 rdaddr0 clk willdq ESE370__addressLoop
 Xand2@0 ptrflag net@43 Empty_next ESE370__and2
