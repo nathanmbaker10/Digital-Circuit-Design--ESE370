@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAMtests{sch} from library ESE370
 *** Created on Thu Dec 02, 2021 20:42:33
-*** Last revised on Sat Dec 04, 2021 18:41:17
-*** Written on Sat Dec 04, 2021 18:41:38 by Electric VLSI Design System, version 9.07
+*** Last revised on Sat Dec 04, 2021 18:09:41
+*** Written on Sat Dec 04, 2021 18:28:19 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -179,7 +179,7 @@ Mpmos@2 vdd CLK BL vdd P L=0.022U W=0.022U
 .ENDS ESE370__bitLineConditioning
 
 *** SUBCIRCUIT ESE370__SRAM FROM CELL SRAM{sch}
-.SUBCKT ESE370__SRAM Addr[3] Addr[2] Addr[1] Addr[0] bl0 D_[3] D_[2] D_[1] D_[0] D[3] D[2] D[1] D[0] PC storedbit wl0 wl1 WR/_R
+.SUBCKT ESE370__SRAM Addr[3] Addr[2] Addr[1] Addr[0] bl0 D_[3] D_[2] D_[1] D_[0] D[3] D[2] D[1] D[0] PC pcafter storedbit wl0 wl1 WR/_R
 ** GLOBAL gnd
 ** GLOBAL vdd
 XColumnDe@0 net@161 net@147 net@133 net@119 bl_4 bl_3 bl_2 bl_ net@154 net@140 net@126 net@112 bl4 bl3 bl2 bl0 Addr[3] D_[0] D_[1] D_[2] D_[3] D[0] D[1] D[2] D[3] WR/_R ESE370__ColumnDecoderBus
@@ -248,14 +248,15 @@ XRAM_Cell@65 net@126 net@133 RAM_Cell@65_storedbit wl7 ESE370__RAM_Cell
 XRAM_Cell@66 net@140 net@147 RAM_Cell@66_storedbit wl7 ESE370__RAM_Cell
 XRAM_Cell@67 net@154 net@161 RAM_Cell@67_storedbit wl7 ESE370__RAM_Cell
 XRowDecod@4 Addr[2] Addr[1] Addr[0] wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 PC ESE370__RowDecoder
-XbitLineC@0 bl0 bl_ PC ESE370__bitLineConditioning
-XbitLineC@1 bl2 bl_2 PC ESE370__bitLineConditioning
-XbitLineC@2 bl3 bl_3 PC ESE370__bitLineConditioning
-XbitLineC@3 bl4 bl_4 PC ESE370__bitLineConditioning
-XbitLineC@4 net@112 net@119 PC ESE370__bitLineConditioning
-XbitLineC@5 net@126 net@133 PC ESE370__bitLineConditioning
-XbitLineC@7 net@140 net@147 PC ESE370__bitLineConditioning
-XbitLineC@8 net@154 net@161 PC ESE370__bitLineConditioning
+XbitLineC@0 bl0 bl_ pcafter ESE370__bitLineConditioning
+XbitLineC@1 bl2 bl_2 pcafter ESE370__bitLineConditioning
+XbitLineC@2 bl3 bl_3 pcafter ESE370__bitLineConditioning
+XbitLineC@3 bl4 bl_4 pcafter ESE370__bitLineConditioning
+XbitLineC@4 net@112 net@119 pcafter ESE370__bitLineConditioning
+XbitLineC@5 net@126 net@133 pcafter ESE370__bitLineConditioning
+XbitLineC@7 net@140 net@147 pcafter ESE370__bitLineConditioning
+XbitLineC@8 net@154 net@161 pcafter ESE370__bitLineConditioning
+Xtristate@3 WR/_R PC pcafter ESE370__tristate-buffer-enable-inverted
 .ENDS ESE370__SRAM
 
 *** SUBCIRCUIT ESE370__AddressSelector FROM CELL AddressSelector{sch}
@@ -542,7 +543,7 @@ X_4buffers@4 rw net@149 ESE370__4buffers
 X_4buffers@5 net@149 net@150 ESE370__4buffers
 X_4buffers@6 net@150 net@151 ESE370__4buffers
 X_4buffers@7 net@151 net@154 ESE370__4buffers
-XSRAM@0 addr3 addr2 addr1 addr0 bl0 d3_ d2_ d1_ d0_ d3 d2 d1 d0 pc storedbit wl0 wl1 rw ESE370__SRAM
+XSRAM@0 addr3 addr2 addr1 addr0 bl0 d3_ d2_ d1_ d0_ d3 d2 d1 d0 pc pcafter storedbit wl0 wl1 rw ESE370__SRAM
 VVPWL@0 enqIn gnd pwl (0 0 2ns 0V 2ns 0.8V 6ns 0.8V 6ns 0V 8ns 0V) DC 0V AC 0V 0
 VVPWL@1 DQIn gnd pwl (0 0 6ns 0V 6ns 0.8V 8ns 0.8V 8ns 0V 10ns 0V) DC 0V AC 0V 0
 VVPulse@0 clk gnd pulse (0 0.8V 0ns 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
