@@ -3085,7 +3085,7 @@ Estoredbit||D5G1;|pin@10||U
 X
 
 # Cell RAM_Cell;1{sch}
-CRAM_Cell;1{sch}||schematic|1637281149985|1638676394996|
+CRAM_Cell;1{sch}||schematic|1637281149985|1638685599593|
 IRAM_Cell;4{ic}|RAM_Cell@1||42.5|27.5|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-4|16|||RRR|
@@ -3096,7 +3096,7 @@ NGround|gnd@0||-6|-12.5||||
 NTransistor|nmos@0||-20|1|||||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)S2
 NTransistor|nmos@1||12.5|1|||||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
 NTransistor|nmos@2||1.5|-5.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S2
-NTransistor|nmos@3||-13|-5.5|||XR||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@3||-13|-5.5|||XR||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S1
 NWire_Pin|pin@0||-15|-1||||
 NWire_Pin|pin@5||6|-1||||
 NWire_Pin|pin@6||-20|14||||
@@ -3117,7 +3117,7 @@ NWire_Pin|pin@25||3.5|0||||
 NWire_Pin|pin@26||-2.5|0.5||||
 NWire_Pin|pin@27||-15|0.5||||
 NWire_Pin|pin@28||-15|-2||||
-NTransistor|pmos@0||1.5|4.5|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|pmos@0||1.5|4.5|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S1
 NTransistor|pmos@1||-13|4.5|||XR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S1
 NPower|pwr@0||-4|10||||
 Awire|net@0|||1800|nmos@0|d|-18|-1|pin@0||-15|-1
@@ -3409,7 +3409,7 @@ E~PC||D5G2;|pin@22||I
 X
 
 # Cell RowDecoder;1{sch}
-CRowDecoder;1{sch}||schematic|1638160664952|1638676189397|
+CRowDecoder;1{sch}||schematic|1638160664952|1638684091777|
 IRowDecoder;1{ic}|RowDecod@0||115|58.5|||D5G4;
 Iand2;1{ic}|and2@0||-17|17.5|||D5G4;
 Iand2;1{ic}|and2@1||-17|9|||D5G4;
@@ -3450,14 +3450,14 @@ NTransistor|nmos@8||50.5|1.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(
 NTransistor|nmos@11||58.5|1.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
 NTransistor|nmos@12||69.5|17.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
 NTransistor|nmos@15||80|16|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@16||12.5|32|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@17||21|32|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@18||30.5|31.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@19||43|31.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@20||50.5|31|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@21||59.5|31|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@22||69.5|30.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
-NTransistor|nmos@23||79.5|31|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@16||12.5|32|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S1
+NTransistor|nmos@17||21|32|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)S1
+NTransistor|nmos@18||30.5|31.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@19||43|31.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@20||50.5|31|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@21||59.5|31|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@22||69.5|30.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
+NTransistor|nmos@23||79.5|31|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S1.0|ATTR_width(D5G1;X0.5;Y-1;)D1.0
 NWire_Pin|pin@1||-43|16.5||||
 NWire_Pin|pin@2||-36|18.5||||
 NWire_Pin|pin@3||-35.5|18.5||||
@@ -3755,7 +3755,7 @@ E~PC||D5G2;|conn@15|a|I
 X
 
 # Cell SRAM;1{ic}
-CSRAM;1{ic}||artwork|1638327909469|1638672015617|E
+CSRAM;1{ic}||artwork|1638327909469|1638682405088|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOpened-Thicker-Polygon|art@1||0|0|38|38|||SCHEM_function(D5G2;)SSRAM|trace()V[-19/-19,-19/19,19/19,19/-19,-19/-19]
 Nschematic:Bus_Pin|pin@0||-23|8||||
@@ -3796,6 +3796,10 @@ Nschematic:Wire_Pin|pin@50||18.5|13||||
 Nschematic:Wire_Pin|pin@51||18|-5.5||||
 Nschematic:Bus_Pin|pin@52||0|-20||||
 Nschematic:Wire_Pin|pin@54||0|-15||||
+Nschematic:Bus_Pin|pin@55||10|-20||||
+Nschematic:Wire_Pin|pin@56||10|-18||||
+Nschematic:Bus_Pin|pin@57||-10|-20||||
+Nschematic:Wire_Pin|pin@59||-10|-15||||
 Aschematic:wire|net@0|||0|pin@1||-17|8|pin@0||-23|8
 Aschematic:wire|net@1|||0|pin@3||-17|5|pin@2||-23|5
 Aschematic:wire|net@2|||0|pin@5||-17|2|pin@4||-23|2
@@ -3815,6 +3819,8 @@ Aschematic:wire|net@31|||0|pin@40||23|7.5|pin@45||17|7.5
 Aschematic:wire|net@34|||0|pin@46||23|13|pin@50||18.5|13
 Aschematic:wire|net@35|||0|pin@48||23|-5.5|pin@51||18|-5.5
 Aschematic:wire|net@37|||2700|pin@52||0|-20|pin@54||0|-15
+Aschematic:wire|net@38|||900|pin@56||10|-18|pin@55||10|-20
+Aschematic:wire|net@40|||2700|pin@57||-10|-20|pin@59||-10|-15
 EAddr[0]||D5G2;|pin@0||I
 EAddr[1]||D5G2;|pin@2||I
 EAddr[2]||D5G2;|pin@4||I
@@ -3830,6 +3836,8 @@ ED[3]||D5G2;|pin@22||B
 EPC||D5G2;|pin@24||I
 EWR/~R||D5G2;|pin@26||I
 Ebl0||D5G2;|pin@46||O
+Ebl0_||D5G2;|pin@57||O
+Ebl7||D5G2;|pin@55||O
 Epcafter||D5G2;|pin@48||O
 Estoredbit||D5G2;|pin@52||O
 Ewl0||D5G2;|pin@40||O
@@ -3837,7 +3845,7 @@ Ewl1||D5G2;|pin@42||O
 X
 
 # Cell SRAM;1{sch}
-CSRAM;1{sch}||schematic|1638133382304|1638672000607|
+CSRAM;1{sch}||schematic|1638133382304|1638682396314|
 IColumnDecoderBus;1{ic}|ColumnDe@0||26|-79|||D5G4;
 IRAM_Cell;4{ic}|RAM_Cell@0||-18|3|||D5G4;
 IRAM_Cell;4{ic}|RAM_Cell@1||-5|3|||D5G4;
@@ -3933,6 +3941,8 @@ NOff-Page|conn@23||-32.5|17.5|||R|
 NOff-Page|conn@24||-30.5|-14.5|||RR|
 NOff-Page|conn@25||-33.5|33.5|||R|
 NOff-Page|conn@26||30|0||||
+NOff-Page|conn@27||85|-50||||
+NOff-Page|conn@28||-30|-25|||RR|
 NWire_Pin|pin@0||-22|-72||||
 NWire_Pin|pin@1||-14.5|-72||||
 NWire_Pin|pin@2||-9|-72||||
@@ -4003,6 +4013,9 @@ NWire_Pin|pin@119||-33.5|33||||
 NWire_Pin|pin@125||-59|-10||||
 NWire_Pin|pin@133||-63|-79||||
 NWire_Pin|pin@134||28|-2||||
+NWire_Pin|pin@135||68|-50||||
+NWire_Pin|pin@136||75.5|-50||||
+NWire_Pin|pin@137||-14.5|-25||||
 Itristate-buffer-enable-inverted;1{ic}|tristate@3||-63|33|Y||D5G4;
 Awire|bl|D5G1;||900|RAM_Cell@0|BL|-22|3|RAM_Cell@12|BL|-22|-5
 Awire|bl2|D5G1;||900|bitLineC@1|BL|-7.5|15|pin@21||-7.5|3
@@ -4300,6 +4313,11 @@ Awire|net@475|||0|pin@133||-63|-79|pin@114||-71|-79
 Awire|net@476|||900|tristate@3|en|-63|29|pin@133||-63|-79
 Awire|net@477|||900|conn@26|a|28|0|pin@134||28|-2
 Awire|net@478|||1800|RAM_Cell@3|storedbit|20|-2|pin@134||28|-2
+Awire|net@480|||900|RAM_Cell@51|BL|68|-45|pin@135||68|-50
+Awire|net@481|||0|conn@27|a|83|-50|pin@136||75.5|-50
+Awire|net@482|||900|RAM_Cell@51|BL'|75.5|-45|pin@136||75.5|-50
+Awire|net@483|||1800|conn@28|a|-28|-25|pin@137||-14.5|-25
+Awire|net@484|||900|RAM_Cell@28|BL'|-14.5|-23|pin@137||-14.5|-25
 Awire|pcafter|D5G1;||0|pin@119||-33.5|33|tristate@3|out|-58|33
 Awire|wl0|D5G1;||1800|pin@116||-38|7.5|pin@104||-18|7.5
 Awire|wl1|D5G1;||0|RAM_Cell@12|WL|-18|-1.5|pin@117||-32.5|-1.5
@@ -4324,6 +4342,8 @@ ED[3]||D5G2;|conn@14|a|B
 EPC||D5G2;|conn@0|a|I
 EWR/~R||D5G2;|conn@4|a|I
 Ebl0||D5G2;|conn@24|y|O
+Ebl0_||D5G2;|conn@28|y|O
+Ebl7||D5G2;|conn@27|y|O
 Epcafter||D5G2;|conn@25|y|O
 Estoredbit||D5G2;|conn@26|y|O
 Ewl0||D5G2;|conn@22|y|O
@@ -4331,7 +4351,7 @@ Ewl1||D5G2;|conn@23|y|O
 X
 
 # Cell SRAMtests;1{sch}
-CSRAMtests;1{sch}||schematic|1638495753834|1638672028359|
+CSRAMtests;1{sch}||schematic|1638495753834|1638684580221|
 I4buffers;1{ic}|4buffers@4||-36|41|R||D5G4;
 I4buffers;1{ic}|4buffers@5||-36|47|R||D5G4;
 I4buffers;1{ic}|4buffers@6||-36|51|R||D5G4;
@@ -4342,7 +4362,7 @@ IspicepartsS3:VPWL;1{ic}|VPWL@1||-80|-32|||D5G4;|ATTR_ACM(D6G0.5;NPX9.5;Y-2;)S0V
 IspicepartsS3:VPulse;1{ic}|VPulse@0||-18|-41.5|||D5G4;|ATTR_ACM(D6G0.5;NPX9.5;Y-4;)S0V|ATTR_ACP(D6G0.5;NPX9.5;Y-4.5;)I0|ATTR_PW(D6G0.5;NPX9.5;Y-3;)S1ns|ATTR_Per(D6G0.5;NPX9.5;Y-3.5;)S2ns|ATTR_TD(D6G0.5;NPX9.5;Y-1.5;)S0ns|ATTR_TF(D6G0.5;NPX9.5;Y-2.5;)S10ps|ATTR_TR(D6G0.5;NPX9.5;Y-2;)S10ps|ATTR_V1(D6G0.5;NPX9.5;Y-0.5;)I0|ATTR_V2(D6G0.5;NPX9.5;Y-1;)S0.8V|ATTR_VDC(D6G0.5;NPX9.5;Y-5;)S0V
 IspicepartsS3:VPulse;1{ic}|VPulse@1||-14.5|3.5|||D5G4;|ATTR_ACM(D6G0.5;NPX9.5;Y-4;)S0V|ATTR_ACP(D6G0.5;NPX9.5;Y-4.5;)I0|ATTR_PW(D6G0.5;NPX9.5;Y-3;)S110ps|ATTR_Per(D6G0.5;NPX9.5;Y-3.5;)S2ns|ATTR_TD(D6G0.5;NPX9.5;Y-1.5;)S0ns|ATTR_TF(D6G0.5;NPX9.5;Y-2.5;)S10ps|ATTR_TR(D6G0.5;NPX9.5;Y-2;)S10ps|ATTR_V1(D6G0.5;NPX9.5;Y-0.5;)S0.8V|ATTR_V2(D6G0.5;NPX9.5;Y-1;)S0V|ATTR_VDC(D6G0.5;NPX9.5;Y-5;)S0V
 IspicepartsS3:VPulse;1{ic}|VPulse@2||-77|31|||D5G4;|ATTR_ACM(D6G0.5;NPX2.5;Y-1;)S0V|ATTR_ACP(D6G0.5;NPX2.5;Y-1.5;)I0|ATTR_PW(D6G0.5;NPX2.5;)S4ns|ATTR_Per(D6G0.5;NPX2.5;Y-0.5;)S1s|ATTR_TD(D6G0.5;NPX2.5;Y1.5;)S0ns|ATTR_TF(D6G0.5;NPX2.5;Y0.5;)S10ps|ATTR_TR(D6G0.5;NPX2.5;Y1;)S10ps|ATTR_V1(D6G0.5;NPX2.5;Y2.5;)S0.8|ATTR_V2(D6G0.5;NPX2.5;Y2;)S0V|ATTR_VDC(D6G0.5;NPX2.5;Y-2;)S0V
-IspicepartsS3:V_Generic;1{ic}|V_Generi@0||-107|-1.5|||D5G4;|ATTR_Voltage(D6G0.5;PX9.5;Y-1;)SDC 0.8 AC 0
+IspicepartsS3:V_Generic;1{ic}|V_Generi@0||-107|-1.5|||D5G4;|ATTR_Voltage(D6G0.5;PX9.5;Y-1;)SDC 1 AC 0
 Ngeneric:Facet-Center|art@0||0|0||||AV
 IcontrolLogic;1{ic}|controlL@0||-26|-12|||D5G4;
 IdataDriver;1{ic}|dataDriv@0||10|63|||D5G4;
@@ -4353,7 +4373,6 @@ NGround|gnd@3||-14.5|-3||||
 NGround|gnd@4||-77|23.5||||
 IinputRegister;1{ic}|inputReg@0||-61|24|||D5G4;
 NWire_Pin|last_write|D5G1;|-11|-26||||
-IoutputRegister;1{ic}|outputRe@0||59|31|||D5G4;
 NWire_Pin|pin@10||-53.5|-9||||
 NWire_Pin|pin@11||-54|-14.5||||
 NWire_Pin|pin@12||-89|-13||||
@@ -4406,13 +4425,13 @@ NWire_Pin|pin@77||48.5|33||||
 NWire_Pin|pin@78||50|27.5||||
 NWire_Pin|pin@79||44|38.5||||
 NWire_Pin|pin@80||45.5|20||||
-NWire_Pin|pin@81||9|-10||||
-NWire_Pin|pin@82||8.5|-16.5||||
 NWire_Pin|pin@84||-36|14.5||||
 NWire_Pin|pin@88||-19|-25||||
 NWire_Pin|pin@97||-36|14.5||||
 NWire_Pin|pin@98||-36|63.5||||
 NWire_Pin|pin@99||12.5|-5||||
+NWire_Pin|pin@100||2.5|-5||||
+NWire_Pin|pin@101||22.5|-5||||
 NPower|pwr@0||-107|11.5||||
 Awire|DQIn|D5G1;||0|inputReg@0|dequeue|-68.5|-20.5|pin@13||-80|-20.5
 Awire|addr0|D5G1;||0|SRAM@0|Addr[0]|-10.5|33.5|pin@41||-28.5|33.5
@@ -4420,6 +4439,7 @@ Awire|addr1|D5G1;||0|SRAM@0|Addr[1]|-10.5|30.5|pin@42||-23|30.5
 Awire|addr2|D5G1;||0|SRAM@0|Addr[2]|-10.5|27.5|pin@43||-17.5|27.5
 Awire|addr3|D5G1;||2700|controlL@0|Addr3|-11.5|-4|pin@44||-11.5|24.5
 Awire|bl0|D5G1;||1800|SRAM@0|bl0|35.5|38.5|pin@79||44|38.5
+Awire|bl0_|D5G1;||900|SRAM@0|bl0_|2.5|5.5|pin@100||2.5|-5
 Awire|clk|D5G1;||900|controlL@0|clk|-25.5|-20.5|pin@25||-25.5|-33
 Awire|d0|D5G1;||2700|SRAM@0|D[0]|24.5|47.5|dataDriv@0|d0|24.5|57
 Awire|d0_|D5G1;||2700|SRAM@0|D'[0]|29.5|46.5|pin@53||29.5|53
@@ -4496,10 +4516,6 @@ Awire|net@106|||0|inputReg@0|in0|-67.5|71|pin@76||-77|71
 Awire|net@107|||2700|pin@54||-77|60|pin@76||-77|71
 Awire|net@108|||2700|gnd@4||-77|25.5|VPulse@2|minus|-77|31
 Awire|net@109|||2700|VPulse@2|plus|-77|35|pin@56||-77|39
-Awire|net@110|||900|pin@23||9|-8.5|pin@81||9|-10
-Awire|net@111|||0|outputRe@0|emptyIn|53|-10|pin@81||9|-10
-Awire|net@112|||900|pin@24||8.5|-14|pin@82||8.5|-16.5
-Awire|net@113|||0|outputRe@0|fullIn|52.5|-16.5|pin@82||8.5|-16.5
 Awire|net@118|||1800|pin@40||-36.5|14.5|pin@84||-36|14.5
 Awire|net@132|||900|controlL@0|last_write|-11|-20|last_write||-11|-26
 Awire|net@149|||900|4buffers@4|B|-36|46|4buffers@5|A|-36|42
@@ -4509,6 +4525,7 @@ Awire|net@152|||0|pin@97||-36|14.5|pin@40||-36.5|14.5
 Awire|net@153|||900|4buffers@4|A|-36|36|pin@97||-36|14.5
 Awire|net@154|||0|dataDriv@0|En|-13|63.5|pin@98||-36|63.5
 Awire|net@156|||2700|4buffers@7|B|-36|60|pin@98||-36|63.5
+Awire|net@158|||900|SRAM@0|bl7|22.5|5.5|pin@101||22.5|-5
 Awire|pc|D5G1;||2700|VPulse@1|plus|-14.5|7.5|pin@45||-14.5|17.5
 Awire|pcafter|D5G1;||1800|SRAM@0|pcafter|35.5|20|pin@80||45.5|20
 Awire|ptrflag|D5G1;||900|controlL@0|ptrflag|-19|-20|pin@88||-19|-25
