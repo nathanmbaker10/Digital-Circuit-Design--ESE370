@@ -5,7 +5,7 @@
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
-.include C:\Users\shane\Downloads\22nm_HP.pm
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
 
 *** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
 .SUBCKT ESE370__inverter a not_a_
@@ -248,9 +248,9 @@ XRAM_Cell@65 net@126 net@133 wl7 ESE370__RAM_Cell
 XRAM_Cell@66 net@140 net@147 wl7 ESE370__RAM_Cell
 XRAM_Cell@67 net@154 net@161 wl7 ESE370__RAM_Cell
 XRowDecod@4 gnd gnd gnd wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 pcbefore ESE370__RowDecoder
-VVPWL@0 net@302 gnd pwl (0ns 0.8 1.5ns 0.8 1.5ns 0 3.5ns 0 3.5ns 0.8) DC 0V AC 0V 0
+VVPWL@0 net@302 gnd pwl (0ns 0.8 2ns 0.8 2ns 0 8ns 0 8ns 0.8) DC 0V AC 0V 0
 VVPulse@0 pcbefore gnd pulse (0.8V 0V 20ps 10ps 10ps 200ps 1ns) DC 0V AC 0V 0
-VVPulse@1 RW gnd pulse (0V 0.8V 0ps 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
+VVPulse@1 RW gnd pulse (0V 0.8V 0ps 10ps 10ps 1ns 3ns) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
 XbitLineC@0 bl bl_ pcafter ESE370__bitLineConditioning
 XbitLineC@1 bl2 bl_2 pcafter ESE370__bitLineConditioning

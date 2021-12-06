@@ -1,0 +1,316 @@
+*** SPICE deck for cell controllogicbugfix{sch} from library ESE370
+*** Created on Sun Dec 05, 2021 20:11:04
+*** Last revised on Sun Dec 05, 2021 21:02:11
+*** Written on Sun Dec 05, 2021 21:02:21 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+* Model cards are described in this file:
+.include '~/Desktop/Shared VM (Desktop)/ESE370/22nm_HP.pm'
+
+*** SUBCIRCUIT ESE370__inverter FROM CELL inverter{sch}
+.SUBCKT ESE370__inverter a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.022U
+.ENDS ESE370__inverter
+
+*** SUBCIRCUIT ESE370__buffer FROM CELL buffer{sch}
+.SUBCKT ESE370__buffer a out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 a net@1 ESE370__inverter
+Xinverter@1 net@1 out ESE370__inverter
+.ENDS ESE370__buffer
+
+*** SUBCIRCUIT ESE370__4buffers FROM CELL 4buffers{sch}
+.SUBCKT ESE370__4buffers A B
+** GLOBAL gnd
+** GLOBAL vdd
+Xbuffer@0 A net@0 ESE370__buffer
+Xbuffer@1 net@0 net@1 ESE370__buffer
+Xbuffer@2 net@1 net@2 ESE370__buffer
+Xbuffer@3 net@2 B ESE370__buffer
+.ENDS ESE370__4buffers
+
+*** SUBCIRCUIT ESE370__tri-state-buffer FROM CELL tri-state-buffer{sch}
+.SUBCKT ESE370__tri-state-buffer En In out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out En net@24 gnd N L=0.022U W=0.022U
+Mnmos@1 net@24 net@3 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 net@1 net@14 out vdd P L=0.022U W=0.022U
+Mpmos@1 vdd net@3 net@1 vdd P L=0.022U W=0.022U
+Xinverter@1 In net@3 ESE370__inverter
+Xinverter@2 En net@14 ESE370__inverter
+.ENDS ESE370__tri-state-buffer
+
+*** SUBCIRCUIT ESE370__tristate-buffer-enable-inverted FROM CELL tristate-buffer-enable-inverted{sch}
+.SUBCKT ESE370__tristate-buffer-enable-inverted en in out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 en net@2 ESE370__inverter
+Xtri-stat@0 net@2 in out ESE370__tri-state-buffer
+.ENDS ESE370__tristate-buffer-enable-inverted
+
+*** SUBCIRCUIT ESE370__AddressSelector FROM CELL AddressSelector{sch}
+.SUBCKT ESE370__AddressSelector Addr0 Addr1 Addr2 Addr3 Raddr0 Raddr1 Raddr2 Raddr3 Wr/_RCtrl Wraddr0 Wraddr1 Wraddr2 Wraddr3
+** GLOBAL gnd
+** GLOBAL vdd
+Xtri-stat@0 Wr/_RCtrl Wraddr0 Addr0 ESE370__tri-state-buffer
+Xtri-stat@1 Wr/_RCtrl Wraddr1 Addr1 ESE370__tri-state-buffer
+Xtri-stat@2 Wr/_RCtrl Wraddr2 Addr2 ESE370__tri-state-buffer
+Xtri-stat@3 Wr/_RCtrl Wraddr3 Addr3 ESE370__tri-state-buffer
+Xtristate@0 Wr/_RCtrl Raddr0 Addr0 ESE370__tristate-buffer-enable-inverted
+Xtristate@1 Wr/_RCtrl Raddr1 Addr1 ESE370__tristate-buffer-enable-inverted
+Xtristate@2 Wr/_RCtrl Raddr2 Addr2 ESE370__tristate-buffer-enable-inverted
+Xtristate@3 Wr/_RCtrl Raddr3 Addr3 ESE370__tristate-buffer-enable-inverted
+.ENDS ESE370__AddressSelector
+
+*** SUBCIRCUIT ESE370__nor2 FROM CELL nor2{sch}
+.SUBCKT ESE370__nor2 a b o
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 o b gnd gnd N L=0.022U W=0.022U
+Mnmos@1 o a gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd a net@12 vdd P L=0.022U W=0.022U
+Mpmos@1 net@12 b o vdd P L=0.022U W=0.022U
+.ENDS ESE370__nor2
+
+*** SUBCIRCUIT ESE370__2phaseclock FROM CELL 2phaseclock{sch}
+.SUBCKT ESE370__2phaseclock clock1 clock2 in
+** GLOBAL gnd
+** GLOBAL vdd
+Xbuffer@0 in net@5 ESE370__buffer
+Xinverter@0 in net@4 ESE370__inverter
+Xnor2@0 net@4 clock2 clock1 ESE370__nor2
+Xnor2@1 clock1 net@5 clock2 ESE370__nor2
+.ENDS ESE370__2phaseclock
+
+*** SUBCIRCUIT ESE370__nand2 FROM CELL nand2{sch}
+.SUBCKT ESE370__nand2 A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.022U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.022U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2
+
+*** SUBCIRCUIT ESE370__3nandlatch FROM CELL 3nandlatch{sch}
+.SUBCKT ESE370__3nandlatch clock in out
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 clock net@6 ESE370__inverter
+Xnand2@0 in clock net@8 ESE370__nand2
+Xnand2@1 net@6 out net@10 ESE370__nand2
+Xnand2@2 net@8 net@10 out ESE370__nand2
+.ENDS ESE370__3nandlatch
+
+*** SUBCIRCUIT ESE370__PositiveRegister FROM CELL PositiveRegister{sch}
+.SUBCKT ESE370__PositiveRegister clk d q
+** GLOBAL gnd
+** GLOBAL vdd
+X_2phasecl@0 net@20 net@24 clk ESE370__2phaseclock
+X_3nandlat@0 net@24 d net@0 ESE370__3nandlatch
+X_3nandlat@1 net@20 net@0 q ESE370__3nandlatch
+.ENDS ESE370__PositiveRegister
+
+*** SUBCIRCUIT ESE370__XNOR_PT FROM CELL XNOR_PT{sch}
+.SUBCKT ESE370__XNOR_PT A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 net@53 net@39 B gnd N L=0.022U W=0.022U
+Mnmos@3 net@53 A net@44 gnd N L=0.022U W=0.022U
+Xbuffer@0 net@58 out ESE370__buffer
+Xinverter@0 A net@39 ESE370__inverter
+Xinverter@1 B net@44 ESE370__inverter
+Xinverter@2 net@53 net@58 ESE370__inverter
+.ENDS ESE370__XNOR_PT
+
+*** SUBCIRCUIT ESE370__and2 FROM CELL and2{sch}
+.SUBCKT ESE370__and2 a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@0 net@25 output ESE370__inverter
+Xnand2@0 a b net@25 ESE370__nand2
+.ENDS ESE370__and2
+
+*** SUBCIRCUIT ESE370__inverter1 FROM CELL inverter1{sch}
+.SUBCKT ESE370__inverter1 a not_a_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 not_a_ a gnd gnd N L=0.022U W=0.198U
+Mpmos@0 vdd a not_a_ vdd P L=0.022U W=0.614U
+.ENDS ESE370__inverter1
+
+*** SUBCIRCUIT ESE370__nand2_sized FROM CELL nand2_sized{sch}
+.SUBCKT ESE370__nand2_sized A B O
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 O A net@10 gnd N L=0.022U W=0.088U
+Mnmos@1 net@10 B gnd gnd N L=0.022U W=0.088U
+Mpmos@0 vdd A O vdd P L=0.022U W=0.13U
+Mpmos@1 vdd B O vdd P L=0.022U W=0.13U
+.ENDS ESE370__nand2_sized
+
+*** SUBCIRCUIT ESE370__and2_sized FROM CELL and2_sized{sch}
+.SUBCKT ESE370__and2_sized a b output
+** GLOBAL gnd
+** GLOBAL vdd
+Xinverter@2 net@45 output ESE370__inverter1
+Xnand2_si@0 a b net@45 ESE370__nand2_sized
+.ENDS ESE370__and2_sized
+
+*** SUBCIRCUIT ESE370__Readaddr__Wraddr FROM CELL Readaddr==Wraddr{sch}
+.SUBCKT ESE370__Readaddr__Wraddr Radd__WRadd rdAddr0 rdaddr1 rdaddr2 rdaddr3 wraddr0 wraddr1 wraddr2 wraddr3
+** GLOBAL gnd
+** GLOBAL vdd
+XXNOR_PT@1 rdAddr0 wraddr0 net@0 ESE370__XNOR_PT
+XXNOR_PT@2 rdaddr1 wraddr1 net@3 ESE370__XNOR_PT
+XXNOR_PT@3 rdaddr2 wraddr2 net@5 ESE370__XNOR_PT
+XXNOR_PT@4 rdaddr3 wraddr3 net@7 ESE370__XNOR_PT
+Xand2@0 net@10 net@12 Radd__WRadd ESE370__and2
+Xand2_siz@0 net@0 net@3 net@10 ESE370__and2_sized
+Xand2_siz@1 net@5 net@7 net@12 ESE370__and2_sized
+.ENDS ESE370__Readaddr__Wraddr
+
+*** SUBCIRCUIT ESE370__TristateBufferSized FROM CELL TristateBufferSized{sch}
+.SUBCKT ESE370__TristateBufferSized En In out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out En net@6 gnd N L=0.022U W=0.088U
+Mnmos@1 net@6 net@10 gnd gnd N L=0.022U W=0.088U
+Mpmos@0 net@1 net@38 out vdd P L=0.022U W=0.088U
+Mpmos@1 vdd net@10 net@1 vdd P L=0.022U W=0.088U
+Xinverter@2 In net@10 ESE370__inverter1
+Xinverter@4 En net@38 ESE370__inverter1
+.ENDS ESE370__TristateBufferSized
+
+*** SUBCIRCUIT ESE370__4bitReg FROM CELL 4bitReg{sch}
+.SUBCKT ESE370__4bitReg CLK In[3] In[2] In[1] In[0] Out[3] Out[2] Out[1] Out[0]
+** GLOBAL gnd
+** GLOBAL vdd
+XPositive@1 CLK In[3] Out[3] ESE370__PositiveRegister
+XPositive@2 CLK In[2] Out[2] ESE370__PositiveRegister
+XPositive@3 CLK In[1] Out[1] ESE370__PositiveRegister
+XPositive@4 CLK In[0] Out[0] ESE370__PositiveRegister
+.ENDS ESE370__4bitReg
+
+*** SUBCIRCUIT ESE370__NAND2sized FROM CELL NAND2sized{sch}
+.SUBCKT ESE370__NAND2sized A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@1 B gnd gnd N L=0.022U W=0.11U
+Mnmos@1 out A net@1 gnd N L=0.022U W=0.11U
+Mpmos@0 vdd A out vdd P L=0.022U W=0.176U
+Mpmos@1 vdd B out vdd P L=0.022U W=0.176U
+.ENDS ESE370__NAND2sized
+
+*** SUBCIRCUIT ESE370__nand2dc FROM CELL nand2dc{sch}
+.SUBCKT ESE370__nand2dc A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@1 B gnd gnd N L=0.022U W=0.022U
+Mnmos@1 out A net@1 gnd N L=0.022U W=0.022U
+Mpmos@2 vdd A out vdd P L=0.022U W=0.022U
+Mpmos@3 vdd B out vdd P L=0.022U W=0.022U
+.ENDS ESE370__nand2dc
+
+*** SUBCIRCUIT ESE370__newXOR FROM CELL newXOR{sch}
+.SUBCKT ESE370__newXOR A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out A net@18 gnd N L=0.022U W=0.022U
+Mnmos@1 out net@46 net@19 gnd N L=0.022U W=0.022U
+Mnmos@2 net@18 B gnd gnd N L=0.022U W=0.022U
+Mnmos@3 net@19 net@51 gnd gnd N L=0.022U W=0.022U
+Mpmos@0 vdd net@46 net@8 vdd P L=0.022U W=0.022U
+Mpmos@1 vdd A net@7 vdd P L=0.022U W=0.022U
+Mpmos@2 net@8 B out vdd P L=0.022U W=0.022U
+Mpmos@3 net@7 net@51 out vdd P L=0.022U W=0.022U
+Xinverter@0 A net@46 ESE370__inverter
+Xinverter@1 B net@51 ESE370__inverter
+.ENDS ESE370__newXOR
+
+*** SUBCIRCUIT ESE370__Standardadder FROM CELL Standardadder{sch}
+.SUBCKT ESE370__Standardadder A B Cin Cout S
+** GLOBAL gnd
+** GLOBAL vdd
+XNAND2siz@0 net@36 Cin net@51 ESE370__NAND2sized
+XNAND2siz@1 net@51 net@53 Cout ESE370__NAND2sized
+Xnand2dc@0 A B net@53 ESE370__nand2dc
+XnewXOR@0 A B net@36 ESE370__newXOR
+XnewXOR@1 net@36 Cin S ESE370__newXOR
+.ENDS ESE370__Standardadder
+
+*** SUBCIRCUIT ESE370__PlusOne FROM CELL PlusOne{sch}
+.SUBCKT ESE370__PlusOne in0 in1 in2 in3 out0 out1 out2 out3
+** GLOBAL gnd
+** GLOBAL vdd
+XStandard@0 in0 vdd gnd net@5 out0 ESE370__Standardadder
+XStandard@1 in1 gnd net@5 net@6 out1 ESE370__Standardadder
+XStandard@2 in2 gnd net@6 net@9 out2 ESE370__Standardadder
+XStandard@3 in3 gnd net@9 Standard@3_Cout out3 ESE370__Standardadder
+.ENDS ESE370__PlusOne
+
+*** SUBCIRCUIT ESE370__addressLoop FROM CELL addressLoop{sch}
+.SUBCKT ESE370__addressLoop Addr[3] Addr[2] Addr[1] Addr[0] clk En/Deq
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@6 pc gnd gnd N L=0.044U W=0.044U
+Mnmos@1 net@3 pc gnd gnd N L=0.044U W=0.044U
+Mnmos@2 net@38 pc gnd gnd N L=0.044U W=0.044U
+Mnmos@3 net@1 pc gnd gnd N L=0.044U W=0.044U
+X_4bitReg@0 clk net@1 net@38 net@3 net@6 Addr[3] Addr[2] Addr[1] Addr[0] ESE370__4bitReg
+XPlusOne@0 Addr[0] Addr[1] Addr[2] Addr[3] net@18 net@20 net@24 net@25 ESE370__PlusOne
+VVPulse@0 pc gnd pulse (0 0.8V 0ns 10ps 10ps 80ps 1s) DC '0V' AC '0V' 0
+Xtri-stat@0 En/Deq net@20 net@3 ESE370__tri-state-buffer
+Xtri-stat@1 En/Deq net@18 net@6 ESE370__tri-state-buffer
+Xtri-stat@2 En/Deq net@24 net@38 ESE370__tri-state-buffer
+Xtri-stat@3 En/Deq net@25 net@1 ESE370__tri-state-buffer
+Xtristate@0 En/Deq Addr[3] net@1 ESE370__tristate-buffer-enable-inverted
+Xtristate@1 En/Deq Addr[2] net@38 ESE370__tristate-buffer-enable-inverted
+Xtristate@2 En/Deq Addr[1] net@3 ESE370__tristate-buffer-enable-inverted
+Xtristate@3 En/Deq Addr[0] net@6 ESE370__tristate-buffer-enable-inverted
+.ENDS ESE370__addressLoop
+
+*** SUBCIRCUIT ESE370__controlLogic FROM CELL controlLogic{sch}
+.SUBCKT ESE370__controlLogic Addr0 Addr1 Addr2 Addr3 clk DQ Empty_next ENQ Full_next last_enq nor ptrflag WRCtrl
+** GLOBAL gnd
+** GLOBAL vdd
+Mpmos@0 vdd net@208 Last__Read vdd P L=0.044U W=0.044U
+X_4buffers@1 WRCtrl net@305 ESE370__4buffers
+X_4buffers@2 last_enq net@317 ESE370__4buffers
+X_4buffers@3 net@317 net@334 ESE370__4buffers
+X_4buffers@4 net@334 net@335 ESE370__4buffers
+X_4buffers@5 net@335 net@337 ESE370__4buffers
+X_4buffers@6 net@337 net@336 ESE370__4buffers
+XAddressS@0 Addr0 Addr1 Addr2 Addr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 net@305 wraddr0 wraddr1 wraddr2 wraddr3 ESE370__AddressSelector
+XPositive@0 clk this__write Last__Read ESE370__PositiveRegister
+XReadaddr@0 ptrflag wraddr0 wraddr1 wraddr2 wraddr3 rdaddr0 rdaddr1 rdaddr2 rdaddr3 ESE370__Readaddr__Wraddr
+XTristate@0 nor Last__Read this__write ESE370__TristateBufferSized
+VVPulse@3 net@208 gnd pulse (0.8V 0 0ns 10ps 10ps 80ps 1s) DC '0V' AC '0V' 0
+XaddressL@0 wraddr3 wraddr2 wraddr1 wraddr0 clk willenq ESE370__addressLoop
+XaddressL@1 rdaddr3 rdaddr2 rdaddr1 rdaddr0 clk willdq ESE370__addressLoop
+Xand2@0 ptrflag Last__Read Empty_next ESE370__and2
+Xand2@1 ptrflag net@336 Full_next ESE370__and2
+Xand2@2 ENQ andin willenq ESE370__and2
+Xand2@3 DQ net@110 willdq ESE370__and2
+Xand2_siz@0 clk willenq WRCtrl ESE370__and2_sized
+Xinverter@1 Empty_next net@110 ESE370__inverter
+Xinverter@2 Full_next andin ESE370__inverter
+Xinverter@4 Last__Read last_enq ESE370__inverter
+Xnor2@0 willenq willdq nor ESE370__nor2
+Xtristate@2 nor willdq this__write ESE370__tristate-buffer-enable-inverted
+.ENDS ESE370__controlLogic
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: controllogicbugfix{sch}
+VVPWL@0 enqin gnd pwl (0 0 2.1ns 0 2.1ns 0.8V 6.1ns 0.8V 6.1ns 0V 7ns 0V) DC '0V' AC '0V' 0
+VVPWL@1 dqin gnd pwl (0 0 4.1ns 0 4.1ns 0.8V 6.1ns 0.8V 6.1ns 0V 7ns 0V) DC '0V' AC '0V' 0
+VVPulse@0 net@2 gnd pulse (0 0.8V 0ns 10ps 10ps 1ns 2ns) DC '0V' AC '0V' 0
+VV_Generi@0 vdd gnd DC 0.8 AC 0
+XcontrolL@0 controlL@0_Addr0 controlL@0_Addr1 controlL@0_Addr2 controlL@0_Addr3 net@2 enqin emptynext dqin fullnext controlL@0_last_enq nor controlL@0_ptrflag rw ESE370__controlLogic
+.END
