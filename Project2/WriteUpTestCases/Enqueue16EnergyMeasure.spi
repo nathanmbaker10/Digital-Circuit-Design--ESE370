@@ -1,7 +1,7 @@
 *** SPICE deck for cell SRAMtests{sch} from library ESE370
 *** Created on Thu Dec 02, 2021 20:42:33
-*** Last revised on Sun Dec 05, 2021 21:29:07
-*** Written on Sun Dec 05, 2021 22:01:20 by Electric VLSI Design System, version 9.07
+*** Last revised on Sun Dec 05, 2021 22:30:47
+*** Written on Sun Dec 05, 2021 22:31:15 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 * Model cards are described in this file:
@@ -540,12 +540,13 @@ X_4bitReg@0 clk outC3 outC2 outC1 outC0 out3 out2 out1 out0 ESE370__4bitReg
 
 *** TOP LEVEL CELL: SRAMtests{sch}
 XSRAM@0 addr3 addr2 addr1 addr0 d3_ d2_ d1_ d0_ d3 d2 d1 d0 pc rw ESE370__SRAM
-VVPWL@0 enqIn gnd pwl (0 0 1ns 0V 1ns 0.8V 34ns 0.8V 34ns 0V 35.9ns 0V 35.9ns 0.8V 37.9ns 0.8V 37.9 0V) DC 0V AC 0V 0
-VVPWL@1 DQIn gnd pwl (0 0 33.9ns 0V 33.9ns 0.8V 35.9ns 0.8 35.9ns 0 36ns 0) DC 0V AC 0V 0
+VVPWL@0 enqIn gnd pwl (0 0 1.9ns 0V 1.9ns 0.8 1.9ns 0.8 33.9ns 0.8 33.9ns 0 35.9ns 0V 35.9ns 0.8V 39ns 0.8V) DC 0V AC 0V 0
+VVPWL@1 DQIn gnd pwl (0 0 33.9ns 0V 33.9ns 0.8V 35.9ns 0.8V 35.9ns 0V) DC 0V AC 0V 0
+VVPWL@2 in gnd pwl (0 0 1.9ns 0.8 1.9ns 0.8 33.9ns 0.8 33.9ns 0 37.9ns 0V) DC '0V' AC '0V' 0
 VVPulse@0 clk gnd pulse (0 0.8V 0ns 10ps 10ps 1ns 2ns) DC 0V AC 0V 0
 VVPulse@1 pc gnd pulse (0.8V 0V 110ps 10ps 10ps 110ps 1ns) DC 0V AC 0V 0
-VVPulse@2 in gnd pulse (0.8 0V 0ns 10ps 10ps 1.9ns 1s) DC 0V AC 0V 0
 VV_Generi@0 vdd gnd DC 0.8 AC 0
+VV_Generi@1 vdd net@198 DC 0 AC 0
 XcontrolL@0 addr0 addr1 addr2 addr3 clk dq enqlast empty enq full ptrflag controlL@0_pulseclk rw ESE370__controlLogic
 XdataDriv@0 in0 in1 in2 in3 d0 d0_ d1 d1_ d2 d2_ d3 d3_ rw ESE370__dataDriver
 XinputReg@0 clk DQIn dq enqIn enq in in0 in in1 in in2 in in3 ESE370__inputRegister

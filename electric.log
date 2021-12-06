@@ -6807,4 +6807,174 @@ Currently highlighted:
     com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Off-Page[conn@10].y'
 --------------- 1983 --------------
   Sun Dec 05 21:39:51 EST 2021
-Menu Activated: Edit | Mode
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Off-Page[conn@10].y'
+--------------- 1984 --------------
+  Sun Dec 05 21:40:20 EST 2021
+Menu Activated: Edit | Modes | Edit | Toggle Zoom
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@3']
+--------------- 1985 --------------
+  Sun Dec 05 21:40:25 EST 2021
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+Currently highlighted: 
+    Parameter 'V1' on node spicepartsS3:VPulse{ic}['VPulse@3']
+--------------- 1986 --------------
+  Sun Dec 05 21:40:53 EST 2021
+ProcessKeyBinding 401 when=1638715922613 modifiers=80 code=11 char=ffff false false
+--------------- 1987 --------------
+  Sun Dec 05 21:40:54 EST 2021
+Menu Activated: Export | Create Export...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Off-Page[conn@18].y'
+--------------- 1988 --------------
+  Sun Dec 05 21:40:54 EST 2021
+ProcessKeyBinding 400 when=1638715922913 modifiers=80 code=0 char=5 false false
+--------------- 1989 --------------
+  Sun Dec 05 21:40:58 EST 2021
+ProcessKeyBinding 402 when=1638715926957 modifiers=0 code=a char=a false false
+--------------- 1990 --------------
+  Sun Dec 05 21:41:03 EST 2021
+ProcessKeyBinding 402 when=1638715932460 modifiers=0 code=8 char=8 false true
+--------------- 1991 --------------
+  Sun Dec 05 21:41:04 EST 2021
+ProcessKeyBinding 402 when=1638715932642 modifiers=0 code=8 char=8 false true
+--------------- 1992 --------------
+  Sun Dec 05 21:41:04 EST 2021
+ProcessKeyBinding 402 when=1638715932810 modifiers=0 code=8 char=8 false true
+--------------- 1993 --------------
+  Sun Dec 05 21:41:04 EST 2021
+ProcessKeyBinding 401 when=1638715933579 modifiers=0 code=33 char=33(3) false true
+--------------- 1994 --------------
+  Sun Dec 05 21:41:05 EST 2021
+ProcessKeyBinding 402 when=1638715933652 modifiers=0 code=33 char=33(3) false true
+--------------- 1995 --------------
+  Sun Dec 05 21:41:05 EST 2021
+ProcessKeyBinding 401 when=1638715933667 modifiers=0 code=30 char=30(0) false true
+--------------- 1996 --------------
+  Sun Dec 05 21:41:05 EST 2021
+ProcessKeyBinding 402 when=1638715933740 modifiers=0 code=30 char=30(0) false true
+--------------- 1997 --------------
+  Sun Dec 05 21:41:05 EST 2021
+ProcessKeyBinding 401 when=1638715933829 modifiers=0 code=30 char=30(0) false true
+--------------- 1998 --------------
+  Sun Dec 05 21:41:05 EST 2021
+ProcessKeyBinding 402 when=1638715933905 modifiers=0 code=30 char=30(0) false true
+--------------- 1999 --------------
+  Sun Dec 05 21:41:06 EST 2021
+ProcessKeyBinding 402 when=1638715934575 modifiers=0 code=a char=a false false
+--------------- 2000 --------------
+  Sun Dec 05 21:41:17 EST 2021
+ProcessKeyBinding 401 when=1638715946614 modifiers=0 code=35 char=35(5) false true
+--------------- 2001 --------------
+  Sun Dec 05 21:41:18 EST 2021
+ProcessKeyBinding 402 when=1638715946681 modifiers=0 code=35 char=35(5) false true
+--------------- 2002 --------------
+  Sun Dec 05 21:41:24 EST 2021
+ProcessKeyBinding 401 when=1638715953454 modifiers=80 code=11 char=ffff false false
+--------------- 2003 --------------
+  Sun Dec 05 21:41:24 EST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2004 --------------
+  Sun Dec 05 21:41:24 EST 2021
+ProcessKeyBinding 400 when=1638715953454 modifiers=80 code=0 char=13 false false
+--------------- 2005 --------------
+  Sun Dec 05 21:41:30 EST 2021
+ProcessKeyBinding 401 when=1638715959456 modifiers=80 code=11 char=ffff false false
+--------------- 2006 --------------
+  Sun Dec 05 21:41:30 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2007 --------------
+  Sun Dec 05 21:41:30 EST 2021
+ProcessKeyBinding 400 when=1638715959599 modifiers=80 code=0 char=30(0) false false
+--------------- 2008 --------------
+  Sun Dec 05 21:41:31 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2009 --------------
+  Sun Dec 05 21:41:31 EST 2021
+ProcessKeyBinding 400 when=1638715959923 modifiers=80 code=0 char=30(0) false false
+--------------- 2010 --------------
+  Sun Dec 05 21:41:31 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2011 --------------
+  Sun Dec 05 21:41:31 EST 2021
+ProcessKeyBinding 400 when=1638715960095 modifiers=80 code=0 char=30(0) false false
+--------------- 2012 --------------
+  Sun Dec 05 21:41:31 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2013 --------------
+  Sun Dec 05 21:41:31 EST 2021
+ProcessKeyBinding 400 when=1638715960259 modifiers=80 code=0 char=30(0) false false
+--------------- 2014 --------------
+  Sun Dec 05 21:41:31 EST 2021
+Menu Activated: Window | Zoom Out
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2015 --------------
+  Sun Dec 05 21:41:31 EST 2021
+ProcessKeyBinding 400 when=1638715960415 modifiers=80 code=0 char=30(0) false false
+--------------- 2016 --------------
+  Sun Dec 05 21:41:32 EST 2021
+Menu Activated: Window | Fill Window
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2017 --------------
+  Sun Dec 05 21:41:32 EST 2021
+ProcessKeyBinding 400 when=1638715961284 modifiers=80 code=0 char=39(9) false false
+--------------- 2018 --------------
+  Sun Dec 05 21:41:32 EST 2021
+Menu Activated: Window | Fill Window
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': 'Transistor(pMOS)[pmos@0].s'
+--------------- 2019 --------------
+  Sun Dec 05 21:41:32 EST 2021
+ProcessKeyBinding 400 when=1638715961408 modifiers=80 code=0 char=39(9) false false
+--------------- 2020 --------------
+  Sun Dec 05 21:41:33 EST 2021
+ProcessKeyBinding 402 when=1638715962059 modifiers=0 code=11 char=ffff false false
+--------------- 2021 --------------
+  Sun Dec 05 21:41:43 EST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+--------------- 2022 --------------
+  Sun Dec 05 21:44:18 EST 2021
+ProcessKeyBinding 401 when=1638716127143 modifiers=80 code=11 char=ffff false false
+--------------- 2023 --------------
+  Sun Dec 05 21:44:18 EST 2021
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'SRAMtests{sch}': 'controlLogic{ic}[controlL@0].pulseclk'
+--------------- 2024 --------------
+  Sun Dec 05 21:44:18 EST 2021
+ProcessKeyBinding 400 when=1638716127381 modifiers=80 code=0 char=4 false false
+--------------- 2025 --------------
+  Sun Dec 05 21:44:18 EST 2021
+ProcessKeyBinding 402 when=1638716127469 modifiers=0 code=11 char=ffff false false
+--------------- 2026 --------------
+  Sun Dec 05 21:44:45 EST 2021
+ProcessKeyBinding 401 when=1638716154609 modifiers=80 code=11 char=ffff false false
+--------------- 2027 --------------
+  Sun Dec 05 21:44:46 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': Off-Page['conn@19']
+--------------- 2028 --------------
+  Sun Dec 05 21:44:46 EST 2021
+ProcessKeyBinding 400 when=1638716154796 modifiers=80 code=0 char=a false false
+--------------- 2029 --------------
+  Sun Dec 05 21:44:46 EST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'controlLogic{sch}': Off-Page['conn@19']
+--------------- 2030 --------------
+  Sun Dec 05 21:44:46 E
